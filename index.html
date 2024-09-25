@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>雪域狂歡</title>
-    <script type="module" crossorigin src="/Snow-Pick/assets/main-95044a17.js"></script>
-    <link rel="stylesheet" href="/Snow-Pick/assets/main-16662ba3.css">
+    <script type="module" crossorigin src="/Snow-Pick/assets/main-d93b422a.js"></script>
+    <link rel="stylesheet" href="/Snow-Pick/assets/main-2bee93ec.css">
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">雪域狂歡</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid ">
+        <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+        <a class="navbar-brand animate__animated animate__bounce " href="#">雪域狂歡</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -30,14 +32,38 @@
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-primary-100" type="submit" disabled>Search</button>
           </form>
         </div>
       </div>
     </nav>
   
+    <div class="card" >
+      <div class="card-img" data-aos="fade-right">
+        <img src="https://www.filepicker.io/api/file/tNa2so2RRMuedpc2yydt" alt="Avatar" width="200">
+      </div>
+    </div>
 
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+      
     
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>
