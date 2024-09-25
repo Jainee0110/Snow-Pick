@@ -4,9 +4,8 @@
 >
 
   有報名滑雪團的經驗，覺得網站不太好用(列於下方) ，因此想要做一個使用者體驗佳的滑雪報名網。
-  [Double Black Crew](https://dbctaiwan.com/index/) - 手機版頁面操作不太方便
-
-  [滑雪中毒者](https://www.skisnow.com.tw/) - 一頁式網站，無法從網站直接報名，須透過表單
+  - [Double Black Crew](https://dbctaiwan.com/index/)：手機版頁面操作不太方便
+  - [滑雪中毒者](https://www.skisnow.com.tw/)：一頁式網站，無法從網站直接報名，須透過表單
 
 ### 網站理念：
 > 
