@@ -8,9 +8,17 @@ import 'swiper/css/bundle';
 
 
 
-// var swiper = new Swiper(".mySwiper", {
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
+var swiper = new Swiper(".mySwiper", {
+    autoplay:true,
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable :true,
+    },
+  });
