@@ -19,3 +19,19 @@ top: 0;
     font-size: 24px;
     padding: 8px 12px;
 }
+.form-check-equipment{
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input{
+    border-color: $info-200;
+
+&:checked{
+    background-color: #ffffff;
+    border-color: $primary-100;
+    color: $primary-100;
+
+}
+
+}
