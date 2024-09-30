@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車-裝備租借</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+<!--progress-->
+<section class="container">
+  <div class="px-11 py-8 mt-8 mb-11">
+<div class="position-relative mx-7 mb-6">
+
+  <div class="progress  mb-4" role="progressbar" aria-label="Example 4px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 4px">
+    <div class="progress-bar" style="width: 66%"></div>
+  </div> 
+
+  <div class="progress-milestone translate-middle" style="left: 0%;"></div>
+  <div class="progress-milestone translate-middle" style="left: 33%;"></div>
+  <div class="progress-milestone translate-middle" style="left: 66%;"></div>
+  <div class="progress-milestone translate-middle bg-info-300" style="left: 100%;"></div>
+
+  
+</div>
+<ul class="list-unstyled d-flex justify-content-between text-info-100">
+<li>行程確認</li>
+<li>資料填寫</li>
+<li>裝備租借</li>
+<li>訂單確認</li>
+</ul>
+</div>
+</section>
+<!--行程介紹-->
+<section class="my-11">
+  <div class="container">
+  <div class="alert bg-primary-400 p-0 p-6" role="alert">
+  <h1 class="alert-heading fs-5 fw-bold text-info-100 mb-6">行程介紹</h1>
+  <p class="text-info-200 mb-0">
+    1. 為了確保您在雪域狂歡中獲得最佳的滑雪體驗，請無論是否租借雪具裝備，都詳細填寫您的身高、體重和腳掌長度。我們將根據您提供的資訊為您準備合適的滑雪器材- 雪板及雪靴。</p>
+  <p class="text-info-200 mb-0">
+    2. 雪衣及護具等其他雪具裝備的尺寸會根據您的身高和體重進行配備。如現場試穿後發現不合適，我們將提供更換服務。
+  </p>
+   </div>
+  </div>
+</section>
+
+<!--旅客資料1-->
+<section class="container mb-11">
+  <hr>
+  <span class="badge traveler-label mt-11">旅客 1  成人</span>
+  <div class="my-6 d-flex">
+    <p style="margin-right: 32px;">中文姓名：王怡蓁</p>
+    <p>性別：女性</p>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3">
+      <div>
+        <label for="travelerdataInput1" class="form-label">身高*</label>
+        <input type="text" class="form-control" id="travelerdataInput1
+        " placeholder="請輸入您的身高">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
