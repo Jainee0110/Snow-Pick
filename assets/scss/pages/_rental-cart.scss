@@ -35,3 +35,8 @@ top: 0;
 }
 
 }
+.tableHead{
+    --bs-table-bg: $primary-100;
+    background-color: $primary-100;
+    color: #ffffff;    
+}
