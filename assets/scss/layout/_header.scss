@@ -1,31 +1,31 @@
-nav{
+.index-nav{
     .login{
         order: -1;
-        @include media-breakpoint-up(md){
+        @include media-breakpoint-up(lg){
             order:1;
         }
     }
     .nav-link{
         padding: 9.5px 34px;
-        @include media-breakpoint-up(md){
+        @include media-breakpoint-up(lg){
             color: white !important;
             line-height: 1.2;
         }
         &:hover{
-            @include media-breakpoint-up(md){
+            @include media-breakpoint-up(lg){
                 transition: 3s;
                 -webkit-box-reflect: below -25px linear-gradient(transparent, rgba(0, 0, 0, .5));;
             }
         }
     }
     .nav-item{
-        width: 135px;
+        width: 125px;
         background-color:rgba(255, 255, 255, .6);
         margin-left: auto;
         &:hover{
             background-color:rgba(255, 255, 255, 1);
         }
-        @include media-breakpoint-up(md){
+        @include media-breakpoint-up(lg){
             width: auto;
             background: transparent;
             &:hover{
@@ -33,20 +33,15 @@ nav{
             }
         }
     }
-    .collapsed .open {
-        display: block;
-      }
-    .open {
-        display: none;
-    }
-    .collapsed .close {
-        display: none;
-    }
-    .close {
-        display: inline-block;
-    }
     .navbar-toggler:focus{
         box-shadow: none;
     }
+    .navbar-toggler.collapsed .bi-x-lg  {
+        display: none;
+    }
+    .navbar-toggler:not(.collapsed) .bi-list {
+        display: none;
+    }
+    
 }
 
