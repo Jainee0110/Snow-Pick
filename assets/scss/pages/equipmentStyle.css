@@ -1,0 +1,186 @@
+ img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+.dp-flx{
+    display: flex;
+}
+.jc-center{
+    justify-content: center;
+}
+.flex-dire-c{
+    flex-direction: column;
+}
+.jc-e{
+    justify-content: end;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1296px;
+    height: 500px;
+    background-color: rgba(184, 225, 255, 1);
+}
+
+h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 44px;
+}
+.equipage{
+    background: linear-gradient(to top left, rgba(184, 225, 255, 1),rgba(237, 248, 255, 1));
+    padding: 44px;
+    margin-bottom: 44px;
+    
+}
+
+.linePosition{
+    position: relative;
+}
+
+.line2{
+    width: 274px;
+    height: 64px;
+    position: relative;
+    z-index: 2;
+    top: -50px;
+    left: -150px;
+}
+
+.line3{
+    width: 270px;
+    height: 204px;
+    position: relative;
+    z-index: 2;
+    bottom: -70px;
+    right: 50px;
+}
+
+.equipageList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.equipageList li{
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.equipageImg{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.equipageCard{
+    position: relative;
+    width: 284px;
+    height: 284px;
+    padding: 16px;
+    text-align: center;
+    font-weight: 700;
+    overflow: hidden;
+    gap: 4px;
+}
+
+@media (max-width: 375px) {
+    .equipageCard{
+    width: 327px;
+    height: 68px;
+}
+    
+}
+
+.rentBorder{
+    border: 2px solid rgba(85, 175, 244, 1);
+    
+}
+.rent{
+    align-content: center;
+    padding: 4px 16px;
+    color: #fff;
+    background-color: #55AFF4;
+    border-radius: 8px;
+    height: 32px;
+    margin-left: 0;
+}
+@media (max-width: 375px) {
+    .rent{
+    width: 62px;
+    height: 26px;
+    font-size: 12px;
+    padding: 4px 12px;
+}
+}
+.equipageNameRent{
+    color: #55AFF4;
+    
+}
+
+.free{
+    align-content: center;
+    padding: 4px 16px;
+    color: #55AFF4;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 32px;
+    margin-left: 0;
+    border: 1px solid #55AFF4;
+}
+@media (max-width: 375px) {
+    .free{
+    width: 62px;
+    height: 26px;
+    font-size: 12px;
+    padding: 4px 12px;
+}
+}
+    
+
+.owned{
+    align-content: center;
+    padding: 4px 16px;    
+    background-color: #fff;
+    border-radius: 8px;
+    height: 32px;
+    margin-left: 0;
+    border: 1px solid #A3A3A3;
+    color: #A3A3A3;
+}
+.equipageNameOwned{
+    color: #A3A3A3;
+    
+}
+
+.imgShadow{
+    position: absolute;
+    top: 86px;
+    right: 86px;
+    width: 254px;
+    height: 254px;
+    opacity: 0.1;
+}
+
+.priceList{
+    background-color: #F3FAFF;
+    padding: 44px;
+}
+.priceList h3{
+    margin-bottom: 44px;
+}
+.rentMenu{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: #fff;    
+    border-collapse: collapse;
+    text-align: center;
+    tr:nth-child(1), tr:nth-child(2) {
+        border-bottom: 1px solid #E4E4E4;
+    }
+}
+.rentMenu tr, th, td{
+    width: 202px;
+    padding: 12px;
+}
