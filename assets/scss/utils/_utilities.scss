@@ -9,5 +9,14 @@ $utilities: map-merge(
         )
       ),
     
+    "letter-spacing": (
+      property: letter-spacing,
+      class: ls,
+      responsive: true,
+      values: (
+        0: 0,
+        1: 0.05rem,
+      ),
+    ),
   )
 );
