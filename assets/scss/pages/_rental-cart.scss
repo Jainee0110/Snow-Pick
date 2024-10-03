@@ -9,7 +9,10 @@ width: 24px;
 height: 24px;
 border-radius: 50px;
 background-color:$primary-100;
-top: 0;       
+top: 0; 
+&-hover{    
+    box-shadow:0 0 0 8px $primary-200,0 0 0 14px #EBF7FF;  
+}      
     }
 }
 
@@ -39,4 +42,10 @@ top: 0;
     --bs-table-bg: $primary-100;
     background-color: $primary-100;
     color: #ffffff;    
+}
+.btn-page{
+    padding: 16px 50px;
+    @media (min-width:768px) {
+        padding: 16px 70px; 
+    }
 }

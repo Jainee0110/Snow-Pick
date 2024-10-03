@@ -314,6 +314,9 @@ $info-100:      #4D4D4D !default;
 $info-200:      #A3A3A3 !default;
 $info-300:      #E4E4E4 !default;
 
+$decoration-100:      #FF4B4B !default;
+$decoration-200:      #5ACF6B !default;
+$decoration-300:      #9A9A9A !default;
 
 $warning:       $yellow !default;
 $danger:        $red !default;
@@ -325,7 +328,7 @@ $white:         $white !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
+  "primary":      $primary,
 
   "primary-100":    $primary-100,
   "primary-200":    $primary-200,
@@ -333,7 +336,8 @@ $theme-colors: (
   "primary-400":    $primary-400,
 
   "secondary":  $secondary,
-  "success":    $success,
+  // "success":    $success,
+  "success":    $decoration-200,
   "info":       $info,
 
   "info-100":  $info-100,
@@ -341,9 +345,11 @@ $theme-colors: (
   "info-300":  $info-300,
 
   "warning":    $warning,
-  "danger":     $danger,
+  "danger":     $decoration-100,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+
+  "grey":   $decoration-300,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -482,7 +488,8 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align:           null !default;
-$body-color:                $gray-900 !default;
+// $body-color:                $gray-900 !default;
+$body-color:                $info-200 !default;
 $body-bg:                   $white !default;
 
 $body-secondary-color:      rgba($body-color, .75) !default;
@@ -498,7 +505,8 @@ $body-emphasis-color:       $black !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+// $link-decoration:                         underline !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -519,7 +527,9 @@ $icon-link-icon-transform:    translate3d(.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+// $paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0 !default;
+
 
 
 // Grid breakpoints
@@ -650,7 +660,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Noto Sans TC",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -678,30 +688,48 @@ $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
 // $h1-font-size:                $font-size-base * 2.5 !default;
-$h1-font-size:                $font-size-base * 4 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
+
+$h1-font-size:                $font-size-base * 3.5 !default;  //56px
+$h2-font-size:                $font-size-base * 2 !default;    //32px
+$h3-font-size:                $font-size-base * 1.5 !default;  //24px
+$h4-font-size:                $font-size-base * 1.25 !default; //20px
+$h5-font-size:                $font-size-base !default;        //16px
+
+
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  1: 3.5rem ,   //56px
+  2: 2.75rem,   //44px
+  3: 2rem,      //32px
+  4: 1.75rem,   //28px
+  5: 1.5rem,    //24px
+  6: 1.25rem,   //20px
+  7: 1.125rem,  //18px
+  8: 1rem,      //16px
+  9: 0.875rem,  //14px
+  10: 0.75rem,   //12px
+  // 1: $h1-font-size,
+  // 2: $h2-font-size,
+  // 3: $h3-font-size,
+  // 4: $h4-font-size,
+  // 5: $h5-font-size,
+  // 6: $h6-font-size
 ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+// $headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
+// $headings-font-weight:        500 !default;
+$headings-font-weight:        700 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 // scss-docs-end headings-variables
@@ -864,7 +892,8 @@ $input-btn-border-width:      var(--#{$prefix}border-width) !default;
 
 // scss-docs-start btn-variables
 $btn-color:                   var(--#{$prefix}body-color) !default;
-$btn-padding-y:               $input-btn-padding-y !default;
+// $btn-padding-y:               $input-btn-padding-y !default;
+$btn-padding-y:               1rem !default;
 $btn-padding-x:               $input-btn-padding-x !default;
 $btn-font-family:             $input-btn-font-family !default;
 $btn-font-size:               $input-btn-font-size !default;
@@ -881,11 +910,14 @@ $btn-font-size-lg:            $input-btn-font-size-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-normal !default;
+// $btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             $font-weight-bold !default;
+
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
-$btn-disabled-opacity:        .65 !default;
+// $btn-disabled-opacity:        .65 !default;
+$btn-disabled-opacity:        1 !default;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
 
 $btn-link-color:              var(--#{$prefix}link-color) !default;
@@ -894,7 +926,8 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-link-focus-shadow-rgb:   to-rgb(mix(color-contrast($link-color), $link-color, 15%)) !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           var(--#{$prefix}border-radius) !default;
+// $btn-border-radius:           var(--#{$prefix}border-radius) !default;
+$btn-border-radius:           none !default;
 $btn-border-radius-sm:        var(--#{$prefix}border-radius-sm) !default;
 $btn-border-radius-lg:        var(--#{$prefix}border-radius-lg) !default;
 
@@ -1534,12 +1567,16 @@ $toast-header-border-color:         $toast-border-color !default;
 // Badges
 
 // scss-docs-start badge-variables
-$badge-font-size:                   .75em !default;
-$badge-font-weight:                 $font-weight-bold !default;
+$badge-font-size:                   $font-size-base !default;
+// $badge-font-weight:                 $font-weight-bold !default;
+$badge-font-weight:                 $font-weight-normal !default;
 $badge-color:                       $white !default;
-$badge-padding-y:                   .35em !default;
-$badge-padding-x:                   .65em !default;
-$badge-border-radius:               var(--#{$prefix}border-radius) !default;
+// $badge-padding-y:                   .35em !default;
+$badge-padding-y:                   4px  !default;
+$badge-padding-x:                   12px !default;
+// $badge-padding-x:                   .65em !default;
+// $badge-border-radius:               var(--#{$prefix}border-radius) !default;
+$badge-border-radius:               8px !default;
 // scss-docs-end badge-variables
 
 
