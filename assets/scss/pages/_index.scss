@@ -66,35 +66,35 @@
     }
     .aboutus-icon{
         transition: 1s;
-        content: url('.././images/about_us_hover.png');
+        content: url('.././img/about_us_hover.png');
         width: 88px;
         @include media-breakpoint-up(sm){
             width: auto;
-            content: url('.././images/about_us_hover.png');
+            content: url('.././img/about_us_hover.png');
         }
     }
     .latest-icon{
-        content: url('.././images/latest_hover.png');
+        content: url('.././img/latest_hover.png');
         width: 88px;
         @include media-breakpoint-up(sm){
             width: auto;
-            content: url('.././images/latest_hover.png');
+            content: url('.././img/latest_hover.png');
         }
     }
     .skiresort-icon{
-        content: url('.././images/ski resort_hover.png');
+        content: url('.././img/ski resort_hover.png');
         width: 88px;
         @include media-breakpoint-up(sm){
             width: auto;
-            content: url('.././images/ski resort_hover.png');
+            content: url('.././img/ski resort_hover.png');
         }
     }
     .team-icon{
-        content: url('.././images/team_hover.png');
+        content: url('.././img/team_hover.png');
         width: 88px;
         @include media-breakpoint-up(sm){
             width: auto;
-            content: url('.././images/team_hover.png');
+            content: url('.././img/team_hover.png');
         }
     }
     h3{
@@ -116,14 +116,14 @@
     &::after{
         content: "";
         position: absolute;
-        background-image: url('.././images/line03_mobile.png');
+        background-image: url('.././img/line03_mobile.png');
         height: 24px;
         width: 244px;
         top: 100%;
         left: 50%;
         transform: translate(-50%, -50%);
         @include media-breakpoint-up(sm){
-            background-image: url('.././images/line03.png');
+            background-image: url('.././img/line03.png');
             height: 40px;
             width: 392px;
         }
