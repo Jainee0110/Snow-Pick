@@ -15,6 +15,7 @@ border-radius: 50px;
 background-color:$primary-100;
 top: 0; 
 &-hover{    
+<<<<<<< HEAD
     box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
 }
 @media (min-width:768px) {
@@ -23,6 +24,9 @@ top: 0;
     &-hover{    
         box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF;  
     }
+=======
+    box-shadow:0 0 0 8px $primary-200,0 0 0 14px #EBF7FF;  
+>>>>>>> 660de712ab79da3a5561901b48ef03a7c1f6bb67
 }      
     }
 }
