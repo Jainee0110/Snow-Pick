@@ -42,6 +42,13 @@
     .navbar-toggler:not(.collapsed) .bi-list {
         display: none;
     }
-    
+    .header-dropdown-menu{
+        position: absolute;
+        top: 60px;
+        right: 12px;
+        @include media-breakpoint-up(lg){
+            position: static;
+        }
+    }
+     
 }
-
