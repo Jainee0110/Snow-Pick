@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>雪域狂歡</title>
-    <script type="module" crossorigin src="/Snow-Pick/assets/main-80c27618.js"></script>
-    <link rel="stylesheet" href="/Snow-Pick/assets/main-1759b06c.css">
+    <script type="module" crossorigin src="/Snow-Pick/assets/main-b3f3d12e.js"></script>
+    <link rel="stylesheet" href="/Snow-Pick/assets/main-cd4c4eaa.css">
   </head>
   <body>
     <nav class="index-nav navbar py-0 navbar-expand-lg" style="z-index: 100;">
@@ -46,8 +46,8 @@
       </div>
       <img src="/Snow-Pick/assets/line01-75955623.png" alt="line" class="img-fluid position-absolute animate__animated animate__backInDown">
     </div>
-    <div>
-      <div class="container pb-12 pb-sm-19 text-center">
+    <div class="index-bg position-relative">
+      <div class="container pb-12 pb-sm-19 text-center block2">
         <p class="text-info-200 fs-10 fs-sm-6 ls-1 mb-1 mb-sm-2 source-sans-pro">解鎖屬於你的</p>
         <h2 class="text-info-100 fs-6 fs-sm-3 ls-1 position-relative" data-aos="zoom-in" data-aos-duration="1500">雪域之旅
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAAASCAYAAACejqbEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGnSURBVHgB7ZdBTsMwEEVn7CLRFeYEhCVLjtElN+AoXIETcASWlbgESyQ2hBPgAhKVqD2M7ThN1VQIglpczcvC43ESJZnvbwdAEARBEARBELYEQkFMnz6qteRiUfWdq4l680MgAusV2rWB0ajO4dzO7cX5sYXCGSyM2/sXc8hHiP2nMwopxt3CoCfjEWIeUZ/kPBEZbPJNolp9OqygdIjq2GIUlE0psJj6HLvnNIzxPNe0ntCqA213JTS8e3y9jMH3xTPcSeMKDb+cAWFrcA0sebLQCIczNQWhkZspFhqxk2VRBQcbKigWxhtBKeTZ16X9UGsDG/K/B9kNeydE1+niJML/M2nCN2vcKjtVcKk+MU1Ox3W+7A+EwSqmZJFdu+wWxnuaIfrWRhUt12m3UsBR3b3z5GxcQ+FMH9K+SGtnnEuOqxS7sAd26OVSunTpVmTJoXewnPIzXbEw3m9CZ1PxSPGGy6PVmtXldFvQfShaSWSB8W47tpoFlIVFpIxSeNSKKjjYQOcq6q9E+DlBUNmtslORoqpfTBhj7+EaBEEQBEEQBEEQdsoXUUTiqf9ioiUAAAAASUVORK5CYII=" alt="line02" class="position-absolute top-100 start-50 translate-middle d-none d-sm-inline-block">
@@ -66,6 +66,7 @@
           <li class="col-6 col-lg-3 mb-6 mb-lg-0 py-3 py-lg-8">
             <a href="#latest">
               <img src="/Snow-Pick/assets/latest-88f5c7cd.png" alt="latest" class="latest-icon img-fluid mb-4 d-none d-sm-inline-block animate__animated animate__pulse animate__infinite animate__slower">
+              
               <img src="data:image/png;base64,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" alt="latest" class="latest-icon img-fluid mb-2 d-sm-none animate__animated animate__pulse animate__infinite animate__slower">
               <h3 class="fs-8 fs-sm-5 text-info-100 mb-1">最新活動</h3>
               <p class="fs-9 fs-sm-6 text-info-200 ls-1 source-sans-pro more">看更多</p>
@@ -92,13 +93,45 @@
           </li>
         </ul>
       </div>
-      <div id="aboutus" class="container">
+      <div id="aboutus" class="container aboutus">
         <div class="aboutus-text mb-6 mb-md-11">
           <h2 class="text-center fs-3 fs-sm-2 text-info-100 mb-6 mb-sm-8 about-snow-pick position-relative" data-aos="flip-down" data-aos-duration="800">About Snow Pick</h2>
           <p class="mb-4 mb-lg-8 fs-sm-6 ls-md-1 text-center source-sans-pro">雪域狂歡專為滑雪愛好者精心打造，提供全面而有趣的滑雪體驗。</p>
           <p class="fs-sm-6 ls-md-1 text-center source-sans-pro">我們致力簡化滑雪的繁瑣流程，精選優質滑雪行程，從熱門滑雪勝地到隱藏雪域秘境一應俱全，無論是滑雪新手還是經驗豐富的達人，都能在雪域狂歡輕鬆開啟一場獨一無二的冰雪冒險。</p>
         </div>
+        <ul class="list-unstyled">
+          <li class="position-relative">
+              <img src="/Snow-Pick/assets/aboutus01-3d5f2148.png" alt="about01" class="aboutus-img img-fluid" data-aos="zoom-in-right" data-aos-duration="1000">
+              <div class="p-4 px-sm-6 bg-white aboutus-content position-absolute position-relative" data-aos="fade-right">
+                <img src="/Snow-Pick/assets/label-8fec2d92.png" alt="label" class="position-absolute bottom-50 end-0" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <h3 class="text-info-100 mb-3 fs-8 fs-sm-6 fs-lg-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">豐富的滑雪團選擇</h3>
+                <p class="text-info-200 source-sans-pro fs-sm-6 ls-1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">精心挑選各類滑雪團，涵蓋熱門滑雪勝地和隱藏版雪域秘境，滿足不同滑雪愛好者的需求。</p>
+              </div>
+          </li>
+          <li>
+            <div class="position-relative aboutus-02 about02">
+              <img src="/Snow-Pick/assets/aboutus02-42269136.png" alt="about02" class="aboutus-img img-fluid" data-aos="zoom-in-right" data-aos-duration="1000">
+              <div class="p-4 px-sm-6 bg-white aboutus-content position-absolute position-relative" data-aos="fade-right">
+                <img src="/Snow-Pick/assets/label2-8583c1a0.png" alt="label" class="position-absolute bottom-50 end-0 mb-3 mb-sm-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <h3 class="text-info-100 mb-3 fs-8 fs-sm-6 fs-lg-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">優質細心經驗豐富的<br>教練團隊</h3>
+                <p class="text-info-200 source-sans-pro fs-sm-6 ls-1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">我們的合作教練均取得國際組織教學認證，擁有專業及豐富教學經驗，提供安全、系統性的滑雪指導。</p>
+              </div>
+            </div>
+          </li>
+          <li class="d-flex">
+            <div class="position-relative aboutus-03 about03 ms-lg-auto">
+              <img src="/Snow-Pick/assets/aboutus03-50c4b5d1.png" alt="about03" class="aboutus-img img-fluid" data-aos="zoom-in-right" data-aos-duration="1000">
+              <div class="p-4 px-sm-6 bg-white aboutus-content position-absolute position-relative end-0" data-aos="fade-right">
+                <img src="/Snow-Pick/assets/label3-b601f01d.png" alt="label" class="position-absolute bottom-50 end-0" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <h3 class="text-info-100 mb-3 fs-8 fs-sm-6 fs-lg-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">住宿、課程、攝影一站完成</h3>
+                <p class="text-info-200 source-sans-pro fs-sm-6 ls-1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">精選住宿地點均臨近滑雪場，方便滑雪者在活動後輕鬆返回休息，並提供專屬攝影服務，讓您留下美好回憶。</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
+      <div style="height: 751px;"></div>
+      <div style="height: 1367px;"></div>
     </div>
 
     
