@@ -21,3 +21,9 @@ var swiper = new Swiper(".mySwiper", {
         clickable :true,
     },
   });
+
+
+  var latestSwiper = new Swiper(".latest-swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+  });

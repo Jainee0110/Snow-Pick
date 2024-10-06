@@ -22,7 +22,29 @@
                 background-color: #fff;
             }
         }
+    &-bg::after{
+        content: "";
+        height: 5062px;
+        width: 100%;
+        background-image: url('.././img/bg_sm.png');
+        background-size: cover;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -8%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-position: 25% 10%;
+        position: absolute;
+        z-index: -1;
+        @include media-breakpoint-up(lg){
+            background-image: url('.././img/background.png');
+            background-position: center;
+            top: -10%;
+        }
+        @media (min-width: 1920px) {background-position: 15% 15%; }
+    }
 }
+
 .banner-content{
     top: 13%;
     padding-top: 64px;
@@ -54,48 +76,15 @@
         }
     }
 }
-.more-hover{
+.more-hover, .aboutus-icon-hover, .latest-icon-hover, .ski-resort-icon-hover, .team-icon-hover{
     display: none;
 }
 .banner-interact li:hover{
-    .more{
+    .more, .aboutus-icon, .latest-icon, .ski-resort-icon, .team-icon{
         display: none;
     }
-    .more-hover{
-        display: block;
-    }
-    .aboutus-icon{
-        transition: 1s;
-        content: url('.././img/about_us_hover.png');
-        width: 88px;
-        @include media-breakpoint-up(sm){
-            width: auto;
-            content: url('.././img/about_us_hover.png');
-        }
-    }
-    .latest-icon{
-        content: url('.././img/latest_hover.png');
-        width: 88px;
-        @include media-breakpoint-up(sm){
-            width: auto;
-            content: url('.././img/latest_hover.png');
-        }
-    }
-    .skiresort-icon{
-        content: url('.././img/ski resort_hover.png');
-        width: 88px;
-        @include media-breakpoint-up(sm){
-            width: auto;
-            content: url('.././img/ski resort_hover.png');
-        }
-    }
-    .team-icon{
-        content: url('.././img/team_hover.png');
-        width: 88px;
-        @include media-breakpoint-up(sm){
-            width: auto;
-            content: url('.././img/team_hover.png');
-        }
+    .more-hover, .aboutus-icon-hover, .latest-icon-hover, .ski-resort-icon-hover, .team-icon-hover{
+        display: inline-block;
     }
     h3{
         color: #1B5583 !important;
@@ -105,11 +94,87 @@
     font-family: "Source Sans 3", sans-serif;;
 }
 
-.aboutus-text{
-    width: 100%;
-    @include media-breakpoint-up(lg){
-        max-width: 881px;
+.aboutus{
+    padding-bottom: 60px;
+    @include media-breakpoint-up(sm){
+        padding-bottom: 40px;
+    }
+    &-text{
+        width: 100%;
+        @include media-breakpoint-up(lg){
+            max-width: 881px;
+            margin: 0 auto;
+            }
+    }
+    &-content{
+        box-shadow: 0px 0px 16px 0px #0000001A;
+        width: 327px;
+        left: 24px;
+        top: 216px;
+        @include media-breakpoint-up(sm){
+            width: 415px;
+            padding-top: 25px !important;
+            padding-bottom: 25px !important;
+            left: 30px;
+        }
+        @include media-breakpoint-up(md){
+            left: 200px; 
+        }
+        @include media-breakpoint-up(lg){ 
+            left: 329px;
+            top: 181px;
+        }
+
+    }
+    li{
+        margin-bottom: 154px;
+        max-width: 351px;
+        margin-left: auto;
+        margin-right: auto;
+        @include media-breakpoint-up(sm){  
+            max-width: none;
+            width: 434px;    
+        }
+        @include media-breakpoint-up(md){  
+            width: 615px;
+        }
+        @include media-breakpoint-up(lg){  
+            width: 100%;
+            margin-bottom: 88px;
+            margin-left: 0;
+        }
+    }
+    &-02.about02{
+        margin-bottom: 170px;
+        @include media-breakpoint-up(lg){  
+            margin-bottom: 118px;
+            margin-left: 100px;
+        }
+        @include media-breakpoint-up(xl){          
+            margin-left: 180px;   
+        }
+        @include media-breakpoint-up(xxl){          
+            margin-left: 276px;
+        }
+    }
+    &-03.about03{
+        @include media-breakpoint-up(lg){
+            margin-right: 330px;
+        }
+        @include media-breakpoint-up(xxl){
+            margin-right: 328px;
+        }
+    }
+    &-img{
         margin: 0 auto;
+        max-width: 327px;
+        @include media-breakpoint-up(sm){
+            width: 400px;
+            max-width: none;
+        }
+        @include media-breakpoint-up(lg){
+            width: auto;
+        }
     }
 }
 .about-snow-pick{
@@ -127,5 +192,23 @@
             height: 40px;
             width: 392px;
         }
+    }
+}
+.latest{
+    .swiper{
+        .btn{
+            padding-top: 3px;
+            padding-bottom: 1px;
+            &:hover{
+                background-color: $primary-100 !important;
+                color: white !important;
+            }
+        }
+    }
+    .card:hover{
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+    .btn{
+        line-height: 1.2;
     }
 }
