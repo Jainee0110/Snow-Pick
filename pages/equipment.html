@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="..\assets\scss\layout\cssReset.css" />
+    <!-- <link rel="stylesheet" href="..\assets\scss\layout\cssReset.css" /> -->
     <link rel="stylesheet" href="../assets/scss/pages/equipmentStyle.css" />
     <title>滑雪裝備一覽表</title>
 </head>
@@ -13,7 +13,7 @@
         <div class="equipage">
             <h3>滑雪裝備一覽表</h3>
             <div class="equipageBox">
-                <ul class="equipageList"> 
+                <ul class="equipageList list-unstyled"> 
                     <!-- 雪衣 -->
                     <li class="equipageCard rentBorder">
                         <div class="align-self-end">
@@ -185,7 +185,8 @@
         </div>
         <div class="priceList">
             <h3>合作店家租借價目表</h3>
-            <table class="rentMenu">
+            <!-- 電腦版table -->
+            <table class="rentMenu PcTable">
                 <tr>
                     <th>品項</th>
                     <th>雪衣</th>
@@ -209,6 +210,40 @@
                     <td>$150 / 日</td>
                     <td>$250 / 日</td>
                     <td>$210 / 日</td>
+                </tr>
+            </table>
+
+            <!-- 手機版table -->
+            <table class="rentMenu1 MbTable">
+                <tr>
+                    <th>品項</th>
+                    <th>成人</th>
+                    <th>孩童</th>
+                </tr>
+                <tr>
+                    <th>雪衣</th>
+                    <td>$450 / 日</td>
+                    <td>$450 / 日</td>
+                </tr>
+                <tr>
+                    <th>雪褲</th>
+                    <td>$450 / 日</td>
+                    <td>$450 / 日</td>
+                </tr>
+                <tr>
+                    <th>滑雪手套</th>
+                    <td>$450 / 日</td>
+                    <td>$450 / 日</td>
+                </tr>
+                <tr>
+                    <th>護膝</th>
+                    <td>$450 / 日</td>
+                    <td>$450 / 日</td>
+                </tr>
+                <tr>
+                    <th>防摔褲</th>
+                    <td>$450 / 日</td>
+                    <td>$450 / 日</td>
                 </tr>
             </table>
         </div>
