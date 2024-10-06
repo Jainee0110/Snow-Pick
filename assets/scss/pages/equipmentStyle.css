@@ -24,6 +24,7 @@ ul{
 }
 .container{
     margin: 0 auto;
+    margin-top: 100px;
     max-width: 1296px;
     height: 500px;
     background-color: rgba(184, 225, 255, 1);
@@ -51,7 +52,8 @@ h3{
     background: linear-gradient(to top left, rgba(184, 225, 255, 1),rgba(237, 248, 255, 1));
     padding: 44px;
     margin-bottom: 44px;
-    
+    /* 新增 */
+    position: relative;
 }
 @media  (max-width: 375px) {   
     .equipage{
@@ -61,25 +63,27 @@ h3{
 }
 
 .linePosition{
-    position: relative;
+    width: 1px;
+    height: 1px;    
+    /* overflow: visible;
+    position: relative; */
 }
 
-.line2{
+.line2 {
     width: 274px;
     height: 64px;
-    position: relative;
-    z-index: 2;
-    top: -50px;
-    left: -150px;
+    position: absolute;
+    top: -20px;
+    left: -80px;
 }
 
-.line3{
+.line3 {
     width: 270px;
     height: 204px;
-    position: relative;
+    position: absolute;
     z-index: 2;
-    bottom: -70px;
-    right: 50px;
+    top: -230px;
+    right: -70px;
 }
 
 .equipageList{
@@ -241,6 +245,7 @@ h3{
 .priceList{
     background-color: #F3FAFF;
     padding: 44px;
+    position: relative;
 }
 @media (max-width: 375px) {
     .priceList{ 
