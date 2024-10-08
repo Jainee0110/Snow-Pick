@@ -9,13 +9,14 @@
           </picture>
         </a>
         <div class="header-itinerary-dropdown">
-          <button class="header-itinerary-dropdown-menu-btn navbar-toggler p-1 border-0" id="header-itinerary-dropdownMenu-btn" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <button class="header-itinerary-dropdown-menu-btn navbar-toggler p-1 border-0"
+            id="header-itinerary-dropdownMenu-btn" data-bs-toggle="collapse" data-bs-target="#header-itinerary-menu-collapse"
+            aria-expanded="false" aria-controls="header-itinerary-menu-collapse">
             <i class="bi bi-list text-light fs-4 lh-0"></i>
-            <i class="bi bi-x-lg text-light fs-5 lh-0"></i>
+            <i class="bi bi-x-lg text-light fs-4 lh-0"></i>
           </button>
-          <ul class="header-itinerary-dropdown-menu dropdown-menu dropdown-menu-end m-0 p-0 rounded-0 text-center fs-9"
-            aria-labelledby="header-itinerary-dropdownMenu-btn">
+          <ul class="header-itinerary-dropdown-menu collapse m-0 p-0 rounded-0 text-center fs-9 position-absolute bg-white list-unstyled "
+            aria-labelledby="header-itinerary-dropdownMenu-btn" id="header-itinerary-menu-collapse">
             <li><a class="dropdown-item" href="##">會員登入</a></li>
             <li><a class="dropdown-item" href="##">滑雪行程</a></li>
             <li><a class="dropdown-item" href="##">雪場介紹</a></li>
