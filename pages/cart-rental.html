@@ -108,15 +108,16 @@
   
 
 <div>
-  <div class="form-check">
+  <div class="form-check d-flex">
     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseSnowEquipment" aria-expanded="false" aria-controls="collapseExample">
     <label class="form-check-label me-6" for="flexCheckDefault">
       我想租借雪具裝備
     </label>
+    <div class="collapse" id="collapseSnowEquipment">
+      <div class="card border-0"><span class="text-danger">*請勾選欲租借的裝備</span></div>
       </div>
-  <div class="collapse" id="collapseSnowEquipment">
-    <div class="card border-0"><span class="text-danger">*請勾選欲租借的裝備</span></div>
-    </div>
+
+      </div>
   <div class="collapse mb-md-11 my-6" id="collapseSnowEquipment">
     <div class="card card-body border-0">
       <div class="row">
@@ -248,12 +249,14 @@
   
 
 <div>
-  <div class="form-check">
+  <div class="form-check d-flex">
     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseSnowEquipment-2" aria-expanded="false" aria-controls="collapseExample">
     <label class="form-check-label me-6" for="flexCheckDefault">
       我想租借雪具裝備
     </label>
-    <span class="text-danger">*請勾選欲租借的裝備</span>
+    <div class="collapse" id="collapseSnowEquipment-2">
+      <div class="card border-0"><span class="text-danger">*請勾選欲租借的裝備</span></div>
+      </div>
   </div>
   <div class="collapse" id="collapseSnowEquipment-2">
     <div class="card card-body border-0">
@@ -387,12 +390,14 @@
   
 
 <div>
-  <div class="form-check">
+  <div class="form-check d-flex">
     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseSnowEquipment-3" aria-expanded="false" aria-controls="collapseExample">
     <label class="form-check-label me-6" for="flexCheckDefault">
       我想租借雪具裝備
     </label>
-    <span class="text-danger">*請勾選欲租借的裝備</span>
+    <div class="collapse" id="collapseSnowEquipment-3">
+      <div class="card border-0"><span class="text-danger">*請勾選欲租借的裝備</span></div>
+      </div>
   </div>
   <div class="collapse" id="collapseSnowEquipment-3">
     <div class="card card-body border-0">
@@ -463,13 +468,13 @@
 <!--滑雪裝備租賃購物車-->
 <section class="container ">
   <hr class="my-0">
-  <h3 class="mt-11 fs-5 mb-6">滑雪裝備租賃購物車</h3>
+  <h3 class="mt-11 fs-md-5 fs-6 mb-6">滑雪裝備租賃購物車</h3>
   
-  <table class="table table-hover table-borderless text-center d-md-block d-none mb-6">
-    <caption class="text-end"><span class="fs-6">合計</span>
+  <table class="table table-hover table-borderless text-center d-md-table d-none mb-6">
+    <caption class="text-end text-info-100"><span class="fs-6">合計</span>
       <span class="fs-2">NT$ 5,850</span>
     </caption>
-    <thead class="table-dark tableHead text-white border-0">
+    <thead class="table-dark tableHead text-white border-0 fs-6">
       <tr>
         <th scope="col">租賃項目</th>
         <th scope="col">天數</th>
@@ -480,7 +485,7 @@
         <th scope="col">小計</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="fs-6">
       <tr>
         <th scope="row">雪褲</th>
         <td>3</td>
@@ -529,18 +534,18 @@
     </tbody>
   </table>
 
-  <table class="table table-hover table-borderless text-center d-md-none mb-6" style="width: inherit">
-    <caption class="text-end"><span class="fs-10">合計</span>
+  <table class="table table-hover table-borderless text-center d-md-none d-table mb-6" style="width: inherit">
+    <caption class="text-end text-info-100"><span class="fs-10">合計</span>
       <span class="fs-5">NT$ 5,850</span>
     </caption>
-    <thead class="table-dark tableHead text-white border-0">
+    <thead class="table-dark tableHead text-white border-0 fs-8">
       <tr>
-        <th scope="col">租賃項目2</th>
+        <th scope="col">租賃項目</th>
         <th scope="col">數量</th>
         <th scope="col">小計</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="fs-8">
       <tr>
         <th scope="row">雪褲</th>
         <td>1</td>
@@ -569,11 +574,12 @@
     </tbody>
   </table>
   
-  <div class="d-flex justify-content-center gap-6">
+  <div class="d-flex justify-content-center  gap-6">
     <button type="button" class="btn btn-page btn-white border-info-300 rounded-0 fw-bold">上一步</button>
     <button type="button" class="btn btn-page btn-primary-100 rounded-0 text-white fw-bold">下一步</button>
-  </div>
+  </div> 
 </section>
+
 
     <%- include('./layout/footer'); -%>
 
