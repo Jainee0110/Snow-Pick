@@ -24,7 +24,7 @@
   .bi-x-lg {
     display: none;
   }
-  &:has(.header-itinerary-dropdown-menu.show) {
+  &:has(.header-itinerary-dropdown-menu.show,.header-itinerary-dropdown-menu.collapsing) {
     .bi-list {
       display: none;
     }
@@ -42,7 +42,8 @@
 
 .header-itinerary-dropdown-menu {
   min-width: 127px;
-
+  right: 0px;
+  top: 56px;
   li:not(:last-child) {
     border-bottom: 1px solid $info-300;
   }
@@ -59,3 +60,4 @@
     background-color: $primary-100;
   }
 }
+
