@@ -22,15 +22,16 @@
   background-repeat: no-repeat;
 }
 
-.itineraryDetail-courseListHead{
+.itineraryDetail-courseListHead {
   @include media-breakpoint-up(lg) {
     margin-left: 200px;
   }
 }
 
-.deco-itineraryDetail-courseList-content{
+.deco-itineraryDetail-courseList-content {
   background-image: url(../img/deco/deco-itineraryCourseList.png);
   background-size: 300px 300px;
   background-position: right bottom;
   background-repeat: no-repeat;
 }
+
