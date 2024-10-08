@@ -54,8 +54,12 @@ top: 0;
     background-color: $primary-100;
     color: #ffffff;    
 }
+.table{
+    --bs-table-hover-bg:#F3FAFF;
+}
 .btn-page{
     padding: 16px 50px;
+    max-width:200px;    
     @media (min-width:768px) {
         padding: 16px 70px; 
     }
