@@ -8,6 +8,20 @@
   background-repeat: no-repeat;
 }
 
+.bg-itineraryDetail-courseListHead {
+  background: $primary-300;
+  border-bottom: 1px solid $info-300;
+  margin: -12px;
+  margin-bottom: 0px;
+  padding: 12px;
+  @include media-breakpoint-up(lg) {
+    margin: -24px;
+    margin-bottom: 0px;
+    padding: 24px;
+    padding-bottom: 12px;
+  }
+}
+
 .deco-itineraryDetail-courseList {
   font-family: Roboto;
   font-size: 40px;
@@ -34,4 +48,3 @@
   background-position: right bottom;
   background-repeat: no-repeat;
 }
-
