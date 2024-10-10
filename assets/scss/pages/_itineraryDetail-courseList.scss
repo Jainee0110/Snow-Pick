@@ -8,6 +8,20 @@
   background-repeat: no-repeat;
 }
 
+.bg-itineraryDetail-courseListHead {
+  background: $primary-300;
+  border-bottom: 1px solid $info-300;
+  margin: -12px;
+  margin-bottom: 0px;
+  padding: 12px;
+  @include media-breakpoint-up(lg) {
+    margin: -24px;
+    margin-bottom: 0px;
+    padding: 24px;
+    padding-bottom: 12px;
+  }
+}
+
 .deco-itineraryDetail-courseList {
   font-family: Roboto;
   font-size: 40px;
@@ -22,13 +36,13 @@
   background-repeat: no-repeat;
 }
 
-.itineraryDetail-courseListHead{
+.itineraryDetail-courseListHead {
   @include media-breakpoint-up(lg) {
     margin-left: 200px;
   }
 }
 
-.deco-itineraryDetail-courseList-content{
+.deco-itineraryDetail-courseList-content {
   background-image: url(../img/deco/deco-itineraryCourseList.png);
   background-size: 300px 300px;
   background-position: right bottom;
