@@ -214,7 +214,7 @@
     &-content{
         box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
         width: 325px;
-        right: 12px;
+        left: 24px;
         top: 140px;
         @include media-breakpoint-up(sm){
             padding-top: 25px !important;
@@ -257,7 +257,7 @@
         }
     }
     li{
-        width: 350px;
+        width: 351px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 216px;
