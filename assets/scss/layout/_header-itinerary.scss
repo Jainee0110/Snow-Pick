@@ -1,3 +1,12 @@
+.header-itinerary {
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  @include media-breakpoint-up(lg) {
+    min-height: 322px;
+  }
+}
+
 .header-itinerary-navbar {
   a {
     color: $white;
@@ -21,14 +30,17 @@
   .bi-list {
     display: block;
   }
+
   .bi-x-lg {
     display: none;
   }
-  &:has(.header-itinerary-dropdown-menu.show,.header-itinerary-dropdown-menu.collapsing) {
+
+  &:has(.header-itinerary-dropdown-menu.show, .header-itinerary-dropdown-menu.collapsing) {
     .bi-list {
       display: none;
     }
-    .bi-x-lg{
+
+    .bi-x-lg {
       display: block;
     }
   }
@@ -44,6 +56,7 @@
   min-width: 127px;
   right: 0px;
   top: 56px;
+
   li:not(:last-child) {
     border-bottom: 1px solid $info-300;
   }
@@ -60,4 +73,3 @@
     background-color: $primary-100;
   }
 }
-
