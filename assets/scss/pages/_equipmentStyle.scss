@@ -1,3 +1,6 @@
+// body {
+//     overflow-x: hidden;
+// }
 .imgShadow, .equipageImg{
     max-width: 100%;
     height: auto;
@@ -27,8 +30,9 @@
 }
 .equipageContainer{
     margin: 0 auto;
-    max-width: 1296px;
-    height: 500px;
+    width: 1296px;
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: rgba(184, 225, 255, 1);
 }
 @media  (max-width: 375px) { 
