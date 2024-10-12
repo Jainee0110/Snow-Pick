@@ -266,7 +266,7 @@
     .imgShadow{ display: none;}
 }
 /* 螢幕寬度小於374px時隱藏PcTable */
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     .PcTable {
       display: none;
     }
@@ -277,7 +277,7 @@
     padding: 44px;
     position: relative;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .priceList{ 
     padding: 12px;
     }
@@ -302,7 +302,8 @@
 }
 
 .rentMenu1{
-    max-width: 327px;
+    //max-width: 327px;
+    width: 100%;
     font-size: 12px;
     line-height: 1.5;
     font-weight: 400;
@@ -316,12 +317,12 @@
     
 }
 .MbTable tr, .MbTable td, .MbTable th{
-    width: 109px;
+    //width: 109px;
     padding: 12px 22px;
 }
 
 /*螢幕寬度大於374px時隱藏MbTable */
-@media (min-width: 376px) {
+@media (min-width: 768px) {
     .MbTable {
       display: none;
     }
