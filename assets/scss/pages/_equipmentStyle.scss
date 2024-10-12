@@ -103,7 +103,7 @@
 .equipageList{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    //gap: 24px;
     overflow: hidden;
     
 }
@@ -112,10 +112,13 @@
         gap: 12px;
     }
 }
+
+/* 改用BS通用樣式對card設定
 .equipageList li{
     border-radius: 8px;
     background-color: #fff;    
 }
+*/
 
 .equipageImg{
     width: 160px;
@@ -136,7 +139,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 284px;
+    //width: 284px;
     height: 284px;
     padding: 16px;
     text-align: center;
