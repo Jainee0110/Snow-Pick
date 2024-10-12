@@ -311,6 +311,7 @@
 .PcTable {
   tr,td,th {
     width: 202px;
+    font-weight: 400;
     padding: 12px 0px;
   }
 
@@ -376,9 +377,10 @@
   tr,td,th {
     //width: 109px;
     padding: 12px 22px;
+    font-weight: 400;
   }
   @include media-breakpoint-down(md) {
-    display: block;
+    display: table;
   }
 }
 
