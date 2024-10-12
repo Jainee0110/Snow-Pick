@@ -1,28 +1,7 @@
-.nav-itineraryDetail {
-  box-shadow: 0px 0px 16px 0px #0000001A;
-  flex-wrap: nowrap;
-
-  .nav-link {
-    padding: 16px 28px;
-    white-space: nowrap;
-    border-radius: 0px;
-    color: $black;
-
-    &.active {
-      background-color: $primary-100;
-      color: $white;
-    }
-
-    @include media-breakpoint-up(lg) {
-      padding: 16px 0px;
-    }
-  }
-}
-
 .deco-itineraryDetail-content-sm {
   padding: 12px 36px 12px 16px;
   display: inline-block;
-  background-image: url(../img/deco-itineraryDetail-content-sm.png);
+  background-image: url(../img/deco/deco-itineraryDetail-content-sm.png);
   background-size: 131px 41px;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +15,7 @@
   padding: 16px 47px 41px 41px;
   position: absolute;
   top: -8px;
-  background-image: url(../img/deco-itineraryDetail-content.png);
+  background-image: url(../img/deco/deco-itineraryDetail-content.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,15 +36,14 @@
   }
 }
 
-.word-break-break-all {
-  word-break: break-all;
-}
-
-
-//-----------component-----------
+//-----------utilities-----------
 
 .lh-0 {
   line-height: 0px;
+}
+
+.word-break-break-all {
+  word-break: break-all;
 }
 
 .overscroll-nobar {
@@ -79,5 +57,54 @@
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+//-----------itineraryDetail頁面共通樣式-----------
+
+.itineraryDetail-swiper {
+  box-shadow: 0px 0px 16px 0px #0000001A;
+
+  .swiper-slide {
+    width: 20%;
+    min-width: 120px;
+
+  }
+
+  .slide-link {
+    color: $black;
+    white-space: nowrap;
+    text-align: center;
+
+    &.active {
+      background-color: $primary-100;
+      color: $white;
+    }
+  }
+
+  .itineraryDetail-swiper-prev,
+  .itineraryDetail-swiper-next {
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 32px;
+    height: 100%;
+    background-color: darken($primary-100,5%);
+    color: $white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.swiper-button-disabled{
+      display: none;
+    }
+  }
+  .itineraryDetail-swiper-prev{
+    left: 0%;
+  }
+  .itineraryDetail-swiper-next{
+    right: 0%;
   }
 }
