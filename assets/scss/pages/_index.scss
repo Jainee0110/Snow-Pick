@@ -107,8 +107,11 @@
     &-content{
         box-shadow: 0px 0px 16px 0px #0000001A;
         width: 327px;
-        left: 24px;
+        left: 10px;
         top: 216px;
+        @media (min-width: 375px){
+            left: 24px;
+        }
         @include media-breakpoint-up(sm){
             width: 415px;
             padding-top: 25px !important;
@@ -214,8 +217,11 @@
     &-content{
         box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
         width: 325px;
-        left: 24px;
+        left: 10px;
         top: 140px;
+        @media (min-width: 375px){
+            left: 24px;
+        }
         @include media-breakpoint-up(sm){
             padding-top: 25px !important;
             padding-bottom: 25px !important;
