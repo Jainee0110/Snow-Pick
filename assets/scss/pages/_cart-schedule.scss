@@ -9,6 +9,7 @@
     background-color: $info-300;
     @media (min-width:768px) {
         height: 4px;
+        
     }
     .progress-bar{
         background-color: $primary-100;
@@ -31,37 +32,6 @@ top: 0;
     }
 }      
     }
-}
-
-.traveler-label{
-    border-radius: 0%;
-    background-color: $primary-100;
-    font-size: 24px;
-    padding: 8px 12px;
-}
-.form-check-equipment{
-    display: flex;
-    align-items: center;
-}
-
-.form-check-input{
-    border-color: $info-200;
-
-// &:checked{
-//      background-color: #ffffff;
-//     border-color: $primary-100;
-//     color: $primary-100;
-
-// }
-
-}
-.tableHead{
-    --bs-table-bg: $primary-100;
-    background-color: $primary-100;
-    color: #ffffff;    
-}
-.table{
-    --bs-table-hover-bg:#F3FAFF;
 }
 .btn-page{
     padding: 16px 50px;
