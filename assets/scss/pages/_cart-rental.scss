@@ -1,0 +1,66 @@
+.progress{
+    height: 2px;
+    background-color: $info-300;
+    @media (min-width:768px) {
+        height: 4px;
+    }
+    .progress-bar{
+        background-color: $primary-100;
+    }
+    &-milestone{
+position:absolute;
+width: 12px;
+height: 12px;
+border-radius: 50px;
+background-color:$primary-100;
+top: 0; 
+&-hover{    
+    box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
+}
+@media (min-width:768px) {
+    width: 24px;
+    height: 24px;  
+    &-hover{    
+        box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF;  
+    }
+}      
+    }
+}
+
+.traveler-label{
+    border-radius: 0%;
+    background-color: $primary-100;
+    font-size: 24px;
+    padding: 8px 12px;
+}
+.form-check-equipment{
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input{
+    border-color: $info-200;
+
+// &:checked{
+//      background-color: #ffffff;
+//     border-color: $primary-100;
+//     color: $primary-100;
+
+// }
+
+}
+.tableHead{
+    --bs-table-bg: $primary-100;
+    background-color: $primary-100;
+    color: #ffffff;    
+}
+.table{
+    --bs-table-hover-bg:#F3FAFF;
+}
+.btn-page{
+    padding: 16px 50px;
+    max-width:200px;    
+    @media (min-width:768px) {
+        padding: 16px 70px; 
+    }
+}
