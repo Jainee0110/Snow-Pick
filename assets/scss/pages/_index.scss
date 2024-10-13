@@ -318,3 +318,14 @@
         }
     }
 }
+.hidden{
+    display: none;
+}
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 100; 
+    padding-left: 11px; 
+    padding-right: 11px;
+  }
