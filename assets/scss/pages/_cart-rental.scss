@@ -36,11 +36,8 @@ top: 0;
 .traveler-label{
     border-radius: 0%;
     background-color: $primary-100;
-    font-size: 20px;
     padding: 8px 12px;
-    @media (min-width:768px) {
-        font-size: 24px;  
-    }
+   
 }
 .form-check-equipment{
     display: flex;
