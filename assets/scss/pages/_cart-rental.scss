@@ -1,13 +1,13 @@
 .progress-mt{
     margin-top: 24px;
-    @media (min-width:768px) {
+    @media (min-width:992px) {
         margin-top: 90px;
     } 
 }
 .progress{
     height: 2px;
     background-color: $info-300;
-    @media (min-width:768px) {
+    @media (min-width:992px) {
         height: 4px;
     }
     .progress-bar{
@@ -23,7 +23,7 @@ top: 0;
 &-hover{    
     box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
 }
-@media (min-width:768px) {
+@media (min-width:992px) {
     width: 24px;
     height: 24px;  
     &-hover{    
@@ -66,7 +66,7 @@ top: 0;
 .btn-page{
     padding: 16px 50px;
     max-width:200px;    
-    @media (min-width:768px) {
+    @media (min-width:992px) {
         padding: 16px 70px; 
     }
 }
