@@ -41,9 +41,10 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 24,
       }
     },
-    hashNavigation: {
-      watchState: true,
-    },
+    // 危險的東西
+    // hashNavigation: {
+    //   watchState: true,
+    // },
     keyboard: {
       enabled: true,
     },
