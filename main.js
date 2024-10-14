@@ -5,6 +5,7 @@ import 'animate.css';
 import Swiper from 'swiper/bundle';
 // import styles bundle
 import 'swiper/css/bundle';
+import 'swiper/css/navigation'; // module css
 
 
 var swiper = new Swiper(".mySwiper", {
@@ -27,3 +28,57 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: "auto",
       spaceBetween: 24,
   });
+
+  var teamSwiper = new Swiper(".team-swiper", {
+    slidesPerView: 1,
+    breakpoints: {
+      770: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      }
+    },
+    hashNavigation: {
+      watchState: true,
+    },
+    keyboard: {
+      enabled: true,
+    },
+    navigation: {
+      nextEl: ".team-button-next",
+      prevEl: ".team-button-prev",
+    },
+    pagination: {
+      el: ".team-swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3500,
+    },
+  
+  });
+
+
+const showOnPx = 2000;
+const backToTopButton = document.querySelector(".back-to-top")
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden")
+  } else {
+    backToTopButton.classList.add("hidden")
+  }
+});
+
+const goToTop = () => {
+  document.body.scrollIntoView();
+};
+
+backToTopButton.addEventListener("click", goToTop);
