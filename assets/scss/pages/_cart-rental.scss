@@ -45,7 +45,11 @@ top: 0;
 }
 
 .form-check-input{
-    border-color: $info-200;
+    border-color: $info-200;    
+}
+.form-check-input[type=checkbox]{
+    border-radius: 2px;
+}
 
 // &:checked{
 //      background-color: #ffffff;
@@ -54,7 +58,7 @@ top: 0;
 
 // }
 
-}
+
 .tableHead{
     --bs-table-bg: $primary-100;
     background-color: $primary-100;
