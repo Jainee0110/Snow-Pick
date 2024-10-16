@@ -5,32 +5,60 @@
     border: 3px solid gray;
     border-radius: 8px;
     margin-bottom: 36px;
+    @include media-breakpoint-down(md) {
+        border-radius: 0;
+        border: 1px solid gray;
+      }
 }
 .descriptionBox{
     width: 430px;
-    height: 340px;
+    // height: 340px;
     text-align: center;
     align-content: center;
     border: 1px solid gray;
     margin: 0;
     background-color: #55AFF4;
     color: #FFF;
+
+    @include media-breakpoint-down(md) {
+        width: auto;
+        height: auto;
+      }
+}
+.descriptionBox>.fs-4{
+    @include media-breakpoint-down(md) {
+        font-size: 12px;
+      }
+}
+.feeIncluded, .feeIncluded ul{
+    @include media-breakpoint-down(md) {
+        width: auto;
+        height: auto;
+      }
 }
 
 .cancelPolicy .descriptionBox{
     width: 430px;
-    height: 448px;
+    // height: 448px;
     text-align: center;
     align-content: center;
     border: 1px solid gray;
     margin: 0;
     background-color: gray;
     color: #FFF;
+
+    @include media-breakpoint-down(md) {
+        width: auto;
+        height: auto;
+      }
 }
 
 .cancelPolicy .feeBorder{
-    height: 448px;
-    
+    // height: 448px;
+        @include media-breakpoint-down(md) {
+        width: auto;
+        height: auto;
+      }
 }
 
 .cancelPost{
@@ -38,16 +66,34 @@
     padding: 36px 36px 0 36px;
     margin: 0;
     color: $blue-400;
+    
+    @include media-breakpoint-down(md) {
+        padding: 12px 12px 0 12px;
+      }
 }
 
 .feeDetails{
     width: 863px;
-    height: 340px;
+    // height: 340px;
     align-content: center;
     padding: 36px;
     margin: 0;
+    @include media-breakpoint-down(md) {
+        width: auto;
+        height: auto;
+        padding: 12px;
+      }
 }
 
 .feeBorder{
     border: 1px solid gray;
+    @include media-breakpoint-down(md) {
+        border: 0;
+      }
+}
+
+.feeIncluded, .cancelPolicy{
+@include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
 }
