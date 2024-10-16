@@ -4,8 +4,9 @@
 .feeDescription{
     border: 3px solid gray;
     border-radius: 8px;
+    margin-bottom: 36px;
 }
-.descriptionBox p{
+.descriptionBox{
     width: 430px;
     height: 340px;
     text-align: center;
@@ -16,11 +17,37 @@
     color: #FFF;
 }
 
+.cancelPolicy .descriptionBox{
+    width: 430px;
+    height: 448px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid gray;
+    margin: 0;
+    background-color: gray;
+    color: #FFF;
+}
+
+.cancelPolicy .feeBorder{
+    height: 448px;
+    
+}
+
+.cancelPost{
+    align-content: center;
+    padding: 36px 36px 0 36px;
+    margin: 0;
+    color: $blue-400;
+}
+
 .feeDetails{
     width: 863px;
     height: 340px;
     align-content: center;
-    border: 1px solid gray;
     padding: 36px;
     margin: 0;
+}
+
+.feeBorder{
+    border: 1px solid gray;
 }
