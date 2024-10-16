@@ -41,23 +41,24 @@
   <hr class="my-0">
   <span class="badge traveler-label mt-md-11 mt-6 fs-md-5 fs-6">旅客 1  成人</span>
   <div class="form-check mt-md-8 mt-6 text-info-100">
-    <input class="form-check-input" type="checkbox" value="" id="samePurchasingMan1">
+    <input class="form-check-input" type="checkbox" value="" id="samePurchasingMan1" checked>
     <label class="form-check-label" for="samePurchasingMan1">
       同訂購人
     </label>
   </div>
 
-    <div class="row mt-md-8 mt-6">
-    <div class="col-lg-4 mb-6">
-      <div>
+    <div class="row mt-md-8 mt-6 needs-validation" novalidate>
+    <div class="col-lg-4 mb-6 form-pd">
         <label for="chineseNameInput" class="form-label">中文姓名</label>
-        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="chineseNameInput" placeholder="請輸入您的中文姓名">
-      </div>
+        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="chineseNameInput" placeholder="請輸入您的中文姓名" value="王怡蓁" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
     </div>
     <div class="col-lg-4 mb-6">
       <div>
         <label for="birthDayInput" class="form-label">出生日期</label>
-        <input type="date" class="form-control border-info-200 rounded-0 text-info-200" id="birthDayInput" placeholder="請輸入您的出生日期 ">
+        <input type="date" class="form-control border-info-200 rounded-0 text-info-200" id="birthDayInput" placeholder="1999/01/01 ">
       </div>
     </div>
     <div class="col-lg-4 mb-6">
@@ -82,61 +83,61 @@
     <div class="col-lg-4 mb-6">
       <div>
         <label for="idNumberInput" class="form-label">身分證號/統編</label>
-        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="idNumberInput" placeholder="請輸入您的身分證號/統編">
+        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="idNumberInput" placeholder="F149XXXXXX">
       </div>
       </div>
     <div class="col-lg-4 mb-6">
       <div>
         <label for="psasportEnglishNameInput" class="form-label">護照英文姓名</label>
-        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportEnglishNameInput" placeholder="請輸入您的護照英文姓名">
+        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportEnglishNameInput" placeholder="YI-CHEN WANG">
       </div>
       </div>
     <div class="col-lg-4 mb-6">
       <div>
         <label for="psasportNumberInput" class="form-label">護照號碼</label>
-        <input type="number" class="form-control border-info-200 rounded-0 text-info-200" id="psasportNumberInput" placeholder="請輸入您的護照號碼">
+        <input type="number" class="form-control border-info-200 rounded-0 text-info-200" id="psasportNumberInput" placeholder="888800088">
       </div>
       </div>
     <div class="col-lg-4 mb-6">
       <div>
         <label for="emailInput" class="form-label">電子信箱</label>
-        <input type="email" class="form-control border-info-200 rounded-0 text-info-200" id="emailInput" placeholder="請輸入您的電子信箱">
+        <input type="email" class="form-control border-info-200 rounded-0 text-info-200" id="emailInput" placeholder="snowpick@gmail.com">
       </div>
       </div>
     <div class="col-lg-4 mb-6">
       <div>
         <label for="cellphoneInput" class="form-label">行動電話</label>
-        <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="cellphoneInput" placeholder="請輸入您的行動電話">
+        <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="cellphoneInput" placeholder="+886 919999999">
       </div>
       </div>
     <div class="col-lg-4 mb-6">
       <div>
         <label for="homePhoneInput" class="form-label">市話</label>
-        <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="homePhoneInput" placeholder="請輸入您的市話">
+        <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="homePhoneInput" placeholder="02-99999999">
       </div>
       </div>
     <div class="col-lg-4 mb-6">
       <div>
         <label for="urgentPersonInput" class="form-label">緊急連絡人</label>
-        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonInput" placeholder="請輸入您的緊急連絡人">
+        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonInput" placeholder="王小明">
       </div>
       </div>
     <div class="col-lg-4 mb-6">
       <div>
         <label for="urgentPersonRelationInput" class="form-label">緊急聯絡人關係</label>
-        <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonRelationInput" placeholder="請輸入您與緊急聯絡人關係">
+        <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonRelationInput" placeholder="父女">
       </div>
       </div>
     <div class="col-lg-4 mb-6">
       <div>
         <label for="urgentPersonPhoneInput" class="form-label">緊急聯絡人電話</label>
-        <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonPhoneInput" placeholder="請輸入您的緊急聯絡人電話">
+        <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonPhoneInput" placeholder="+886 123456880">
       </div>
       </div>
     <div class="col-lg-12 mb-6">
       <div>
         <label for="urgentPersonAddressInput" class="form-label">聯絡地址</label>
-        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonAddressInput" placeholder="請輸入您的聯絡地址">
+        <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonAddressInput" placeholder="臺中市北區復興路一段688號">
       </div>
       </div>
       <div class="col-lg-4 mb-6">
@@ -267,13 +268,7 @@
 <section class="container mb-md-11 mb-6">
   <hr class="my-0">
   <span class="badge traveler-label mt-md-11 mt-6 fs-md-5 fs-6">旅客 2  成人</span>
-  <div class="form-check mt-md-8 mt-6 text-info-100">
-    <input class="form-check-input" type="checkbox" value="" id="samePurchasingMan2">
-    <label class="form-check-label" for="samePurchasingMan2">
-      同訂購人
-    </label>
-  </div>
-
+ 
     <div class="row mt-md-8 mt-6">
     <div class="col-lg-4 mb-6">
       <div>
@@ -439,12 +434,7 @@
 <section class="container mb-md-11 mb-6">
   <hr class="my-0">
   <span class="badge traveler-label mt-md-11 mt-6 fs-md-5 fs-6">旅客 3  小孩</span>
-  <div class="form-check mt-md-8 mt-6 text-info-100">
-    <input class="form-check-input" type="checkbox" value="" id="samePurchasingMan3">
-    <label class="form-check-label" for="samePurchasingMan3">
-      同訂購人
-    </label>
-  </div>
+ 
 
     <div class="row mt-md-8 mt-6">
     <div class="col-lg-4 mb-6">
@@ -617,5 +607,27 @@
 <%- include('./layout/footer'); -%>
 
 <script type="module" src="../main.js"></script>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
 </body>
 </html>

@@ -33,9 +33,15 @@ top: 0;
 }      
     }
 }
-
+.form-control-plaintext {
+    background-color: $info-300;
+}
 .form-pd{
     padding: 7px 12px;
+}
+input[type="number"] {
+    border: 1px solid $info-200;   
+    padding-left:4px;     
 }
 
 .btn-page{
