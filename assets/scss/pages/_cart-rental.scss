@@ -67,7 +67,7 @@ top: 0;
     color: #ffffff;    
 }
 table{
-    --bs-table-hover-bg:#F3FAFF;
+    --bs-table-hover-bg:$primary-400;
     th{
         font-weight: normal;
         padding: 12px 12px;
@@ -77,6 +77,8 @@ table{
     }
     
 }
+$table-hover-bg:$primary-400;
+
 .table > :not(caption) > * > * {
     padding: 12px 0;
 }
