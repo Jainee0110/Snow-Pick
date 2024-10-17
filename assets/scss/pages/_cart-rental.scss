@@ -74,10 +74,18 @@ table{
     }
     td{
         font-weight: normal;
-    }
-    
+    }    
 }
-$table-hover-bg:$primary-400;
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: $primary-400;
+    --bs-table-bg-type:$primary-400;
+}
+
+
+.table-hover > tbody > tr:hover > * {
+    --bs-table-bg-state:$primary-400;
+    background-color: $primary-400;
+}
 
 .table > :not(caption) > * > * {
     padding: 12px 0;
