@@ -6,8 +6,7 @@
     border-radius: 8px;
     margin-bottom: 36px;
     @include media-breakpoint-down(md) {
-        border-radius: 0;
-        border: 1px solid gray;
+        border: 2px solid gray;
       }
 }
 .descriptionBox{
@@ -84,6 +83,11 @@
         padding: 12px;
       }
 }
+.feeDetails>li{
+  @include media-breakpoint-down(md){
+    margin-bottom: 4px;
+  }
+}
 
 .feeBorder{
     border: 1px solid gray;
@@ -95,5 +99,14 @@
 .feeIncluded, .cancelPolicy{
 @include media-breakpoint-down(md) {
     flex-direction: column;
+  }
+}
+.cancelText{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  @include media-breakpoint-down(md) {
+    display: block;
+    padding-left: 20px
   }
 }
