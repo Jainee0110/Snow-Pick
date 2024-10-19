@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>雪域狂歡</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="orderPayment-paymentInstructions py-16 d-flex flex-column justify-content-center align-items-center">
+      <div class="container mb-12">
+        <h2 class="p-6 fs-5 fs-lg-4 bg-primary-300 text-center text-info-100">雪域狂歡線上付款說明</h2>
+        <div class="py-12 px-6 fs-7 fs-lg-6 text-info-100 border">
+          <p>王○蓁您好：<br>
+            您訂購的苗場滑雪三日行-單板初級，本次應繳金額為<span class="text-danger fw-bold">NT$92,250元整</span>，將透過安全加
+            密線上付款系統進行扣款。</p>
+          <p>如使用信用卡交易，基於個資保護，您的信用卡資訊並不會保存於本站會員資料庫中。</p>
+        </div>
+      </div>
+      <a href="##" class="btn btn-primary-100 text-light fs-lg-6 lh-sm rounded-3">信用卡一次付清</a>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init();</script>
+</body>
+
+</html>
