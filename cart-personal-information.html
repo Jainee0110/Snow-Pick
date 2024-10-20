@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車-資料填寫</title>
+    <script type="module" crossorigin src="/Snow-Pick/assets/main-0a156843.js"></script>
+    <link rel="stylesheet" href="/Snow-Pick/assets/main-2f641dc2.css">
+  </head>
+  <body>
+    <div class="border-bottom border-info-300">
+  <nav class="content-nav navbar py-0 navbar-expand-lg" style="z-index: 100;">
+    <div class="container header-dropdown position-relative">
+      <a class="navbar-brand py-3 d-none d-lg-block" href="index.html"><img src="/Snow-Pick/assets/logo_snow pick_blue-1215a7d7.png" alt="logo"></a>
+      <a class="navbar-brand py-0 d-lg-none" href="index.html"><img src="data:image/png;base64,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" alt="logo"></a>
+      <button class="navbar-toggler collapsed navbar-btn border-0 px-1 px-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-4 align-middle ms-auto text-info-100"></i>
+        <i class="bi bi-x-lg align-middle ms-auto close fs-5 text-info-100"></i>
+      </button>
+      <div class="collapse header-dropdown-menu navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-lg-auto content-navbar border border-info-300">
+          <li class="nav-item"><a class="border-top border-bottom border-info-300 nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 px-8 py-lg-4" href="itinerary-overview.html">滑雪行程</a></li>
+          <li class="nav-item"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 px-8 py-lg-4 mx-lg-4" href="#">雪場介紹</a></li>
+          <li class="nav-item"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 py-lg-4 d-none d-lg-block" href="#">註冊 / 登入</a></li>
+          <li class="nav-item login"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-8 px-lg-6 py-lg-4 d-lg-none" href="#">會員登入</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div><!--progress-->
+<section class="container">
+  <div class="px-md-11 px-6 py-md-8 py-3 mb-md-11 mb-6 progress-mt">
+<div class="position-relative mx-7 mb-6">
+
+  <div class="progress mb-md-6 mb-4" role="progressbar" aria-label="Example 2px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 33%"></div>
+  </div> 
+
+  <div class="progress-milestone translate-middle" style="left: 0%;"></div>
+  <div class="progress-milestone translate-middle progress-milestone-hover" style="left: 33%;"></div>
+  <div class="progress-milestone translate-middle bg-info-300" style="left: 66%;"></div>
+  <div class="progress-milestone translate-middle bg-info-300" style="left: 100%;"></div>
+
+  
+</div>
+<ul class="list-unstyled d-flex justify-content-between text-info-100 fs-10 fs-md-6">
+<li>行程確認</li>
+<li>資料填寫</li>
+<li>裝備租借</li>
+<li>訂單確認</li>
+</ul>
+</div>
+</section>
+
+<!--資料填寫-->
+<section class="container">
+
+  <!--旅客資料1-->
+<section class="container mb-md-11 mb-6">
+  <hr class="my-0">
+  <span class="badge traveler-label mt-md-11 mt-6 fs-md-5 fs-6">旅客 1  成人</span>
+  <div class="form-check mt-md-8 mt-6 text-info-100">
+    <input class="form-check-input" type="checkbox" value="" id="samePurchasingMan1" checked>
+    <label class="form-check-label" for="samePurchasingMan1">
+      同訂購人
+    </label>
+  </div>
+
+  <form class="row g-5 mt-md-8 mt-6 needs-validation" novalidate>
+    <div class="col-lg-4">
+      <label for="validationCustom01" class="form-label">中文姓名</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom01" value="王怡蓁" placeholder="王怡蓁" required>
+      <div class="invalid-feedback">
+        *注意:一旦送出後，無法自行修改姓名資訊
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <label for="validationCustom02" class="form-label">出生日期</label>
+      <input type="date" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom02" value="1999-01-01" required>
+      <div class="invalid-feedback">
+       無效的日期
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <label class="form-label">性別</label>
+      <div class="d-flex gap-6 align-items-start">
+          <div class="form-check">
+              <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="invalidRadio1" required>
+              <label class="form-check-label" for="invalidRadio1">
+                男
+              </label>
+              <div class="invalid-feedback">
+              請選擇性別
+              </div>        
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="invalidRadio2" required checked>
+            <label class="form-check-label" for="invalidRadio2">
+              女
+            </label>      
+          </div>
+        </div>
+       </div>          
+
+  <div class="col-lg-4">
+      <label for="idNumberInput" class="form-label">身分證號/統編</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="idNumberInput" value="F149XXXXXX" placeholder="F149XXXXXX" required>
+        <div class="invalid-feedback">
+          請輸入欄位
+        </div>
+  </div> 
+   
+   <div class="col-lg-4">
+      <label for="psasportEnglishNameInput" class="form-label">護照英文姓名</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportEnglishNameInput" value="YI-CHEN WANG"  placeholder="YI-CHEN WANG" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="psasportNumberInput" class="form-label">護照號碼</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportNumberInput" value="888800088" placeholder="888800088" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="emailInput" class="form-label">電子信箱</label>
+      <input type="email" class="form-control border-info-200 rounded-0 text-info-200" id="emailInput" value="snowpick@gmail.com" placeholder="snowpick@gmail.com" required>
+      <div class="invalid-feedback">
+        錯誤的信箱格式
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="cellphoneInput" class="form-label">行動電話</label>
+      <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="cellphoneInput" value="+886 919999999" placeholder="+886 919999999" required>
+      <div class="invalid-feedback">
+        錯誤的行動電話格式
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="homePhoneInput" class="form-label">市話</label>
+      <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="homePhoneInput" value="02-99999999" placeholder="02-99999999" required>
+      <div class="invalid-feedback">
+        錯誤的市話格式
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="urgentPersonInput" class="form-label">緊急連絡人</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonInput" value="王小明" placeholder="王小明" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="urgentPersonRelationInput" class="form-label">緊急連絡人關係</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonRelationInput" value="父女" placeholder="父女" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="urgentPersonPhoneInput" class="form-label">緊急連絡人電話</label>
+      <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonPhoneInput" value="+886 1234565880" placeholder="+886 1234565880" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-12">
+      <label for="AddressInput" class="form-label">連絡地址</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="AddressInput" value="臺中市北區復興路一段688號" placeholder="臺中市北區復興路一段688號" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label class="form-label">單板等級</label>
+      <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+            <option value="">請選擇您的單板等級</option>
+            <option selected value="1">level 1</option>
+            <option value="2">level 2</option>
+            <option value="3">level 3</option>
+            <option value="4">level 4</option>
+            <option value="5">level 5</option>
+            <option value="6">level 6</option>  
+      </select>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label class="form-label">雙板等級</label>
+      <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+            <option value="">請選擇您的單板等級</option>
+            <option selected value="1">level 1</option>
+            <option value="2">level 2</option>
+            <option value="3">level 3</option>
+            <option value="4">level 4</option>
+            <option value="5">level 5</option>
+            <option value="6">level 6</option>  
+      </select>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+
+   <div class="col-lg-4 col-5 mb-6">
+    <div>
+      <label for="levelFormInput" class="form-label">滑雪等級請參考滑雪程度自評表</label>
+      <div>
+      <input type="checkbox" class="btn-check" id="levelFormInput" autocomplete="off" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <label class="btn btn-sm btn-primary-100 text-white w-100 form-pd" for="levelFormInput">滑雪程度自評表</label><br>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">滑雪程度自評表</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table align-middleclearq table-striped">
+              <thead class="table-dark tableHead text-white border-0 fs-6">
+                <tr>
+                  <th scope="col">單板SnowBoard</th>
+                  <th scope="col">Level</th>
+                  <th scope="col">雙板Ski</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>第一次滑雪</td>
+                  <th scope="row">1</th>
+                  <td>第一次滑雪</td>
+                
+                </tr>
+                <tr>
+                  <td>可以Heel side or Toe side站立、滑行與煞車
+                  </td>
+                  <th scope="row">2</th>
+                  <td>可以內八字煞車在初級道(綠線)連續轉彎
+                  </td>
+                 
+                </tr>
+                <tr>
+                  <td>可以穩定Heel side or Toe side落葉飄及C turn轉向
+                  </td>
+                  <th scope="row">3</th>
+                  <td>可以在中級道(紅/藍線)連續轉彎</td>                      
+                </tr>
+
+                <tr>
+                  <td>可以在初級道(綠線)連續S turn
+                  </td>
+                  <th scope="row">4</th>
+                  <td>可以在初級道(綠線)連續平行/併腿連續轉彎
+                  </td>                      
+                </tr>
+
+                <tr>
+                  <td>可以在中級道(紅/藍線)連續S turn
+                  </td>
+                  <th scope="row">5</th>
+                  <td>可以在中級道(紅/藍線)連續平行/併腿連續轉彎
+                  </td>                      
+                </tr>
+
+                <tr>
+                  <td>可以在高階道(黑線)連續S turn及其他進階技術                         
+                  </td>
+                  <th scope="row">6</th>
+                  <td>可以在高階道(黑線)連續平行/併腿連續轉彎及其他進階技術
+                  </td>                      
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    </div>  
+  
+<!--旅客資料2-->
+<div class="mt-md-11 mt-6">
+  <hr class="my-0">
+    <span class="badge traveler-label mt-md-11 mt-6 fs-md-5 fs-6">旅客 2  成人</span>
+</div>
+
+<div class="col-lg-4">
+  <label for="validationCustom01" class="form-label">中文姓名</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom01" placeholder="" required>
+  <div class="invalid-feedback">
+    *注意:一旦送出後，無法自行修改姓名資訊
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="validationCustom02" class="form-label">出生日期</label>
+  <input type="date" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom02" value="" required>
+  <div class="invalid-feedback">
+   無效的日期
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">性別</label>
+  <div class="d-flex gap-6 align-items-start">
+      <div class="form-check">
+          <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="invalidRadio3" required>
+          <label class="form-check-label" for="invalidRadio3">
+            男
+          </label>
+          <div class="invalid-feedback">
+          請選擇性別
+          </div>        
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="invalidRadio4" required>
+        <label class="form-check-label" for="invalidRadio4">
+          女
+        </label>      
+      </div>
+    </div>
+   </div>          
+<div class="col-lg-4">
+  <label for="idNumberInput" class="form-label">身分證號/統編</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="idNumberInput" placeholder="" required>
+    <div class="invalid-feedback">
+      請輸入欄位
+    </div>
+</div> 
+
+<div class="col-lg-4">
+  <label for="psasportEnglishNameInput" class="form-label">護照英文姓名</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportEnglishNameInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="psasportNumberInput" class="form-label">護照號碼</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportNumberInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="emailInput" class="form-label">電子信箱</label>
+  <input type="email" class="form-control border-info-200 rounded-0 text-info-200" id="emailInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的信箱格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="cellphoneInput" class="form-label">行動電話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="cellphoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的行動電話格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="homePhoneInput" class="form-label">市話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="homePhoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的市話格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonInput" class="form-label">緊急連絡人</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonRelationInput" class="form-label">緊急連絡人關係</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonRelationInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonPhoneInput" class="form-label">緊急連絡人電話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonPhoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-12">
+  <label for="AddressInput" class="form-label">連絡地址</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="AddressInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">單板等級</label>
+  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+        <option value="">請選擇您的單板等級</option>
+        <option value="1">level 1</option>
+        <option value="2">level 2</option>
+        <option value="3">level 3</option>
+        <option value="4">level 4</option>
+        <option value="5">level 5</option>
+        <option value="6">level 6</option>  
+  </select>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">雙板等級</label>
+  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+        <option value="">請選擇您的單板等級</option>
+        <option value="1">level 1</option>
+        <option value="2">level 2</option>
+        <option value="3">level 3</option>
+        <option value="4">level 4</option>
+        <option value="5">level 5</option>
+        <option value="6">level 6</option>  
+  </select>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+
+<div class="col-lg-4 col-5 mb-6">
+<div>
+  <label for="levelFormInput" class="form-label">滑雪等級請參考滑雪程度自評表</label>
+  <div>
+  <input type="checkbox" class="btn-check" id="levelFormInput" autocomplete="off" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <label class="btn btn-sm btn-primary-100 text-white w-100 form-pd" for="levelFormInput">滑雪程度自評表</label><br>
+  </div>
+</div>
+</div>  
+<!--旅客資料3-->
+<div class="mt-md-11 mt-6">
+  <hr class="my-0">
+    <span class="badge traveler-label mt-md-11 mt-6 fs-md-5 fs-6">旅客 3  小孩</span>
+</div>
+
+<div class="col-lg-4">
+  <label for="validationCustom01" class="form-label">中文姓名</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom01" placeholder="" required>
+  <div class="invalid-feedback">
+    *注意:一旦送出後，無法自行修改姓名資訊
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="validationCustom02" class="form-label">出生日期</label>
+  <input type="date" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom02" value="" required>
+  <div class="invalid-feedback">
+   無效的日期
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">性別</label>
+  <div class="d-flex gap-6 align-items-start">
+      <div class="form-check">
+          <input class="form-check-input" type="radio" value="" name="flexRadioDefault3" id="invalidRadio5" required>
+          <label class="form-check-label" for="invalidRadio5">
+            男
+          </label>
+          <div class="invalid-feedback">
+          請選擇性別
+          </div>        
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="" name="flexRadioDefault3" id="invalidRadio6" required>
+        <label class="form-check-label" for="invalidRadio6">
+          女
+        </label>      
+      </div>
+    </div>
+   </div>          
+<div class="col-lg-4">
+  <label for="idNumberInput" class="form-label">身分證號/統編</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="idNumberInput" placeholder="" required>
+    <div class="invalid-feedback">
+      請輸入欄位
+    </div>
+</div> 
+
+<div class="col-lg-4">
+  <label for="psasportEnglishNameInput" class="form-label">護照英文姓名</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportEnglishNameInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="psasportNumberInput" class="form-label">護照號碼</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportNumberInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="emailInput" class="form-label">電子信箱</label>
+  <input type="email" class="form-control border-info-200 rounded-0 text-info-200" id="emailInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的信箱格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="cellphoneInput" class="form-label">行動電話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="cellphoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的行動電話格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="homePhoneInput" class="form-label">市話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="homePhoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的市話格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonInput" class="form-label">緊急連絡人</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonRelationInput" class="form-label">緊急連絡人關係</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonRelationInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonPhoneInput" class="form-label">緊急連絡人電話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonPhoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-12">
+  <label for="AddressInput" class="form-label">連絡地址</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="AddressInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">單板等級</label>
+  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+        <option value="">請選擇您的單板等級</option>
+        <option value="1">level 1</option>
+        <option value="2">level 2</option>
+        <option value="3">level 3</option>
+        <option value="4">level 4</option>
+        <option value="5">level 5</option>
+        <option value="6">level 6</option>  
+  </select>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">雙板等級</label>
+  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+        <option value="">請選擇您的單板等級</option>
+        <option value="1">level 1</option>
+        <option value="2">level 2</option>
+        <option value="3">level 3</option>
+        <option value="4">level 4</option>
+        <option value="5">level 5</option>
+        <option value="6">level 6</option>  
+  </select>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+
+<div class="col-lg-4 col-5 mb-6">
+<div>
+  <label for="levelFormInput" class="form-label">滑雪等級請參考滑雪程度自評表</label>
+  <div>
+  <input type="checkbox" class="btn-check" id="levelFormInput" autocomplete="off" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <label class="btn btn-sm btn-primary-100 text-white w-100 form-pd" for="levelFormInput">滑雪程度自評表</label><br>
+  </div>
+</div>
+</div>  
+<div class="col-12">
+  <div class="form-check">
+        <input class="form-check-input" type="submit" value="" id="flexCheckDefault">
+        <label class="form-check-label text-info-100" for="flexCheckDefault">
+          *確認資料無誤
+        </label>
+  </div>
+</div>
+
+    <div class="d-flex justify-content-center gap-6 my-lg-19 my-6">
+      <a href="cart-schedule.html" class="btn btn-page border-info-300 fw-bold link-info-100">上一步</a>
+      <a href="cart-rental.html" class="btn btn-page btn-primary-100 link-light fw-bold" >下一步</a>      
+    </div>
+    
+  </form>
+
+</section>
+
+     
+   
+
+  
+
+
+
+
+
+</section>
+
+
+
+
+<div class="py-8 py-md-12 bg-primary-400">
+    <div class="container">
+        <div class="d-flex border-bottom border-info-300 pb-4 pb-md-8 mb-4 mb-md-8 flex-column flex-lg-row">
+            <a href="../pages/index.html"><img src="/Snow-Pick/assets/logo_snow pick_footer-77a82d20.png" alt="icon" class="me-lg-12 me-xl-19 mb-4 mb-lg-0" style="width: 236px;"></a>
+            <div class="me-auto mb-4 mb-lg-0 contact">
+                <p class="source-sans-pro ls-1 fs-md-6 ">聯絡地址 : 新北市中山區天龍路999號5樓</p>  
+                <p class="source-sans-pro ls-1 fs-md-6 ">聯絡電話 : <a href="tel:0299999999" class="text-info-200">(02) 9999-9999</a></p>
+                <p class="source-sans-pro ls-1 fs-md-6 ">客服信箱 : <a href="mailto:snowpick@gmail.com" class="text-info-200">snowpick@gmail.com</a></p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKCSURBVHgBvVfbddpAEF0tgm86sFJB5AqIO7D/AZkKQiowVBBTAeH17aQC4w5IBagD41+evldnxRGyVtIiwT1HSGhn587Ozs6MLJETw+GwXqlU7vHYkFK6h8PBwXNdDa8sy/JxX+z3+7fdbve30+ms8ui1sgRA7FSr1Z8gfIwQZiu2rD+bzaYPQ/xUOaEn5oqfoKgrCgDzn5vN5i/tuEgm56pflZsLg9sDb9wleUMmkLtlkhPURZ2z2cxNNUCt/OVccq4Uc1c6I3C9kONkTvTPdDpdGpLPIf9PRb0fHaAnbdt+wuN93Ehsx214SuxwYDwe/zYhx3Hre57X042DYDEajT5wZE/eq+2gYUFgSmWtYxLtWeRZgBHdcCsCA5RFeSf7RchDYHuCBds87yrJ5AJcOteNURdujlAJC3nkBrp14h7ke7ZKr7nBoNOQM+heRSRbppATQWrHgmRDGGC73SYeM5APhUGqVmhIWOmazKjVakvNkJEeAoHvyjIz3hlwJKwwdVuZqFuTySQ1Upi5UM2+iTOA5PaetUCpy91FoZJblndXUnUypQOnwskh5kuk1f/iAoDeH1kyWPzCxs8cz16aYLSE6lqseJlFfvkuso18kyylaXHAYwp3LsMLTcVNklxUhpeIleEkkFuyLoNkJK4MNq3kDqohXPEsrgx2zLwHBqh9HYjrYRDG0rFdQZHpsdaLC4McrVbr2PwcDeB+ICjuLmkEdZMj+u6kYaNbIPBwCSMU+UP8GH/5LmAzWbYnwpVTd3xMJk2gle12mwWoL4pjAPJbXQKTaTMRLD0EJw0xyhMqsQ04lwGX9qVsZylTlj8i1XbZw63X6w+N6ALEdLHR5/knz6hy1MM3xKQAAAAASUVORK5CYII=" alt="fb"></a>
+                <a href="#" class="mx-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM0SURBVHgBtVfZddpQEH2S5X+lA7mC4AoiVwAN2IYKnA4IFSRUAAYKIBVYriCkApQO+GfLvZwZZ/KsjcVzjs7b586u9wJXQKPRqBVFURvdVhAELc7t9/vEHUE4l6NZ4Ry/n9vtdt7r9fJ3+zzgBMAjdFP3AQShxuv1emAFCSz49fX1S5mm1CQMw5VrQLvdLgZYXCJEDiHuVIigCJxg2DhEN9tsNgtsbgTsE/jGsChd2AXPtgplhYg4AfC+Ac/hr7sifx1LInjGj0peXV29ADwhlrj6LhC/L/UQNL65BDiJwQzQVANQhPillgDWpxATHT3AILkgOBWjxt+pIMYpeUP7Z90D7G6EDW2dgF+ejwCgFgk+tu/ihJrL2oEQwBxnaOdon2Q6jewmMnI1oNCGh1PnpepsNlsg+ocPDw9jjml2CNEXn6+wdphnUIOHCvU5wMGlBuD9/X1QAV6Zpko2wsXnGgNvFppOp3vdGzWpcEXgkqqZ9FkxE+kf9uKMZtLY5ydnY7RxZCUvE8CrETn29mDqzO6ZTCZdNGpyFeK2qIawoBEc3Th0NUTGfo2AqzJ/H33PNe6RvQmAvtbxrxUAGj2Z4aAqTblG67wxD8Mv7hwBJNX0b5hrhFcRrUMfyzAVHqcJIHVc6bdrSBqcQok7VQDk7Ek/IY9OtwAo1w60qvWn2WsttzhZAPM3I8Ws566GbNa4ghJ9lABCr9pBbo9YlMo2cg2R39cxBBm6GqoVAHHww+Y2C4wUHR889QtWk6yJjLSFwUITsqzaywTaEf4hvMSof1N8LK3K61CwykCNi1ahKcGl0coCY6ucYdKRLzbzjW9UwF7954KqokGGMOkNAFjpiiI7wzcA+G0VuMVgwYrEjInMtdy/qC8k8etYL5xSK/KmF1db3ID9hzHACteRxU6dAEpeijYmmP1RY4XnQ2gwN+uPVWl2LpE3wLs65kUlhCZ0QSZzsfzHE3dh0kuNjvUCfEhDWKHn3dmXSLOxXFLPepigaQG4Tc011ZkpwBwcBLESqhAVPHmVqhWm6prnp2nR4/Qbuo/uY4hPvV7h49QXhA8WeTPEcoFMXEOyD1mmOb7Xsuf5X6GvTdRxC3izAAAAAElFTkSuQmCC" alt="ig"></a>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALzSURBVHgBvVe9kiFRFD5oEoIlIVE1RSJiA5HIBCSCnRcQeIKdN5jZN5h5AoFINlMlIlgRiaqlBCTsVJFI2IDET9n73XHV7avbaJqvqsvVfft83zn3nHP7OkhBsVhMu93uH2z4sN1u78gGOByONvtpr1arX4VC4UP3TCL+5nK5ntjkR7oimP2XnZB/ewEgZ17/Zh5/pxsAEWEi7iHCiRvw/FbkALiYw09cDPP+TtO0v1YMeL1e8vl85PF4+DWfz2m5XNJsNrNihtbr9b0GJUzR0YlsDoVCIYpEIhQMBjmpESBiMpnQeDymwWBAX4E5/uAolUp/2Ng0/LFYjOLxuCmpGRCVbrd7VAjLhQ8IMHQfYU6lUtzjS4CINBoNWiwWhs+dZuSZTOZicgA2YAs2TxaAF5BkdgG2YNNoGQ8EYL3tJJdFIJ+OCkCYIOBagAA1Cpr8B6WmolwuUzabJb/fz//3+32e2RDabDZ5aPGsVqvtIydnfi6X278L8nA4rHuuEyAmymAtk9e3AMbyVa/XOYlqJ5lM8rGafCqHbgms1rqYj0jIQEdE6RmVH5qaDI0uAIyl02kefnRTsQTwUiScSqhCJ2A6nfJ2q6LVanFvYViNEu4hHzBHAF4Ph0M+DgQCuvloTKYC8JJYOwG5KuCh2IhAHI1G+X2R3cJbed3VCBwVgKQajUY8U40EqJATSo6c/L7qoJoTB40IoZSz3i6AuNPpHNx3Gk1EUtkpAqVcrVYNNyTDvQBlBBFmO5hd5KYChAi8KLL5HIC0Uqkc/VIy/R6QgaxOJBJ8azXbVlV89R0gcFIjghEYA5D5KENkulHPAJDI2DNOgYbPIisHEIQTF8pVjYhowRY+TtvaZrN5dzqdP+kMCHIkGkrsVK8FcD7QGPkbG1sWAHIQ93o9fmFsFTgh8ZMRS8SXc0RciNd8Pv/Iy5AdEJ7ZT5tuh/aO87MP4IyGUwpU0fXxCi7d4VTG7qj2zIYJOnJgsYJdpb2z4RsLe11+9h9bGHQ/CTmhiwAAAABJRU5ErkJggg==" alt="lind"></a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between flex-column flex-lg-row">
+            <p class="mb-2 mb-lg-0">本網站僅供個人作品使用，不提供商業用途</p>
+            <p>Copyright © 2024 oscar.</p>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+</body>
+</html>
