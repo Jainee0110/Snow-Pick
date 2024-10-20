@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>購物車-行程確認</title>
-    <script type="module" crossorigin src="/Snow-Pick/assets/main-b363c5d3.js"></script>
-    <link rel="stylesheet" href="/Snow-Pick/assets/main-9be0dc7d.css">
-  </head>
-  <body>
-    <div class="border-bottom border-info-300">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <title>雪域狂歡</title>
+  <script type="module" crossorigin src="/Snow-Pick/assets/main-b363c5d3.js"></script>
+  <link rel="stylesheet" href="/Snow-Pick/assets/main-9be0dc7d.css">
+</head>
+
+<body>
+  <div class="border-bottom border-info-300">
   <nav class="content-nav navbar py-0 navbar-expand-lg" style="z-index: 100;">
     <div class="container header-dropdown position-relative">
       <a class="navbar-brand py-3 d-none d-lg-block" href="index.html"><img src="/Snow-Pick/assets/logo_snow pick_blue-1215a7d7.png" alt="logo"></a>
@@ -28,141 +34,49 @@
       </div>
     </div>
   </nav>
-</div><!--progress-->
-<section class="container">
-  <div class="px-lg-11 px-6 py-lg-8 py-3 mb-lg-11 mb-6 progress-mt">
-<div class="position-relative mx-7 mb-6">
-
-  <div class="progress mb-lg-6 mb-4" role="progressbar" aria-label="Example 2px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar" style="width: 0%"></div>
-  </div> 
-
-  <div class="progress-milestone translate-middle progress-milestone-hover" style="left: 0%;"></div>
-  <div class="progress-milestone translate-middle bg-info-300" style="left: 33%;"></div>
-  <div class="progress-milestone translate-middle bg-info-300" style="left: 66%;"></div>
-  <div class="progress-milestone translate-middle bg-info-300" style="left: 100%;"></div>
-
-  
-</div>
-<ul class="list-unstyled d-flex justify-content-between text-info-100 fs-10 fs-lg-6">
-<li>行程確認</li>
-<li>資料填寫</li>
-<li>裝備租借</li>
-<li>訂單確認</li>
-</ul>
-</div>
-</section>
-
-<!--行程確認-->
-<section class="container mb-8">
-  <div class="row justify-content-center">
-    <div class="col-lg-11">
-      <div class="card rounded-0">
-        <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6">
-          訂購人資料
-        </div>
-        <div class="card-body">
-          <div class="row gy-6">
-            <div class="col-md-6 col-auto mb-3 fs-lg-6">
-              <label for="exampleFormControlInput1" class="form-label text-info-100">電子信箱</label>
-              <input type="email" class="form-control-plaintext text-info-200 form-pd" id="exampleFormControlInput1" placeholder="snowpick@gmail.com">
+</div>    <section class="userAccount-page py-11 py-lg-16 d-flex flex-column align-items-center">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="login-box d-flex flex-column col-12 col-md-8 border py-16 px-11 px-lg-16  rounded-5">
+          <div class="login-box-header text-center bg-white" style="font-family: 'Permanent Marker';">
+            <h2 class="text-primary-200 text-nowrap">SNOW PICK</h2>
+            <span class="fw-semibold ls-1 fs-6 text-nowrap">Skiing closer than ever.</span>
+          </div>
+          <form class="text-info-100 mb-6 mb-lg-11">
+            <div class="login-account mb-3">
+              <label for="login-account" class="form-label fs-lg-6">帳號</label>
+              <input type="text" class="form-control" id="login-account" aria-describedby="login-account">
             </div>
-            <div class="col-md-6 col-auto mb-3 fs-lg-6">
-              <label for="exampleFormControlInput1" class="form-label text-info-100">訂購人</label>
-              <input type="text" class="form-control-plaintext text-info-200 form-pd" id="exampleFormControlInput1" placeholder="王怡蓁">
+            <div class="mb-3 login-passwd">
+              <label for="login-passwd" class="form-label fs-lg-6">密碼</label>
+              <input type="password" class="form-control" id="login-passwd">
             </div>
-            <div class="col-md-6 col-auto mb-3 fs-lg-6">
-              <label for="exampleFormControlInput1" class="form-label text-info-100">行動電話</label>
-              <input type="tel" class="form-control-plaintext text-info-200 form-pd" id="exampleFormControlInput1" placeholder="09XXXXXXXX">
+            <div class="d-flex mb-6 form-check justify-content-between fs-9 fs-lg-8">
+              <div>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">記住我</label>
+              </div>
+              <div class="account-function-link">
+                <a href="##" class="text-info-100 me-4">註冊</a>
+                <a href="##" class="text-info-100">忘記密碼</a>
+              </div>
             </div>
-           
-
+            <button type="submit"
+              class="btn btn-primary-100 w-100 text-light fs-8 fs-lg-7 lh-sm fw-normal rounded-3">會員登入<i
+                class="bi bi-box-arrow-in-right"></i></button>
+          </form>
+          <div class="d-flex align-items-center mb-6 ">
+            <hr class="w-50"><span class="text-nowrap">使用其他方法登入</span>
+            <hr class="w-50">
+          </div>
+          <div class="login-otherAccount d-flex gap-4 gap-lg-6 fs-3 fs-lg-2 mx-auto">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-google"></i></a>
+            <a href="#"><i class="bi bi-apple"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-11">
-      <div class="card rounded-0">
-        <div class="card-header bg-primary-100 text-white rounded-0">
-          <p class="fs-lg-9 fs-10">2024/12/16(一)</p>
-          <p class="fs-lg-6">苗場滑雪三日行-單板初級</p>
-        </div>
-        <div class="card-body">
-        
-          <table class="table table-borderless fs-lg-6">
-            <thead class="mb-6">
-              <tr class="mb-6">
-                <th class="text-info-100 d-none d-lg-block" scope="col">請選擇行程報名人數</th>
-                <th class="text-info-100 d-lg-none" scope="col">報名人數</th>
-                <th class="text-info-100" scope="col">單價</th>
-                <th class="text-info-100" scope="col">數量</th>
-                <th class="text-info-100" scope="col">小計</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="align-bottom">
-                <th class="text-info-100" scope="row ">成人</th>
-                <td class="text-info-100">NT$28,800</td>
-                <td>
-                  <form>
-                    <label for="quantity"></label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="2" class="rounded-0 text-info-200 fs-lg-6 ">
-                  </form>
-              </td>
-                <td class="text-info-100">NT$57,600</td>
-              </tr>
-              <tr>
-                <th class="text-info-100 align-bottom" scope="row">小孩</th>
-                <td class="text-info-100">NT$28,800</td>
-                <td>
-                  <form>
-                    <label for="quantity2"></label>
-                    <input type="number" id="quantity2" name="quantity2" min="1" max="10" placeholder="1" class="rounded-0 text-info-200 fs-lg-6 ">
-                  </form>
-              </td>
-                <td class="text-info-100">NT$28,800</td>
-              </tr>
-              </tbody>           
-          </table>
-      
-
-        </div>
-        <div class="card-footer text-end text-info-100 fw-bold fs-lg-6">
-          共計 NT$86,400元
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <!--注意事項-->
-<section class="my-lg-11 my-6">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-11">
-        <div class="alert bg-primary-400 p-0 p-lg-6 p-4" role="alert">
-          <h1 class="alert-heading fs-lg-5 fs-6 fw-bold text-info-100 mb-6">注意事項</h1>
-          <ol class="text-info-200 mb-0 fs-lg-6 fs-8 ls-1">
-            <li>小孩報名需就讀國小一年級以上(含)始能參加。</li>
-            <li>請再次確認報名人數後再點擊下一步。</li>
-          </ol>  
-           </div>
-      </div>
-    </div>
-  
-  </div>
-</section>
-<!--下一頁按鈕-->
-<section class="container">
-  <div class="text-center my-lg-19 my-6">
-    <a href="cart-personal-information.html" class="btn btn-page btn-primary-100 link-light fw-bold">下一步</a>
-  </div>
-</section>
-
-<div class="py-8 py-md-12 bg-primary-400">
+    </section>
+    <div class="py-8 py-md-12 bg-primary-400">
     <div class="container">
         <div class="d-flex border-bottom border-info-300 pb-4 pb-md-8 mb-4 mb-md-8 flex-column flex-lg-row">
             <a href="../pages/index.html"><img src="/Snow-Pick/assets/logo_snow pick_footer-77a82d20.png" alt="icon" class="me-lg-12 me-xl-19 mb-4 mb-lg-0" style="width: 236px;"></a>
@@ -184,6 +98,9 @@
         
     </div>
 </div>
-
+      
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init();</script>
 </body>
+
 </html>
