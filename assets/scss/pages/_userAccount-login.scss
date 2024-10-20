@@ -1,0 +1,68 @@
+.userAccount-page{
+  min-height: calc(100vh - 383px);
+}
+.login-box{
+  position: relative;
+  .login-box-header{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.login-account{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon-accountLoggin/person-circle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+    transform: translate(50%,-7px);
+    bottom: 0%;
+    left: 0%;
+  }
+  input[type="text"]{
+    padding-left: 44px;
+    color: $info-100;
+  }
+}
+.login-passwd{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon-accountLoggin/key-fill.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+    transform: translate(50%,-7px);
+    bottom: 0%;
+    left: 0%;
+  }
+  input[type="password"]{
+    padding-left: 44px;
+    color: $info-100;
+  }
+}
+
+.account-function-link{
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.login-otherAccount{
+  a{
+    color: $info-200;
+    &:hover{
+      color: $primary-200;
+    }
+  }
+}
