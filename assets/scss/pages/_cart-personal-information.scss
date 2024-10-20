@@ -28,7 +28,16 @@ top: 0;
     width: 24px;
     height: 24px;  
     &-hover{    
-        box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF;  
+        box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF; 
+        animation: fade 1s linear 2s infinite; 
+    }
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 }      
     }
