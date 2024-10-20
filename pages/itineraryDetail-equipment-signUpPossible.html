@@ -12,59 +12,58 @@
 <body>
 <!-- 匯入 -->
 <header class="header-itinerary header-itinerary-bg mb-6 mb-lg-19">
-  <%- include('./layout/header-itinerary'); -%>
-    <div class="container py-6 pb-lg-11 flex-fill d-flex flex-column justify-content-between align-items-start">
-      <ul class="list-unstyled d-flex ls-1 mb-11 fs-9 fs-lg-8">
-        <li><a href="##" class="link-light">首頁</a><i class="bi bi-chevron-right text-light mx-2"></i></li>
-        <li><a href="##" class="link-light">日本</a><i class="bi bi-chevron-right text-light mx-2"></i></li>
-        <li><a href="##" class="link-light">苗場滑雪三日行｜單板初級</a></li>
-      </ul>
-      <span class="badge bg-danger lh-base mb-2 fs-9 fs-lg-8">已額滿</span>
-      <h2 class="text-light fs-6 fs-lg-3 ls-1">苗場滑雪三日行｜單板初級</h2>
-    </div>
-</header>
-<section class="mb-6 mb-lg-11">
-  <div class="container">
-    <div class="row align-items-lg-start g-4 g-lg-6">
-      <div class="col-lg-9">
-        <div class="d-flex flex-column p-3 p-lg-6 bg-primary-400">
-          <span class="fs-6 fs-lg-5 fw-semibold text-info-100 mb-4">出發日期：2024 / 12 / 16</span>
-          <p class="fs-8 fs-lg-6 ls-lg-1">
-            苗場滑雪場是日本知名的滑雪勝地，以其廣闊的雪道和迷人景色著稱。三日行程包含入住豪華王子大飯店，並由專業教練根據每位學員的程度提供量身指導。這趟旅程將幫助您建立單板滑雪的基本技能，讓您自信地在滑雪場上享受各種滑雪興趣，並感受苗場的美麗雪景。
-          </p>
+    <%- include('./layout/header-itinerary'); -%>
+      <div class="container py-6 pb-lg-11 flex-fill d-flex flex-column justify-content-between align-items-start">
+        <ul class="list-unstyled d-flex ls-1 mb-11 fs-9 fs-lg-8">
+          <li><a href="##" class="link-light">首頁</a><i class="bi bi-chevron-right text-light mx-2"></i></li>
+          <li><a href="##" class="link-light">日本</a><i class="bi bi-chevron-right text-light mx-2"></i></li>
+          <li><a href="##" class="link-light">苗場滑雪三日行｜單板初級</a></li>
+        </ul>
+        <h2 class="text-light fs-6 fs-lg-3 ls-1">苗場滑雪三日行｜單板初級</h2>
+      </div>
+  </header>
+  <section class="mb-6 mb-lg-11">
+    <div class="container">
+      <div class="row align-items-lg-start g-4 g-lg-6">
+        <div class="col-lg-9">
+          <div class="d-flex flex-column p-3 p-lg-6 bg-primary-400">
+            <span class="fs-6 fs-lg-5 fw-semibold text-info-100 mb-4">出發日期：2024 / 12 / 23</span>
+            <p class="fs-8 fs-lg-6 ls-lg-1">
+              苗場滑雪場是日本知名的滑雪勝地，以其廣闊的雪道和迷人景色著稱。三日行程包含入住豪華王子大飯店，並由專業教練根據每位學員的程度提供量身指導。這趟旅程將幫助您建立單板滑雪的基本技能，讓您自信地在滑雪場上享受各種滑雪興趣，並感受苗場的美麗雪景。
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex flex-column p-4 py-lg-10 px-lg-6">
+            <span class="mb-6 fs-5 fw-bold text-info-100 d-flex align-items-lg-center" style="font-family: roboto;">
+              <span class="me-3">NT$</span><span class="fs-lg-3">28,000</span>
+            </span>
+            <!--這裡有問題，為什麼要需要另外加me-6，看起來整個元素超出container了
+             -->
+            <a href="##" class="btn btn-primary-100 text-light fs-lg-6 lh-sm">立即預訂</a>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3">
-        <div class="d-flex flex-column p-4 py-lg-10 px-lg-6">
-          <span class="mb-6 fs-5 fw-bold text-info-100 d-flex align-items-lg-center" style="font-family: roboto;">
-            <span class="me-3">NT$</span><span class="fs-lg-3">28,000</span>
-          </span>
-          <!--這裡有問題，為什麼要需要另外加me-6，看起來整個元素超出container了
-           -->
-          <a href="##" class="btn btn-info-200 text-light fs-lg-6 lh-sm disabled">立即預訂</a>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
   <section class="pb-lg-7">
     <div class="container">
       <div class="swiper itineraryDetail-swiper mb-6 mb-lg-11 ">
         <div class="swiper-wrapper fs-8 fs-lg-6">
           <div class="swiper-slide">
-            <a class="slide-link d-block w-100 py-4 " href="./itineraryDetail-content.html">行程內容</a>
+            <a class="slide-link d-block w-100 py-4 " href="./itineraryDetail-content-signUpPossible.html">行程內容</a>
           </div>
           <div class="swiper-slide">
-            <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-courseList.html">教學項目</a>
+            <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-courseList-signUpPossible.html">教學項目</a>
           </div>
           <div class="swiper-slide">
-            <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-feeDescription.html">費用說明</a>
+            <a class="slide-link d-block w-100 py-4" href="##">費用說明</a>
           </div>
           <div class="swiper-slide">
             <a class="slide-link d-block w-100 py-4 active" href="##">雪具裝備</a>
           </div>
           <div class="swiper-slide">
-            <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-notice.html">注意事項</a>
+            <a class="slide-link d-block w-100 py-4" href="##">注意事項</a>
           </div>
         </div>
         <div class="itineraryDetail-swiper-next d-lg-none"><i class="bi bi-chevron-right"></i></div>

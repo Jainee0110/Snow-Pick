@@ -1,0 +1,73 @@
+.itinerary-overview{
+    &-header{
+        .nav-item{
+            background-color:rgba(255, 255, 255, 1);
+            margin-left: auto;
+            &:hover{
+                background-color:rgba(85, 175, 244, 1);
+                transition: ease-in 0.3s;
+            }
+            @include media-breakpoint-up(lg){
+                background-color: transparent;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0);
+                }
+            }
+        }
+        .nav-link{
+            &:hover{
+                color: white !important;
+                @include media-breakpoint-up(lg){
+                    -webkit-box-reflect: unset;
+                    color:black !important;
+                    text-shadow: 1px 1px 0 white, 2px 2px 0 white, 3px 3px 0 white, 4px 4px 0 white, 5px 5px 0 white ;
+                    font-weight: bold;
+                }
+            }
+        }
+        .index-navbar{
+            box-shadow: 3px 3px 3px 1px rgba(77, 77, 77, 0.2);
+            @include media-breakpoint-up(lg){
+                box-shadow: none;
+                border: none !important;
+            }
+        }
+    }
+    .card::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 87px 87px 0 0;
+        border-color:rgba(228, 228, 228, 0.7) transparent transparent transparent;
+        @include media-breakpoint-up(xl){ 
+            border-width: 100px 100px 0 0;
+        }
+    }
+    .pagination .active{
+        background-color: #55AFF4;
+        border-color: #55AFF4;
+    }
+    .heart {
+        color: black;  
+        font-size: 24px;
+        &.red {
+            color: red;
+        }
+    } 
+    &-banner{
+        height: 100dvh;
+        @include media-breakpoint-up(md){ 
+            height: auto;
+        }
+    } 
+}
+.overview-key-word{
+    margin-top: 30px;
+    @include media-breakpoint-up(md){ 
+        margin-top: 51px;
+    }
+}

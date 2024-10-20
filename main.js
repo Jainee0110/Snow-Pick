@@ -34,16 +34,17 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
       770: {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
       1200: {
         slidesPerView: 3,
         spaceBetween: 24,
       }
     },
-    hashNavigation: {
-      watchState: true,
-    },
+    // 危險的東西
+    // hashNavigation: {
+    //   watchState: true,
+    // },
     keyboard: {
       enabled: true,
     },
@@ -62,7 +63,7 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
-const showOnPx = 2000;
+const showOnPx = 1500;
 const backToTopButton = document.querySelector(".back-to-top")
 
 const scrollContainer = () => {
@@ -82,3 +83,15 @@ const goToTop = () => {
 };
 
 backToTopButton.addEventListener("click", goToTop);
+
+
+
+
+const like = document.getElementsByClassName('heart');
+for (var i = 0; i < like.length; i++) {
+    like[i].addEventListener('click', function(){
+        this.classList.toggle('red');
+        this.classList.toggle('bi-suit-heart');
+        this.classList.toggle('bi-suit-heart-fill');
+    })
+}

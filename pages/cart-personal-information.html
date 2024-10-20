@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+    <title>購物車-資料填寫</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+<!--progress-->
+<section class="container">
+  <div class="px-md-11 px-6 py-md-8 py-3 mb-md-11 mb-6 progress-mt">
+<div class="position-relative mx-7 mb-6">
+
+  <div class="progress mb-md-6 mb-4" role="progressbar" aria-label="Example 2px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 33%"></div>
+  </div> 
+
+  <div class="progress-milestone translate-middle" style="left: 0%;"></div>
+  <div class="progress-milestone translate-middle progress-milestone-hover" style="left: 33%;"></div>
+  <div class="progress-milestone translate-middle bg-info-300" style="left: 66%;"></div>
+  <div class="progress-milestone translate-middle bg-info-300" style="left: 100%;"></div>
+
+  
+</div>
+<ul class="list-unstyled d-flex justify-content-between text-info-100 fs-10 fs-md-6">
+<li>行程確認</li>
+<li>資料填寫</li>
+<li>裝備租借</li>
+<li>訂單確認</li>
+</ul>
+</div>
+</section>
+
+<!--資料填寫-->
+<section class="container">
+
+  <!--旅客資料1-->
+<section class="container mb-md-11 mb-6">
+  <hr class="my-0">
+  <span class="badge traveler-label mt-md-11 mt-6 fs-md-5 fs-6">旅客 1  成人</span>
+  <div class="form-check mt-md-8 mt-6 text-info-100">
+    <input class="form-check-input" type="checkbox" value="" id="samePurchasingMan1" checked>
+    <label class="form-check-label" for="samePurchasingMan1">
+      同訂購人
+    </label>
+  </div>
+
+  <form class="row g-5 mt-md-8 mt-6 needs-validation" novalidate>
+    <div class="col-lg-4">
+      <label for="validationCustom01" class="form-label">中文姓名</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom01" value="王怡蓁" placeholder="王怡蓁" required>
+      <div class="invalid-feedback">
+        *注意:一旦送出後，無法自行修改姓名資訊
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <label for="validationCustom02" class="form-label">出生日期</label>
+      <input type="date" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom02" value="1999-01-01" required>
+      <div class="invalid-feedback">
+       無效的日期
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <label class="form-label">性別</label>
+      <div class="d-flex gap-6 align-items-start">
+          <div class="form-check">
+              <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="invalidRadio1" required>
+              <label class="form-check-label" for="invalidRadio1">
+                男
+              </label>
+              <div class="invalid-feedback">
+              請選擇性別
+              </div>        
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="invalidRadio2" required checked>
+            <label class="form-check-label" for="invalidRadio2">
+              女
+            </label>      
+          </div>
+        </div>
+       </div>          
+
+  <div class="col-lg-4">
+      <label for="idNumberInput" class="form-label">身分證號/統編</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="idNumberInput" value="F149XXXXXX" placeholder="F149XXXXXX" required>
+        <div class="invalid-feedback">
+          請輸入欄位
+        </div>
+  </div> 
+   
+   <div class="col-lg-4">
+      <label for="psasportEnglishNameInput" class="form-label">護照英文姓名</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportEnglishNameInput" value="YI-CHEN WANG"  placeholder="YI-CHEN WANG" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="psasportNumberInput" class="form-label">護照號碼</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportNumberInput" value="888800088" placeholder="888800088" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="emailInput" class="form-label">電子信箱</label>
+      <input type="email" class="form-control border-info-200 rounded-0 text-info-200" id="emailInput" value="snowpick@gmail.com" placeholder="snowpick@gmail.com" required>
+      <div class="invalid-feedback">
+        錯誤的信箱格式
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="cellphoneInput" class="form-label">行動電話</label>
+      <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="cellphoneInput" value="+886 919999999" placeholder="+886 919999999" required>
+      <div class="invalid-feedback">
+        錯誤的行動電話格式
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="homePhoneInput" class="form-label">市話</label>
+      <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="homePhoneInput" value="02-99999999" placeholder="02-99999999" required>
+      <div class="invalid-feedback">
+        錯誤的市話格式
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="urgentPersonInput" class="form-label">緊急連絡人</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonInput" value="王小明" placeholder="王小明" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="urgentPersonRelationInput" class="form-label">緊急連絡人關係</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonRelationInput" value="父女" placeholder="父女" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label for="urgentPersonPhoneInput" class="form-label">緊急連絡人電話</label>
+      <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonPhoneInput" value="+886 1234565880" placeholder="+886 1234565880" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-12">
+      <label for="AddressInput" class="form-label">連絡地址</label>
+      <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="AddressInput" value="臺中市北區復興路一段688號" placeholder="臺中市北區復興路一段688號" required>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label class="form-label">單板等級</label>
+      <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+            <option value="">請選擇您的單板等級</option>
+            <option selected value="1">level 1</option>
+            <option value="2">level 2</option>
+            <option value="3">level 3</option>
+            <option value="4">level 4</option>
+            <option value="5">level 5</option>
+            <option value="6">level 6</option>  
+      </select>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+   <div class="col-lg-4">
+      <label class="form-label">雙板等級</label>
+      <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+            <option value="">請選擇您的單板等級</option>
+            <option selected value="1">level 1</option>
+            <option value="2">level 2</option>
+            <option value="3">level 3</option>
+            <option value="4">level 4</option>
+            <option value="5">level 5</option>
+            <option value="6">level 6</option>  
+      </select>
+      <div class="invalid-feedback">
+        請輸入欄位
+      </div>
+   </div>
+
+   <div class="col-lg-4 col-5 mb-6">
+    <div>
+      <label for="levelFormInput" class="form-label">滑雪等級請參考滑雪程度自評表</label>
+      <div>
+      <input type="checkbox" class="btn-check" id="levelFormInput" autocomplete="off" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <label class="btn btn-sm btn-primary-100 text-white w-100 form-pd" for="levelFormInput">滑雪程度自評表</label><br>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">滑雪程度自評表</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table align-middleclearq table-striped">
+              <thead class="table-dark tableHead text-white border-0 fs-6">
+                <tr>
+                  <th scope="col">單板SnowBoard</th>
+                  <th scope="col">Level</th>
+                  <th scope="col">雙板Ski</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>第一次滑雪</td>
+                  <th scope="row">1</th>
+                  <td>第一次滑雪</td>
+                
+                </tr>
+                <tr>
+                  <td>可以Heel side or Toe side站立、滑行與煞車
+                  </td>
+                  <th scope="row">2</th>
+                  <td>可以內八字煞車在初級道(綠線)連續轉彎
+                  </td>
+                 
+                </tr>
+                <tr>
+                  <td>可以穩定Heel side or Toe side落葉飄及C turn轉向
+                  </td>
+                  <th scope="row">3</th>
+                  <td>可以在中級道(紅/藍線)連續轉彎</td>                      
+                </tr>
+
+                <tr>
+                  <td>可以在初級道(綠線)連續S turn
+                  </td>
+                  <th scope="row">4</th>
+                  <td>可以在初級道(綠線)連續平行/併腿連續轉彎
+                  </td>                      
+                </tr>
+
+                <tr>
+                  <td>可以在中級道(紅/藍線)連續S turn
+                  </td>
+                  <th scope="row">5</th>
+                  <td>可以在中級道(紅/藍線)連續平行/併腿連續轉彎
+                  </td>                      
+                </tr>
+
+                <tr>
+                  <td>可以在高階道(黑線)連續S turn及其他進階技術                         
+                  </td>
+                  <th scope="row">6</th>
+                  <td>可以在高階道(黑線)連續平行/併腿連續轉彎及其他進階技術
+                  </td>                      
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    </div>  
+  
+<!--旅客資料2-->
+<div class="mt-md-11 mt-6">
+  <hr class="my-0">
+    <span class="badge traveler-label mt-md-11 mt-6 fs-md-5 fs-6">旅客 2  成人</span>
+</div>
+
+<div class="col-lg-4">
+  <label for="validationCustom01" class="form-label">中文姓名</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom01" placeholder="" required>
+  <div class="invalid-feedback">
+    *注意:一旦送出後，無法自行修改姓名資訊
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="validationCustom02" class="form-label">出生日期</label>
+  <input type="date" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom02" value="" required>
+  <div class="invalid-feedback">
+   無效的日期
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">性別</label>
+  <div class="d-flex gap-6 align-items-start">
+      <div class="form-check">
+          <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="invalidRadio3" required>
+          <label class="form-check-label" for="invalidRadio3">
+            男
+          </label>
+          <div class="invalid-feedback">
+          請選擇性別
+          </div>        
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="invalidRadio4" required>
+        <label class="form-check-label" for="invalidRadio4">
+          女
+        </label>      
+      </div>
+    </div>
+   </div>          
+<div class="col-lg-4">
+  <label for="idNumberInput" class="form-label">身分證號/統編</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="idNumberInput" placeholder="" required>
+    <div class="invalid-feedback">
+      請輸入欄位
+    </div>
+</div> 
+
+<div class="col-lg-4">
+  <label for="psasportEnglishNameInput" class="form-label">護照英文姓名</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportEnglishNameInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="psasportNumberInput" class="form-label">護照號碼</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportNumberInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="emailInput" class="form-label">電子信箱</label>
+  <input type="email" class="form-control border-info-200 rounded-0 text-info-200" id="emailInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的信箱格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="cellphoneInput" class="form-label">行動電話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="cellphoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的行動電話格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="homePhoneInput" class="form-label">市話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="homePhoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的市話格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonInput" class="form-label">緊急連絡人</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonRelationInput" class="form-label">緊急連絡人關係</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonRelationInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonPhoneInput" class="form-label">緊急連絡人電話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonPhoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-12">
+  <label for="AddressInput" class="form-label">連絡地址</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="AddressInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">單板等級</label>
+  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+        <option value="">請選擇您的單板等級</option>
+        <option value="1">level 1</option>
+        <option value="2">level 2</option>
+        <option value="3">level 3</option>
+        <option value="4">level 4</option>
+        <option value="5">level 5</option>
+        <option value="6">level 6</option>  
+  </select>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">雙板等級</label>
+  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+        <option value="">請選擇您的單板等級</option>
+        <option value="1">level 1</option>
+        <option value="2">level 2</option>
+        <option value="3">level 3</option>
+        <option value="4">level 4</option>
+        <option value="5">level 5</option>
+        <option value="6">level 6</option>  
+  </select>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+
+<div class="col-lg-4 col-5 mb-6">
+<div>
+  <label for="levelFormInput" class="form-label">滑雪等級請參考滑雪程度自評表</label>
+  <div>
+  <input type="checkbox" class="btn-check" id="levelFormInput" autocomplete="off" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <label class="btn btn-sm btn-primary-100 text-white w-100 form-pd" for="levelFormInput">滑雪程度自評表</label><br>
+  </div>
+</div>
+</div>  
+<!--旅客資料3-->
+<div class="mt-md-11 mt-6">
+  <hr class="my-0">
+    <span class="badge traveler-label mt-md-11 mt-6 fs-md-5 fs-6">旅客 3  小孩</span>
+</div>
+
+<div class="col-lg-4">
+  <label for="validationCustom01" class="form-label">中文姓名</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom01" placeholder="" required>
+  <div class="invalid-feedback">
+    *注意:一旦送出後，無法自行修改姓名資訊
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="validationCustom02" class="form-label">出生日期</label>
+  <input type="date" class="form-control border-info-200 rounded-0 text-info-200" id="validationCustom02" value="" required>
+  <div class="invalid-feedback">
+   無效的日期
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">性別</label>
+  <div class="d-flex gap-6 align-items-start">
+      <div class="form-check">
+          <input class="form-check-input" type="radio" value="" name="flexRadioDefault3" id="invalidRadio5" required>
+          <label class="form-check-label" for="invalidRadio5">
+            男
+          </label>
+          <div class="invalid-feedback">
+          請選擇性別
+          </div>        
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" value="" name="flexRadioDefault3" id="invalidRadio6" required>
+        <label class="form-check-label" for="invalidRadio6">
+          女
+        </label>      
+      </div>
+    </div>
+   </div>          
+<div class="col-lg-4">
+  <label for="idNumberInput" class="form-label">身分證號/統編</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="idNumberInput" placeholder="" required>
+    <div class="invalid-feedback">
+      請輸入欄位
+    </div>
+</div> 
+
+<div class="col-lg-4">
+  <label for="psasportEnglishNameInput" class="form-label">護照英文姓名</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportEnglishNameInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="psasportNumberInput" class="form-label">護照號碼</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="psasportNumberInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="emailInput" class="form-label">電子信箱</label>
+  <input type="email" class="form-control border-info-200 rounded-0 text-info-200" id="emailInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的信箱格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="cellphoneInput" class="form-label">行動電話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="cellphoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的行動電話格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="homePhoneInput" class="form-label">市話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="homePhoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    錯誤的市話格式
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonInput" class="form-label">緊急連絡人</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonRelationInput" class="form-label">緊急連絡人關係</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonRelationInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label for="urgentPersonPhoneInput" class="form-label">緊急連絡人電話</label>
+  <input type="tel" class="form-control border-info-200 rounded-0 text-info-200" id="urgentPersonPhoneInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-12">
+  <label for="AddressInput" class="form-label">連絡地址</label>
+  <input type="text" class="form-control border-info-200 rounded-0 text-info-200" id="AddressInput"  placeholder="" required>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">單板等級</label>
+  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+        <option value="">請選擇您的單板等級</option>
+        <option value="1">level 1</option>
+        <option value="2">level 2</option>
+        <option value="3">level 3</option>
+        <option value="4">level 4</option>
+        <option value="5">level 5</option>
+        <option value="6">level 6</option>  
+  </select>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+<div class="col-lg-4">
+  <label class="form-label">雙板等級</label>
+  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="Default select" required>
+        <option value="">請選擇您的單板等級</option>
+        <option value="1">level 1</option>
+        <option value="2">level 2</option>
+        <option value="3">level 3</option>
+        <option value="4">level 4</option>
+        <option value="5">level 5</option>
+        <option value="6">level 6</option>  
+  </select>
+  <div class="invalid-feedback">
+    請輸入欄位
+  </div>
+</div>
+
+<div class="col-lg-4 col-5 mb-6">
+<div>
+  <label for="levelFormInput" class="form-label">滑雪等級請參考滑雪程度自評表</label>
+  <div>
+  <input type="checkbox" class="btn-check" id="levelFormInput" autocomplete="off" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <label class="btn btn-sm btn-primary-100 text-white w-100 form-pd" for="levelFormInput">滑雪程度自評表</label><br>
+  </div>
+</div>
+</div>  
+<div class="col-12">
+  <div class="form-check">
+        <input class="form-check-input" type="submit" value="" id="flexCheckDefault">
+        <label class="form-check-label text-info-100" for="flexCheckDefault">
+          *確認資料無誤
+        </label>
+  </div>
+</div>
+
+    <div class="d-flex justify-content-center gap-6 my-lg-19 my-6">
+      <a href="cart-schedule.html" class="btn btn-page border-info-300 fw-bold link-info-100">上一步</a>
+      <a href="cart-rental.html" class="btn btn-page btn-primary-100 link-light fw-bold" >下一步</a>      
+    </div>
+    
+  </form>
+
+</section>
+
+     
+   
+
+  
+
+
+
+
+
+</section>
+
+
+
+
+<%- include('./layout/footer'); -%>
+
+<script type="module" src="../main.js"></script>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+</body>
+</html>
