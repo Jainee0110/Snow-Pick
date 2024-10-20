@@ -107,8 +107,11 @@
     &-content{
         box-shadow: 0px 0px 16px 0px #0000001A;
         width: 327px;
-        left: 24px;
+        left: 10px;
         top: 216px;
+        @media (min-width: 375px){
+            left: 24px;
+        }
         @include media-breakpoint-up(sm){
             width: 415px;
             padding-top: 25px !important;
@@ -214,8 +217,11 @@
     &-content{
         box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
         width: 325px;
-        left: 24px;
+        left: 10px;
         top: 140px;
+        @media (min-width: 375px){
+            left: 24px;
+        }
         @include media-breakpoint-up(sm){
             padding-top: 25px !important;
             padding-bottom: 25px !important;
@@ -278,3 +284,61 @@
         }
     }
 }
+.team{
+    .team-button-next, .team-button-prev{
+        &::after{
+            font-size: 30px;
+        }
+        @media (min-width: 1500px){
+            display: flex !important;
+        }
+    }
+    .swiper-slide {
+        height: auto;
+        .card{
+            height: 100%;
+        }
+    }
+    @media (min-width: 1500px){
+        &.container{
+            max-width: 1472px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .swiper-container {
+            padding-left: 88px;
+            padding-right: 88px;
+        }
+        .team-title{
+            margin-left: 88px;
+        }
+    }
+    .card{
+        max-width: 351px;
+        margin: 0 auto;
+        &:hover{
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+        @include media-breakpoint-up(sm){ 
+            max-width: 416px;
+        }
+        @media (min-width: 1200px){
+            margin-top: 30px;
+            &:hover{
+                margin-top: 20px;
+                box-shadow: 0px 3px 15px 3px rgba(51, 51, 51, 0.5);
+            }
+        }
+    }
+}
+.hidden{
+    display: none;
+}
+.back-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 100; 
+    padding: 6px 11px; 
+  }
