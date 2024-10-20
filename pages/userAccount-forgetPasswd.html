@@ -16,16 +16,16 @@
   <%- include('./layout/header'); -%>
     <section class="userAccount-page py-11 py-lg-16 d-flex flex-column align-items-center">
       <div class="container d-flex flex-column align-items-center">
-        <div class="col-md-6 p-11 bg-primary-400 rounded-5 border">
-          <h2 class="text-info-100">忘記密碼</h2>
+        <div class="col-12 col-sm-10 col-lg-6 p-11 bg-primary-400 rounded-5 border">
+          <h2 class="text-info-100 mb-4 mb-lg-6 fs-5 fs-lg-3 ">忘記密碼</h2>
           <form action="get">
-            <div class="mb-3">
+            <div class="mb-4 mb-lg-6">
               <label for="forgetPasswd-emailVerify" class="form-label">請輸入你的電子郵件信箱</label>
               <input type="email" class="form-control" id="forgetPasswd-emailVerify" aria-describedby="emailHelp">
             </div>
             <div class="d-flex justify-content-end align-items-center gap-4">
-              <a href="##" class="btn forgetPasswd-cancelBtn py-2 px-4">取消</a>
-              <button type="submit" class="btn btn-primary-100 py-2 px-4 text-light">送出</button>
+              <a href="##" class="forgetPasswd-cancelBtn rounded-2 py-2 px-4">取消</a>
+              <button type="submit" class="btn btn-primary-100 py-2 px-4 rounded-2 text-light">送出</button>
             </div>
           </form>
         </div>
