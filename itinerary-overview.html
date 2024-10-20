@@ -1,45 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>雪域狂歡</title>
-    <script type="module" crossorigin src="/Snow-Pick/assets/main-e53aa62d.js"></script>
-    <link rel="stylesheet" href="/Snow-Pick/assets/main-b18b04fa.css">
-  </head>
-  <body>
-    <div class="border-bottom border-info-300">
-  <nav class="content-nav navbar py-0 navbar-expand-lg" style="z-index: 100;">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+      <script type="module" crossorigin src="/Snow-Pick/assets/main-4ec72a3b.js"></script>
+      <link rel="stylesheet" href="/Snow-Pick/assets/main-7e62ac91.css">
+    </head>
+
+    <body>
+    <div class="position-relative itinerary-overview-header" style="background-image: url(/Snow-Pick/assets/snow-bg-4c67c72b.jpg); background-size: cover; background-position: top left;">
+        <nav class="index-nav navbar py-0 navbar-expand-lg" style="z-index: 100;">
     <div class="container header-dropdown position-relative">
-      <a class="navbar-brand py-3 d-none d-lg-block" href="index.html"><img src="/Snow-Pick/assets/logo_snow pick_blue-1215a7d7.png" alt="logo"></a>
-      <a class="navbar-brand py-0 d-lg-none" href="index.html"><img src="data:image/png;base64,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" alt="logo"></a>
+      <a class="navbar-brand py-3 d-none d-lg-block" href="index.html"><img src="data:image/png;base64,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" alt="logo"></a>
+      <a class="navbar-brand py-0 d-lg-none" href="index.html"><img src="data:image/png;base64,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" alt="logo"></a>
       <button class="navbar-toggler collapsed navbar-btn border-0 px-1 px-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-4 align-middle ms-auto text-info-100"></i>
-        <i class="bi bi-x-lg align-middle ms-auto close fs-5 text-info-100"></i>
+        <i class="bi bi-list fs-4 align-middle ms-auto text-white"></i>
+        <i class="bi bi-x-lg align-middle ms-auto close fs-5 text-white"></i>
       </button>
       <div class="collapse header-dropdown-menu navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-lg-auto content-navbar border border-info-300">
-          <li class="nav-item"><a class="border-top border-bottom border-info-300 nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 px-8 py-lg-4" href="itinerary-overview.html">滑雪行程</a></li>
+        <ul class="navbar-nav ms-lg-auto index-navbar">
+          <li class="nav-item"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 px-8 py-lg-4" href="itinerary-overview.html">滑雪行程</a></li>
           <li class="nav-item"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 px-8 py-lg-4 mx-lg-4" href="#">雪場介紹</a></li>
           <li class="nav-item"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 py-lg-4 d-none d-lg-block" href="#">註冊 / 登入</a></li>
           <li class="nav-item login"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-8 px-lg-6 py-lg-4 d-lg-none" href="#">會員登入</a></li>
         </ul>
       </div>
     </div>
-  </nav>
-</div>    
-    <div class="container py-11">
-        <div class="row">
-            <div class="col-lg-4 col-xxl-3">
-                <a href="itineraryDetail-content-singUpPossible.html">
-                    <div class="card rounded-0">
-                        <img src="/Snow-Pick/assets/latest02-d368109a.png" class="card-img-top rounded-0" alt="苗場滑雪行-單板初級">
+</nav>        <div class="container py-14 py-md-17" style="z-index: 1000;">
+            <div class="row g-2 g-md-4">
+                <div class="col-md-2 col-xl-1 pb-0 pb-xl-9">
+                    <label for="country" class="d-block align-bottom form-label text-white fs-7" style="text-shadow: black 0.1em 0.1em 0.2em"><span class="material-symbols-outlined me-1 align-middle" style="text-shadow: black 0.1em 0.1em 0.2em">travel</span>國家</label>
+                    <input type="text" name="country" id="country" placeholder="日本" class="form-control mt-1" disabled>
+                </div>
+                <div class="col-md-5 col-xl-2 pb-0 pb-xl-9">
+                    <label for="skiresort" class="d-block align-bottom form-label text-white fs-7" style="text-shadow: black 0.1em 0.1em 0.2em"><span class="material-symbols-outlined me-1 align-middle" style="text-shadow: black 0.1em 0.1em 0.2em">mountain_flag</span>滑雪場</label>
+                    <select class="form-select mt-1" aria-label="select" style="cursor: pointer;">
+                        <option value="全部">全部</option>
+                        <option value="岩原滑雪場">岩原滑雪場</option>
+                        <option value="苗場滑雪場">苗場滑雪場</option>
+                        <option value="白馬滑雪場">白馬滑雪場</option>
+                        <option value="藏王七宿滑雪場">藏王七宿滑雪場</option>
+                    </select>            
+                </div>
+                <div class="col-md-5 col-xl-2 pb-0 pb-xl-9">
+                    <label for="level" class="d-block align-bottom form-label text-white fs-7" style="text-shadow: black 0.1em 0.1em 0.2em"><span class="material-symbols-outlined me-1 align-middle" style="text-shadow: black 0.1em 0.1em 0.2em">snowboarding</span>滑雪等級</label>
+                    <select class="form-select mt-1" aria-label="select" id="level" style="cursor: pointer;">
+                        <option value="全部">全部</option>
+                        <option value="單板初級">單板初級</option>
+                        <option value="單板中級">單板中級</option>
+                        <option value="單板高級">單板高級</option>
+                        <option value="雙板初級">雙板初級</option>
+                        <option value="雙板中級">雙板中級</option>
+                        <option value="雙板高級">雙板高級</option>
+                    </select>            
+                </div>
+                <div class="col-md-5 col-xl-3 pb-0 pb-xl-9">
+                    <label for="skiresort" class="d-block align-bottom form-label text-white fs-7" style="text-shadow: black 0.1em 0.1em 0.2em"><span class="material-symbols-outlined me-1 align-middle" style="text-shadow: black 0.1em 0.1em 0.2em">calendar_month</span>行程日期</label>
+                    <div class="input-group input-daterange">
+                        <input type="date" class="form-control px-2 text-center" style="cursor: pointer;">
+                        <div class="input-group-text px-2 px-xxl-2 px-md-1 fw-bold">—</div>
+                        <input type="date" class="form-control border-start-0 mx-0 px-2 text-center" style="cursor: pointer;">
+                    </div>
+                </div>
+                <div class="col-md-5 col-xl-3 d-flex flex-column overview-key-word">
+                    <div class="input-group mb-2">
+                        <span class="input-group-text bg-white border-end-0" id="search"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-start-0 px-0" placeholder="輸入關鍵字 : 景點或行程名稱">
+                    </div>
+                    <div class="form-check ms-auto mb-0">
+                        <input class="form-check-input" type="checkbox" value="signable" id="CheckChecked" checked style="cursor: pointer;">
+                        <label class="form-check-label text-white fs-7" for="CheckChecked" style="text-shadow: black 0.1em 0.1em 0.2em">
+                            只搜尋可報名行程
+                        </label>
+                    </div>
+                </div>
+                <div class="pb-0 pb-xl-9 col-md-2 col-xl-1">
+                    <button type="submit" class="btn btn-primary rounded-2 w-100 mt-4 mt-md-9" style="padding-top: 6px; padding-bottom: 6px;">搜索</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-11 itinerary-overview">
+        <div class="border-bottom border-info-200 mt-9 mb-7 p-2 d-flex justify-content-between align-items-end">
+            <p class="text-info-100 fs-5">搜尋結果</p>
+            <p class="text-info-100 fs-8">共計 70 筆商品</p>
+        </div>
+        <div class="row g-6 g-md-3 g-lg-6 mb-11">
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart-fill red position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                    <a href="itineraryDetail-content-singUpPossible.html"><img src="/Snow-Pick/assets/latest02-d368109a.png" class="card-img-top rounded-0" alt="苗場滑雪行-單板初級"></a>
+                    <div class="card-body">
+                        <small class="ls-1">2024/12/16(一)</small>
+                        <h5 class="card-title  fs-lg-6 my-2 ls-1"><a href="itineraryDetail-content-singUpPossible.html" class="text-info-100">苗場滑雪行 - 單板初級</a></h5>
+                        <small class="card-text">名額10 / 可報名5</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 28,800</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                    <a href=""><img src="/Snow-Pick/assets/latest05-476d4381.png" class="card-img-top rounded-0" alt="岩原滑雪行 - 單板中級"></a>
+                    <div class="card-body">
+                        <small class="ls-1">2024/12/21(六)</small>
+                        <h5 class="card-title fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">岩原滑雪行 - 單板中級</a></h5>
+                        <small class="card-text">名額10 / 可報名4</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 29,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest13-9bd1c659.jpg" class="card-img-top rounded-0" alt="藏王滑雪行-雙板高級"></a>
                         <div class="card-body">
+                            <small class="ls-1">2024/12/25(三)</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2"><a href="" class="text-info-100">藏王滑雪行 - 雙板高級</a></h5>
+                            <small class="card-text">名額10 / 可報名1</small>
+                            <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                                <p class="fs-9">售價</p>
+                                <p class="text-danger fw-bold fs-6">NT$ 44,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest02-d368109a.png" class="card-img-top rounded-0" alt="苗場滑雪行-單板初級"></a>
+                        <div class="card-body position-relative">
+                            <span class="badge bg-danger position-absolute py-2 px-3 ls-1 rounded-pill my-1 mx-2 end-0" style="top: -45px;">額滿</span>
                             <small class="ls-1">2024/12/16(一)</small>
-                            <h5 class="card-title text-info-100 fs-lg-6 my-2 ls-1">苗場滑雪行 - 單板初級</h5>
-                            <small class="card-text">名額10 / 可報名5</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">苗場滑雪行 - 單板初級</a></h5>
+                            <small class="card-text">名額10 / 可報名0</small>
                             <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
                                 <p class="fs-9">售價</p>
                                 <p class="text-danger fw-bold fs-6">NT$ 28,800</p>
@@ -48,29 +156,248 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-xxl-3">
-                <a href="itineraryDetail-content-singUpPossible.html">
-                    <div class="card rounded-0">
-                        <img src="/Snow-Pick/assets/latest05-476d4381.png" class="card-img-top rounded-0" alt="岩原滑雪行 - 單板中級">
-                        <div class="card-body">
-                            <small class="ls-1">2024/12/21(六)</small>
-                            <h5 class="card-title text-info-100 fs-lg-6 my-2 ls-1">岩原滑雪行 - 單板中級</h5>
-                            <small class="card-text">名額10 / 可報名4</small>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">2天</span>
+                    <a href="itineraryDetail-content-singUpPossible.html"><img src="/Snow-Pick/assets/latest01-d9aac61d.png" class="card-img-top rounded-0" alt="白馬滑雪行-單板初級"></a>
+                    <div class="card-body">
+                        <small class="ls-1">2025/02/16(日)</small>
+                        <h5 class="card-title  fs-lg-6 my-2 ls-1"><a href="itineraryDetail-content-singUpPossible.html" class="text-info-100">白馬滑雪行 - 單板初級</a></h5>
+                        <small class="card-text">名額10 / 可報名7</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 38,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">2天</span>
+                    <a href=""><img src="/Snow-Pick/assets/latest07-7f22b4c8.png" class="card-img-top rounded-0" alt="苗場滑雪行-雙板中級"></a>
+                    <div class="card-body">
+                        <small class="ls-1">2025/02/21(五)</small>
+                        <h5 class="card-title fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">苗場滑雪行 - 雙板中級</a></h5>
+                        <small class="card-text">名額10 / 可報名7</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 39,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest08-6396ff25.png" class="card-img-top rounded-0" alt="岩原滑雪行-單板高級"></a>
+                        <div class="card-body position-relative">
+                            <span class="badge bg-danger position-absolute py-2 px-3 ls-1 rounded-pill my-1 mx-2 end-0" style="top: -45px;">額滿</span>
+                            <small class="ls-1">2025/02/26(三)</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2"><a href="" class="text-info-100">岩原滑雪行 - 單板高級</a></h5>
+                            <small class="card-text">名額10 / 可報名0</small>
                             <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
                                 <p class="fs-9">售價</p>
-                                <p class="text-danger fw-bold fs-6">NT$ 29,000</p>
+                                <p class="text-danger fw-bold fs-6">NT$ 40,000</p>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-xxl-3">
-                <a href="itineraryDetail-content-singUpPossible.html">
-                    <div class="card rounded-0">
-                        <img src="/Snow-Pick/assets/latest06-33e7cecb.png" class="card-img-top rounded-0" alt="藏王七宿滑雪行-雙板高級">
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">2天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest09-35c8d8e1.png" class="card-img-top rounded-0" alt="白馬滑雪行-單板高級"></a>
                         <div class="card-body">
-                            <small>2025/01/27(一)</small>
-                            <h5 class="card-title text-info-100 fs-lg-6 my-2">藏王七宿滑雪行 - 雙板高級</h5>
+                            <small class="ls-1">2025/02/11(二)</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">白馬滑雪行 - 單板高級</a></h5>
+                            <small class="card-text">名額10 / 可報名9</small>
+                            <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                                <p class="fs-9">售價</p>
+                                <p class="text-danger fw-bold fs-6">NT$ 44,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                    <a href="itineraryDetail-content-singUpPossible.html"><img src="/Snow-Pick/assets/latest10-3940fee2.jpg" class="card-img-top rounded-0" alt="藏王滑雪行-雙板中級"></a>
+                    <div class="card-body">
+                        <small class="ls-1">2025/02/06(四)</small>
+                        <h5 class="card-title  fs-lg-6 my-2 ls-1"><a href="itineraryDetail-content-singUpPossible.html" class="text-info-100">藏王滑雪行 - 雙板中級</a></h5>
+                        <small class="card-text">名額10 / 可報名4</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 43,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart-fill red position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">2天</span>
+                    <a href=""><img src="/Snow-Pick/assets/latest11-deb24d79.jpg" class="card-img-top rounded-0" alt="藏王滑雪行-單板初級"></a>
+                    <div class="card-body position-relative">
+                        <small class="ls-1">2025/02/01(六)</small>
+                        <span class="badge bg-danger position-absolute py-2 px-3 ls-1 rounded-pill my-1 mx-2 end-0" style="top: -45px;">額滿</span>
+                        <h5 class="card-title fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">藏王滑雪行 - 單板初級</a></h5>
+                        <small class="card-text">名額10 / 可報名0</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 32,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest13-9bd1c659.jpg" class="card-img-top rounded-0" alt="岩原滑雪行-雙板高級"></a>
+                        <div class="card-body">
+                            <small class="ls-1">2025/01/27(一)</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2"><a href="" class="text-info-100">岩原滑雪行 - 雙板高級</a></h5>
+                            <small class="card-text">名額10 / 可報名6</small>
+                            <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                                <p class="fs-9">售價</p>
+                                <p class="text-danger fw-bold fs-6">NT$ 40,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest14-6e33dccd.jpg" class="card-img-top rounded-0" alt="白馬滑雪行 - 雙板初級"></a>
+                        <div class="card-body position-relative">
+                            <span class="badge bg-danger position-absolute py-2 px-3 ls-1 rounded-pill my-1 mx-2 end-0" style="top: -45px;">額滿</span>
+                            <small class="ls-1">2025/01/17(五)</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">白馬滑雪行-雙板初級</a></h5>
+                            <small class="card-text">名額10 / 可報名0</small>
+                            <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                                <p class="fs-9">售價</p>
+                                <p class="text-danger fw-bold fs-6">NT$ 42,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">2天</span>
+                    <a href="itineraryDetail-content-singUpPossible.html"><img src="/Snow-Pick/assets/latest16-59bb2523.jpg" class="card-img-top rounded-0" alt="岩原滑雪行-單板初級"></a>
+                    <div class="card-body">
+                        <small class="ls-1">2025/01/12(日)</small>
+                        <h5 class="card-title  fs-lg-6 my-2 ls-1"><a href="itineraryDetail-content-singUpPossible.html" class="text-info-100">岩原滑雪行 - 單板初級</a></h5>
+                        <small class="card-text">名額10 / 可報名8</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 30,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart-fill red position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                    <a href=""><img src="/Snow-Pick/assets/latest12-b99c8c2c.jpg" class="card-img-top rounded-0" alt="苗場滑雪行-雙板中級"></a>
+                    <div class="card-body">
+                        <small class="ls-1">2025/01/07(二)</small>
+                        <h5 class="card-title fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">苗場滑雪行 - 單板中級</a></h5>
+                        <small class="card-text">名額10 / 可報名6</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 39,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest04-d519d478.png" class="card-img-top rounded-0" alt="藏王七宿滑雪行-單板高級"></a>
+                        <div class="card-body">
+                            <small class="ls-1">2025/02/28(五)</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2"><a href="" class="text-info-100">藏王滑雪行 - 單板高級</a></h5>
+                            <small class="card-text">名額10 / 可報名2</small>
+                            <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                                <p class="fs-9">售價</p>
+                                <p class="text-danger fw-bold fs-6">NT$ 40,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">2天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest15-3e18ed96.jpg" class="card-img-top rounded-0" alt="苗場滑雪行-單板高級"></a>
+                        <div class="card-body">
+                            <small class="ls-1">2024/03/01(六)</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">苗場滑雪行 - 雙板高級</a></h5>
+                            <small class="card-text">名額10 / 可報名10</small>
+                            <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                                <p class="fs-9">售價</p>
+                                <p class="text-danger fw-bold fs-6">NT$ 38,800</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">2天</span>
+                    <a href="itineraryDetail-content-singUpPossible.html"><img src="/Snow-Pick/assets/latest17-4dec63b8.jpg" class="card-img-top rounded-0" alt="白馬滑雪行-雙板中級"></a>
+                    <div class="card-body position-relative">
+                        <span class="badge bg-danger position-absolute py-2 px-3 ls-1 rounded-pill my-1 mx-2 end-0" style="top: -45px;">額滿</span>
+                        <small class="ls-1">2024/12/31(二)</small>
+                        <h5 class="card-title  fs-lg-6 my-2 ls-1"><a href="itineraryDetail-content-singUpPossible.html" class="text-info-100">白馬滑雪行 - 雙板中級</a></h5>
+                        <small class="card-text">名額10 / 可報名0</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 31,800</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card rounded-0 position-relative">
+                    <i class="bi bi-suit-heart-fill red position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                    <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                    <a href=""><img src="/Snow-Pick/assets/latest18-fe01355f.jpg" class="card-img-top rounded-0" alt="苗場滑雪行 - 單板高級"></a>
+                    <div class="card-body">
+                        <small class="ls-1">2024/01/13(一)</small>
+                        <h5 class="card-title fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">苗場滑雪行 - 單板高級</a></h5>
+                        <small class="card-text">名額10 / 可報名5</small>
+                        <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
+                            <p class="fs-9">售價</p>
+                            <p class="text-danger fw-bold fs-6">NT$ 39,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart position-absolute end-0 pt-2 pe-3 heart" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">3天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest06-b3bfc265.png" class="card-img-top rounded-0" alt="藏王滑雪行-雙板高級"></a>
+                        <div class="card-body">
+                            <small class="ls-1">2024/11/30(六)</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2"><a href="" class="text-info-100">藏王滑雪行 - 雙板高級</a></h5>
                             <small class="card-text">名額10 / 可報名2</small>
                             <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
                                 <p class="fs-9">售價</p>
@@ -80,25 +407,45 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-xxl-3">
-                <a href="itineraryDetail-content-singUpPossible.html">
-                    <div class="card rounded-0">
-                        <img src="/Snow-Pick/assets/latest02-d368109a.png" class="card-img-top rounded-0" alt="苗場滑雪行-單板初級">
+            <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card rounded-0 position-relative">
+                        <i class="bi bi-suit-heart-fill red heart position-absolute end-0 pt-2 pe-3" style="cursor: pointer;"></i>
+                        <span class="position-absolute top-0 start-0 p-3 fs-6 fw-bold ls-1 text-info-100 display-inline-block" style="z-index: 1000;">2天</span>
+                        <a href=""><img src="/Snow-Pick/assets/latest19-382f4e9a.jpg" class="card-img-top rounded-0" alt="岩原滑雪行-雙板初級"></a>
                         <div class="card-body">
-                            <small class="ls-1">2024/12/16(一)</small>
-                            <h5 class="card-title text-info-100 fs-lg-6 my-2 ls-1">苗場滑雪行 - 單板初級</h5>
-                            <small class="card-text">名額10 / 可報名10</small>
+                            <small class="ls-1">2025/01/22(三)</small>
+                            <h5 class="card-title text-info-100 fs-lg-6 my-2 ls-1"><a href="" class="text-info-100">岩原滑雪行 - 雙板初級</a></h5>
+                            <small class="card-text">名額10 / 可報名3</small>
                             <div class="mt-2 pt-3 d-flex justify-content-between align-items-center" style="border-top: 2px dotted #E4E4E4;">
                                 <p class="fs-9">售價</p>
-                                <p class="text-danger fw-bold fs-6">NT$ 28,800</p>
+                                <p class="text-danger fw-bold fs-6">NT$ 29,800</p>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination mt-19 mb-11 justify-content-center" style="--bs-pagination-color: #4D4D4D;">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
     </div>
-
+    <button class="back-to-top hidden back-to-top btn btn-primary-100 rounded-circle"><i class="bi bi-chevron-up text-white fs-6"></i></button>
     <div class="py-8 py-md-12 bg-primary-400">
     <div class="container">
         <div class="d-flex border-bottom border-info-300 pb-4 pb-md-8 mb-4 mb-md-8 flex-column flex-lg-row">
@@ -124,5 +471,11 @@
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <script src="../snowstorm-min.js"></script>
+    <script>
+        snowStorm.snowColor = '#99ccff';   // blue-ish snow!?
+        snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
+        snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+    </script>
   </body>
 </html>
