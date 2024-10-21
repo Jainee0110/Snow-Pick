@@ -63,7 +63,7 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
-const showOnPx = 1500;
+const showOnPx = 1000;
 const backToTopButton = document.querySelector(".back-to-top")
 
 const scrollContainer = () => {
