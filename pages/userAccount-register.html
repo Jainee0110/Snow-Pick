@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <title>雪域狂歡</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="userAccount-page py-11 py-lg-16 d-flex flex-column align-items-center">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="bg-primary-300 col-8 p-16 rounded-5">
+          <form action="get" class="caption-top mb-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h2>註冊會員</h2>
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="account-register-chineseName">中文姓名</label>
+                  <input class="form-control" type="text" id="account-register-chineseName">
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="account-register-passportNameEN">護照英文姓名</label>
+                  <input class="form-control" type="text" id="account-register-passportNameEN">
+                </div>
+                <div class="col-4">
+                  <fieldset>
+                    <legend>性別</legend>
+                    <div class="form-check-inline">
+                      <input class="form-check-input" type="radio" name="account-register-gender" id="account-register-gender-male" checked>
+                      <label class="form-check-label" for="account-register-gender-male">
+                        男性
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input class="form-check-input" type="radio" name="account-register-gender" id="account-register-gender-female">
+                      <label class="form-check-label" for="account-register-gender-female">
+                        女性
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-8">
+                  <label class="form-label" for="account-register-birthday">生日</label>
+                  <input class="form-control" type="date" id="account-register-birthday">
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="account-register-email">電子信箱</label>
+                  <input class="form-control" type="email" id="account-register-email">
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="account-register-cellPhone">行動電話</label>
+                  <input class="form-control" type="tel" id="account-register-cellPhone">
+                </div>
+                <div class="col-6">
+                  <label class="form-label" for="account-register-telephone">市話</label>
+                  <input class="form-control" type="tel" id="account-register-telephone">
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="account-register-passwd">密碼</label>
+                  <input class="form-control" type="password" id="account-register-passwd">
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="account-register-passwdConfirm">密碼</label>
+                  <input class="form-control" type="password" id="account-register-passwdConfirm">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init();</script>
+</body>
+
+</html>
