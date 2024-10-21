@@ -18,6 +18,7 @@
         <li><a href="itinerary-overview.html" class="link-light">日本</a><i class="bi bi-chevron-right text-light mx-2"></i></li>
         <li><a href="##" class="link-light">苗場滑雪三日行｜單板初級</a></li>
       </ul>
+      <span class="badge bg-danger lh-base mb-2 fs-9 fs-lg-8">已額滿</span>
       <h2 class="text-light fs-6 fs-lg-3 ls-1">苗場滑雪三日行｜單板初級</h2>
     </div>
 </header>
@@ -39,37 +40,37 @@
           </span>
           <!--這裡有問題，為什麼要需要另外加me-6，看起來整個元素超出container了
            -->
-          <a href="##" class="btn btn-primary-100 text-light fs-lg-6 lh-sm">立即預訂</a>
+          <a href="##" class="btn btn-info-200 text-light fs-lg-6 lh-sm disabled">立即預訂</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="pb-lg-7">
-  <div class="container">
-    <div class="swiper itineraryDetail-swiper mb-6 mb-lg-11 ">
-      <div class="swiper-wrapper fs-8 fs-lg-6">
-        <div class="swiper-slide">
-          <a class="slide-link d-block w-100 py-4 " href="./itineraryDetail-content.html">行程內容</a>
+  <section class="pb-lg-7">
+    <div class="container">
+      <div class="swiper itineraryDetail-swiper mb-6 mb-lg-11 ">
+        <div class="swiper-wrapper fs-8 fs-lg-6">
+          <div class="swiper-slide">
+            <a class="slide-link d-block w-100 py-4 " href="./itineraryDetail-content.html">行程內容</a>
+          </div>
+          <div class="swiper-slide">
+            <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-courseList.html">教學項目</a>
+          </div>
+          <div class="swiper-slide">
+            <a class="slide-link d-block w-100 py-4 active" href="./itineraryDetail-feeDescription.html">費用說明</a>
+          </div>
+          <div class="swiper-slide">
+            <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-equipment.html">雪具裝備</a>
+          </div>
+          <div class="swiper-slide">
+            <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-notice.html">注意事項</a>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-courseList.html">教學項目</a>
-        </div>
-        <div class="swiper-slide">
-          <a class="slide-link d-block w-100 py-4 active" href="./itineraryDetail-feeDescription.html">費用說明</a>
-        </div>
-        <div class="swiper-slide">
-          <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-equipment.html">雪具裝備</a>
-        </div>
-        <div class="swiper-slide">
-          <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-notice.html">注意事項</a>
-        </div>
+        <div class="itineraryDetail-swiper-next d-lg-none"><i class="bi bi-chevron-right"></i></div>
+        <div class="itineraryDetail-swiper-prev d-lg-none"><i class="bi bi-chevron-left"></i></div>
       </div>
-      <div class="itineraryDetail-swiper-next d-lg-none"><i class="bi bi-chevron-right"></i></div>
-      <div class="itineraryDetail-swiper-prev d-lg-none"><i class="bi bi-chevron-left"></i></div>
     </div>
-  </div>
-  </section>
+    </section>
 <!-- 匯入結束-->
 <div class="container mb-19">
     <div class="feeNote mb-4 mb-md-6">
@@ -78,11 +79,11 @@
     <div class="feeDescription overflow-x-hidden">
         <div>
             <div class="feeIncluded d-flex">
-                <div class="descriptionBox border-bottom border-2 border-primary-200">
-                <p class="fs-6 fs-lg-4">費用包含</p>
+                <div class="descriptionBox descriptionBox-fee border-bottom border-2 border-primary-200">
+                <p class="fs-7 fs-lg-4 fw-bold">費用包含</p>
                 </div>
                 <div class="border-2 border-primary-200 border-bottom">
-                    <ol class="list-unstyled feeDetails ps-8 feeBorder text-info-100 h-100 fs-7 fs-lg-5">
+                    <ol class="list-unstyled feeDetails ps-8 feeBorder text-info-100 fs-8 fs-lg-6">
                         <li>1. 三日苗場王子飯店住宿 - 含兩日早餐、一日午餐</li>
                         <li>2. 三日專業滑雪教練課程</li>
                         <li>3. 三日滑雪纜車票</li>
@@ -94,11 +95,11 @@
                 </div>
             </div>
             <div class="feeIncluded d-flex">
-                <div class="descriptionBox border-custom">
-                    <p class="fs-6 fs-lg-4">費用不含</p>
+                <div class="descriptionBox descriptionBox-fee border-custom">
+                    <p class="fs-7 fs-lg-4 fw-bold">費用不含</p>
                 </div>
                     <div>
-                        <ul class="list-unstyled feeDetails ps-8 feeBorder text-info-100 fs-7 fs-lg-5 h-100">
+                        <ul class="list-unstyled feeDetails ps-8 feeBorder text-info-100 fs-8 fs-lg-6">
                             <li>1. 雪場午餐、晚餐</li>
                             <li>2. 滑雪裝備 - 雪衣、雪褲、手套、護具、毛帽等</li>
                             <li>3. 個人消費雜支等費用</li>
@@ -110,11 +111,11 @@
 
         <div class="feeIncluded cancelPolicy d-flex feeDescription-return overflow-x-hidden">
             <div class="descriptionBox border-custom-grey">
-            <p class="fs-6 fs-lg-4">退款政策</p>
+            <p class="fs-7 fs-lg-4 fw-bold">退款政策</p>
             </div>
             <div class="border-0 border-md-1 border-info-200">
-                <p class="cancelPost fs-7 fs-lg-5 mb-md-3 mb-1">若因天災、疫情等不可抗之因素取消課程時，將予全額退費。<br>其餘個人因素請詳閱下列退款政策。</p>
-                <ul class="ps-8 feeDetails list-unstyled text-info-100 fs-7 fs-lg-5">
+                <p class="cancelPost fs-8 fs-lg-6 mb-md-3 mb-1">若因天災、疫情等不可抗之因素取消課程時，將予全額退費。<br>其餘個人因素請詳閱下列退款政策。</p>
+                <ul class="ps-8 feeDetails list-unstyled text-info-100 fs-8 fs-lg-6">
                     <li class="mb-1"><span class="fw-bolder">‧ 出團前第41日以前取消：</span><div class="cancelText">僅退還 95% 旅費。</div></li>
                     <li class="mb-1"><span class="fw-bolder">‧ 出團前第31日至第40日內取消：</span><div class="cancelText">僅退還 90% 旅費。</div></li>
                     <li class="mb-1"><span class="fw-bolder">‧ 出團前第21日至第30日內取消：</span><div class="cancelText">僅退還 80% 旅費。</div></li>

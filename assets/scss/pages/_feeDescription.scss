@@ -65,9 +65,18 @@
     border-bottom: none;
   }
 }
+.descriptionBox-fee{
+  height: 45px;
+  @include media-breakpoint-up(md) {
+    height: 201px !important;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 252px !important;
+  }
+}
 .cancelPolicy .descriptionBox{
     width: 300px;
-    height: 330px;
+    height: 320px;
     text-align: center;
     align-content: center;
     margin: 0;
@@ -81,15 +90,15 @@
         height: 45px;
       }
     @include media-breakpoint-up(lg) {
-      height: 400px;
+      height: 360px;
     }
 }
 
-.cancelPolicy .feeBorder{
-    // height: 448px;
-        @include media-breakpoint-down(md) {
+.feeBorder{
+    height: auto;
+        @include media-breakpoint-up(md) {
         width: auto;
-        height: auto;
+        height: 300px;
       }
 }
 
@@ -106,6 +115,7 @@
 
 .feeDetails{
     width: 996px;
+    height: 250px;
     align-content: center;
     margin: 0;
     @include media-breakpoint-down(md) {
@@ -115,9 +125,11 @@
       }
     @include media-breakpoint-up(md) {
       width: 580px;
+      height: 200px;
     }
     @include media-breakpoint-up(lg) {
       width: 746px;
+      height: 250px;
     }
     @include media-breakpoint-up(xl) {
       width: 816px;
