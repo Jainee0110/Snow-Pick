@@ -34,7 +34,214 @@
 </div>
 </section>
 
+<!--訂購人資料-->
+<section class="container mb-8">
+  <div class="row justify-content-center">
+    <div class="col-lg-11">
+      <div class="card rounded-0">
+        <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6">
+          訂購人資料
+        </div>
+        <div class="card-body">
+          <div class="row gy-6">
+            <div class="col-md-6 col-auto mb-3 fs-lg-6">
+              <label for="exampleFormControlInput1" class="form-label text-info-100">電子信箱</label>
+              <input type="email" class="form-control-plaintext text-info-200 form-pd" id="exampleFormControlInput1" placeholder="snowpick@gmail.com">
+            </div>
+            <div class="col-md-6 col-auto mb-3 fs-lg-6">
+              <label for="exampleFormControlInput1" class="form-label text-info-100">訂購人</label>
+              <input type="text" class="form-control-plaintext text-info-200 form-pd" id="exampleFormControlInput1" placeholder="王怡蓁">
+            </div>
+            <div class="col-md-6 col-auto mb-3 fs-lg-6">
+              <label for="exampleFormControlInput1" class="form-label text-info-100">行動電話</label>
+              <input type="tel" class="form-control-plaintext text-info-200 form-pd" id="exampleFormControlInput1" placeholder="09XXXXXXXX">
+            </div>
+           
 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--訂單總覽-->
+<section class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-11">
+<div class="card">
+  <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6">
+    訂單總覽
+  </div>
+  <div class="card-body">
+    <div class="card rounded-0">
+      <div class="card-header bg-primary-200 text-info-100 rounded-0">
+        <p class="fs-lg-9 fs-10">2024/12/16(一)</p>
+        <p class="fs-lg-6">苗場滑雪三日行-單板初級</p>
+      </div>
+      <div class="card-body">
+      
+        <table class="table table-borderless fs-lg-6">
+          <thead class="mb-6">
+            <tr class="mb-6">
+              <th class="text-info-100 d-none d-lg-block" scope="col">請選擇行程報名人數</th>
+              <th class="text-info-100 d-lg-none" scope="col">報名人數</th>
+              <th class="text-info-100" scope="col">單價</th>
+              <th class="text-info-100" scope="col">數量</th>
+              <th class="text-info-100" scope="col">小計</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-bottom">
+              <th class="text-info-100" scope="row ">成人</th>
+              <td class="text-info-100">NT$28,800</td>
+              <td>
+                <form>
+                  <label for="quantity"></label>
+                  <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="2" class="rounded-0 text-info-200 fs-lg-6 ">
+                </form>
+            </td>
+              <td class="text-info-100">NT$57,600</td>
+            </tr>
+            <tr>
+              <th class="text-info-100 align-bottom" scope="row">小孩</th>
+              <td class="text-info-100">NT$28,800</td>
+              <td>
+                <form>
+                  <label for="quantity2"></label>
+                  <input type="number" id="quantity2" name="quantity2" min="1" max="10" placeholder="1" class="rounded-0 text-info-200 fs-lg-6 ">
+                </form>
+            </td>
+              <td class="text-info-100">NT$28,800</td>
+            </tr>
+            </tbody>           
+        </table>
+    
+
+      </div>
+      <div class="card-footer text-end text-info-100 fw-bold fs-lg-6">
+        共計 NT$86,400元
+        
+      </div>
+    
+    </div>
+   
+  
+    <div class="card">
+      <div class="card-header bg-primary-200 text-info-100 rounded-0 fs-lg-6">加購品項</div>
+      <div class="card-body">
+        <table class="table table-striped table-hover table-borderless text-center d-lg-table d-none mb-6">
+          <caption class="text-end text-info-100 fw-normal mt-6"><span class="fs-6 me-6">共計</span>
+            <span class="fs-2 fw-bold">NT$ 5,850</span>
+          </caption>
+          <thead class="table-dark tableHead text-white border-0 fs-6">
+            <tr>
+              <th scope="col">租賃項目</th>
+              <th scope="col">天數</th>
+              <th scope="col">成人費用</th>
+              <th scope="col">數量</th>
+              <th scope="col">小孩費用</th>
+              <th scope="col">數量</th>
+              <th scope="col">小計</th>
+            </tr>
+          </thead>
+          <tbody class="fs-6">
+            <tr>
+              <th scope="row">雪褲</th>
+              <td>3</td>
+              <td>NT$ 450/日</td>
+              <td>1</td>
+              <td>NT$ 300/日</td>
+              <td>1</td>
+              <td>NT$ 2,250</td>
+            </tr>
+            <tr>
+              <th scope="row">雪衣</th>
+              <td>3</td>
+              <td>NT$ 450/日</td>
+              <td>1</td>
+              <td>NT$ 300/日</td>
+              <td>1</td>
+              <td>NT$ 2,250</td>
+            </tr>
+            <tr>
+              <th scope="row">滑雪手套</th>
+              <td>3</td>
+              <td>NT$ 150/日</td>
+              <td>1</td>
+              <td>NT$ 100/日</td>
+              <td>1</td>
+              <td>NT$ 750</td>
+            </tr>
+            <tr>
+              <th scope="row">護膝</th>
+              <td>3</td>
+              <td>NT$ 250/日</td>
+              <td>0</td>
+              <td>NT$ 100/日</td>
+              <td>1</td>
+              <td>NT$ 750</td>
+            </tr>
+            <tr>
+              <th scope="row">防摔褲</th>
+              <td>3</td>
+              <td>NT$ 210/日</td>
+              <td>0</td>
+              <td>NT$ 100/日</td>
+              <td>1</td>
+              <td>NT$ 300</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <table class="table table-striped table-hover table-borderless text-center d-lg-none d-table mb-6" style="width: inherit">
+          <caption class="text-end text-info-100 mt-6"><span class="fs-10 me-3">共計</span>
+            <span class="fs-5 fw-bold">NT$ 5,850</span>
+          </caption>
+          <thead class="table-dark tableHead text-white border-0 fs-8">
+            <tr>
+              <th scope="col">租賃項目</th>
+              <th scope="col">數量</th>
+              <th scope="col">小計</th>
+            </tr>
+          </thead>
+          <tbody class="fs-8">
+            <tr>
+              <th scope="row">雪褲</th>
+              <td>1</td>
+              <td>NT$ 2,250</td>
+            </tr>
+            <tr>
+              <th scope="row">雪衣</th>
+              <td>1</td>
+              <td>NT$ 2,250</td>
+            </tr>
+            <tr>
+              <th scope="row">滑雪手套</th>
+              <td>1</td>
+              <td>NT$ 750</td>
+            </tr>
+            <tr>
+              <th scope="row">護膝</th>
+              <td>1</td>
+              <td>NT$ 750</td>
+            </tr>
+            <tr>
+              <th scope="row">防摔褲</th>
+              <td>1</td>
+              <td>NT$ 300</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>     
+  </div>
+
+</div>
+ 
+
+    </div>
+  </div>
+</section>
 
 
 
