@@ -1,8 +1,14 @@
 .userAccount-page{
-  min-height: calc(100vh - 383px);
+  min-height: calc(100vh - 390px);
 }
 .login-box{
   position: relative;
+  width: 100%;
+  max-width: 400px;
+  @include media-breakpoint-up(md) {
+    width: 100%;
+    max-width: 540px;
+  }
   .login-box-header{
     position: absolute;
     top: 0%;
