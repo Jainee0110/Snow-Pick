@@ -205,38 +205,54 @@
 <!--訂單備註、付款方式、發票資訊-->
 <section class="container">
 <div class="row justify-content-center g-5">
-  <div class="col-lg-11">
-    <div class="card">
-      <div class="card-header">
-        Featured
+  <div class="col-lg-6">
+    <div class="card rounded-0">
+      <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
+        付款方式
       </div>
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>信用卡(支援VISA、MASTER、JCB、UnionPay)</option>
+          <option value="1">銀行轉帳</option>
+        </select>
       </div>
     </div>
   </div>
-  <div class="col-lg-7">
-    <div class="card">
-    <div class="card-header">
-      Featured
+  <div class="col-lg-5">
+    <div class="card rounded-0">
+    <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
+      發票資訊
     </div>
     <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      </div>
     </div>
   </div>
 </div>
-  <div class="col-lg-4">
-    <div class="card">
-    <div class="card-header">
-      Featured
+  <div class="col-lg-11">
+    <div class="card rounded-0">
+    <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
+      訂單備註
     </div>
     <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <textarea class="form-control" id="FormControlTextarea1" rows="3" placeholder="如有任何特殊指示或需求，請在此註明。"></textarea>
     </div>
-  </div></div>
+  </div>
+</div>
 </div>
 
 
