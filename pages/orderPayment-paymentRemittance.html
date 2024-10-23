@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+  <title>雪域狂歡</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="orderPayment-page py-11 py-lg-16 d-flex flex-column justify-content-center align-items-center">
+      <div class="d-flex flex-column align-items-center container">
+        <span class="d-block text-info-100 fs-6 fs-lg-4 text-center">感謝您的訂購，我們已收到您的訂單</span>
+        <span class="d-block fs-9 fs-lg-8 mb-6 mb-lg-11">訂單編號 : 240816000055</span>
+        <h2 class="w-100 fs-7 fs-lg-5 text-info-100 p-4 p-lg-6 bg-primary-400 border border-bottom-0">訂單資訊</h2>
+        <div class="border w-100 p-4 p-lg-6 mb-6 mb-lg-11">
+          <table class="table table-borderless caption-top w-auto p-6 m-0 fs-9 fs-lg-8">
+            <tr>
+              <th>苗場滑雪三日行</th>
+            </tr>
+            <tr>
+              <th>訂單金額</th>
+              <td class="text-danger">NT$92250</td>
+            </tr>
+            <tr>
+              <th>訂單狀態</th>
+              <td>待付款</td>
+            </tr>
+            <tr>
+              <th>出發日期</th>
+              <td>2024/12/16</td>
+            </tr>
+          </table>
+        </div>
+        <div class="d-flex align-items-center bg-primary-400 gap-4 p-6 p-lg-8 w-100 border fs-9 fs-lg-8 text-info-100 mb-6 mb-lg-11">
+          <h2 class="fs-9 fs-lg-8">服務專員</h2>
+          <ul class="list-unstyled mb-0 ">
+            <li>官方LINE ID : <a href="##" class="text-info-100">@snowpick</a></li>
+            <li>客服信箱 : <a href="mailto:snowpick@gmail.com" class="text-info-100">snowpick@gmail.com</a></li>
+          </ul>
+        </div>
+
+        
+        <h2 class="w-100 fs-7 fs-lg-5 text-info-100 p-4 p-lg-6 bg-primary-400 border border-bottom-0">付款資訊</h2>
+        <div class="border w-100 p-4 p-lg-6 mb-6 mb-lg-11">
+          <ul class="list-unstyled mb-0 ">
+            <li class="text-info-100">戶名：雪域狂歡股份有限公司</li>
+            <li class="text-info-100">銀行：台新銀行(812)</li>
+            <li class="text-info-100">分行：新生分行(0045)</li>
+            <li class="text-info-100">帳號：2024-08-000888-8</li>
+            <li class="text-info-100">＊匯款完成後請利用官方LINE(ID:@snowpick)回傳訂單編號及匯款帳號後5碼，以利後台銷帳。</li>
+            <li class="text-info-100">＊費用請於48小時內轉帳，否則訂單將不予保留。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init();</script>
+</body>
+
+</html>
