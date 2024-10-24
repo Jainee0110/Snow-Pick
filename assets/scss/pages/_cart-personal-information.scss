@@ -29,11 +29,11 @@ top: 0;
     height: 24px;  
     &-hover{    
         box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF; 
-        animation: fade 1s linear 2s infinite; 
+        animation: fade 2s linear 2s infinite; 
     }
     @keyframes fade {
         from {
-            opacity: 0;
+            opacity: 0.4;
         }
         to {
             opacity: 1;
@@ -62,9 +62,6 @@ top: 0;
 .btn-page{
     padding: 16px 50px;
     max-width:200px;    
-    @media (min-width:992px) {
-        padding: 16px 70px; 
-    }
 }
 .link-info-100:hover{
     background-color: $primary-400;
