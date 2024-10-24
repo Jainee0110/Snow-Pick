@@ -7,6 +7,8 @@
   max-width: 400px;
   padding-top: 76px;
   padding-bottom:44px ;
+  
+  
   @include media-breakpoint-up(md) {
     width: 100%;
     max-width: 540px;
@@ -18,6 +20,16 @@
     top: 0%;
     left: 50%;
     transform: translate(-50%,-50%);
+  }
+  .login-box-loginBtn{
+    .bi-box-arrow-in-right{
+      display: none;
+    }
+    &:hover{
+      .bi-box-arrow-in-right{
+        display: inline;
+      }
+    }
   }
 }
 
