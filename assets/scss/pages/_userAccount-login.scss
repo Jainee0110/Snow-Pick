@@ -7,8 +7,7 @@
   max-width: 400px;
   padding-top: 76px;
   padding-bottom:44px ;
-  
-  
+  border: 5px dotted $primary-200;
   @include media-breakpoint-up(md) {
     width: 100%;
     max-width: 540px;
