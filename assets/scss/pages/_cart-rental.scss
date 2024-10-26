@@ -24,7 +24,7 @@
         
         &-hover{    
             box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
-            animation: fade 1s linear 2s infinite; 
+            animation: fade 3s linear 2s infinite; 
         }
         @keyframes fade {
             from {
