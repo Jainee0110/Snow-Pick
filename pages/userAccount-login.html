@@ -30,6 +30,7 @@
               <label for="login-passwd" class="form-label fs-lg-6">密碼</label>
               <input type="password" class="form-control" id="login-passwd">
             </div>
+            <span class="d-none mb-4 text-danger" id="login-errorMsg">帳號或密碼錯誤，請重新輸入</span>
             <div class="d-flex mb-6 form-check justify-content-between fs-9 fs-lg-8">
               <div>
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -41,7 +42,7 @@
               </div>
             </div>
             <button type="submit"
-              class="login-box-loginBtn btn btn-primary-100 w-100 text-light fs-8 fs-lg-7 lh-sm fw-normal rounded-3">會員登入<i
+              class="login-box-loginBtn btn btn-primary-100 w-100 text-light fs-8 fs-lg-7 lh-sm fw-normal rounded-3" id="login-BTN">會員登入<i
                 class="bi bi-box-arrow-in-right"></i></button>
           </form>
           <div class="d-flex align-items-center mb-6 ">
@@ -61,6 +62,22 @@
       <script type="module" src="../main.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>AOS.init();</script>
+      <script>
+        document.getElementById('login-BTN').addEventListener('click', function (event) {
+          const loginAccount = document.getElementById("login-account").value.trim();
+          const loginPasswd = document.getElementById("login-passwd").value.trim();
+          const loginErrorMsg = document.getElementById('login-errorMsg');
+          if(loginAccount === "" || loginPasswd === ""){
+            loginErrorMsg.classList.remove("d-none")
+            loginErrorMsg.classList.add('d-block');
+            event.preventDefault();
+          }
+          else{
+            loginErrorMsg.classList.remove('d-block');
+            loginErrorMsg.classList.add("d-none")
+          }
+        });
+      </script>
 </body>
 
 </html>
