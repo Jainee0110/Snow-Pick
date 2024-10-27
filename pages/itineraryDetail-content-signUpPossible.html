@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>苗場滑雪三日行</title>
+  <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+  <title>行程內容 | 苗場滑雪三日行</title>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
             </span>
             <!--這裡有問題，為什麼要需要另外加me-6，看起來整個元素超出container了
              -->
-            <a href="##" class="btn btn-primary-100 text-light fs-lg-6 lh-sm">立即預訂</a>
+            <a href="cart-schedule.html" class="btn btn-primary-100 text-light fs-lg-6 lh-sm animate__pulse animate__animated animate__infinite animate__slower">立即預訂</a>
           </div>
         </div>
       </div>
@@ -50,19 +51,19 @@
       <div class="swiper itineraryDetail-swiper mb-6 mb-lg-11 ">
         <div class="swiper-wrapper fs-8 fs-lg-6">
           <div class="swiper-slide">
-            <a class="slide-link d-block w-100 py-4 active" href="##">行程內容</a>
+            <a class="slide-link d-block w-100 py-4 active" href="./itineraryDetail-content-signUpPossible.html">行程內容</a>
           </div>
           <div class="swiper-slide">
             <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-courseList-signUpPossible.html">教學項目</a>
           </div>
           <div class="swiper-slide">
-            <a class="slide-link d-block w-100 py-4" href="##">費用說明</a>
+            <a class="slide-link d-block w-100 py-4" href="itineraryDetail-feeDescription-signUpPossible.html">費用說明</a>
           </div>
           <div class="swiper-slide">
             <a class="slide-link d-block w-100 py-4" href="itineraryDetail-equipment-signUpPossible.html">雪具裝備</a>
           </div>
           <div class="swiper-slide">
-            <a class="slide-link d-block w-100 py-4" href="##">注意事項</a>
+            <a class="slide-link d-block w-100 py-4" href="itineraryDetail-notice-signUpPossible.html">注意事項</a>
           </div>
         </div>
         <div class="itineraryDetail-swiper-next d-lg-none"><i class="bi bi-chevron-right"></i></div>
@@ -242,6 +243,7 @@
       </ul>
     </div>
   </section>
+  <button class="back-to-top hidden back-to-top btn btn-primary-100 rounded-circle"><i class="bi bi-chevron-up text-white fs-6"></i></button>
   <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

@@ -63,7 +63,7 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
-const showOnPx = 1500;
+const showOnPx = 800;
 const backToTopButton = document.querySelector(".back-to-top")
 
 const scrollContainer = () => {
@@ -95,3 +95,5 @@ for (var i = 0; i < like.length; i++) {
         this.classList.toggle('bi-suit-heart-fill');
     })
 }
+
+

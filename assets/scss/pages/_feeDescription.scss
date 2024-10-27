@@ -1,0 +1,167 @@
+// .feeNote{
+//     margin-bottom: 24px;
+// }
+.feeDescription{
+    border: 3px solid #BADAF3;
+    border-radius: 8px;
+    margin-bottom: 36px;
+    @include media-breakpoint-down(md) {
+        border: 2px solid #BADAF3;
+      }
+}
+.feeDescription-return{
+  border: 3px solid #A3A3A3;
+  border-radius: 8px;
+  margin-bottom: 36px;
+  @include media-breakpoint-down(md) {
+      border: 2px solid  #A3A3A3;
+    }
+}
+.descriptionBox{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    background-color:#E5F4FF;
+    color: black;
+
+    @include media-breakpoint-down(md) {
+        width: auto;
+        height: 45px;
+    }
+    @include media-breakpoint-up(lg){ 
+      height: 280px;
+      width: 140px;
+    }
+    @include media-breakpoint-up(lg){ 
+      width: 250px;
+    }
+    @include media-breakpoint-up(xl){ 
+        width: 300px;
+    }
+
+}
+.descriptionBox>.fs-4{
+    @include media-breakpoint-down(md) {
+        font-size: 12px;
+      }
+}
+.feeIncluded, .feeIncluded ul{
+    @include media-breakpoint-down(md) {
+        width: auto;
+        height: auto;
+      }
+}
+.border-custom{
+  border-bottom: 2px solid #BADAF3;
+  @include media-breakpoint-up(md) {
+    border-bottom: none;
+  }
+}
+.border-custom-grey{
+  border-bottom: 2px solid #A3A3A3;
+  @include media-breakpoint-up(md) {
+    border-bottom: none;
+  }
+}
+.descriptionBox-fee{
+  height: 45px;
+  @include media-breakpoint-up(md) {
+    height: 202px !important;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 252px !important;
+  }
+}
+.cancelPolicy .descriptionBox{
+    width: 300px;
+    height: 320px;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    background-color: #E4E4E4;
+    color: black;
+    @include media-breakpoint-up(md) {
+      border-right: 1px solid #A3A3A3;
+    }
+    @include media-breakpoint-down(md) {
+        width: auto;
+        height: 45px;
+      }
+    @include media-breakpoint-up(lg) {
+      height: 360px;
+    }
+}
+
+.feeBorder{
+    height: auto;
+        @include media-breakpoint-up(md) {
+        width: auto;
+        height: 300px;
+      }
+}
+
+.cancelPost{
+    align-content: center;
+    padding: 36px 36px 0 36px;
+    margin: 0;
+    color: $blue-400;
+    
+    @include media-breakpoint-down(md) {
+        padding: 12px 12px 0 12px;
+      }
+}
+
+.feeDetails{
+    width: 996px;
+    height: 250px;
+    align-content: center;
+    margin: 0;
+    @include media-breakpoint-down(md) {
+        width: auto;
+        height: auto;
+        padding: 12px;
+      }
+    @include media-breakpoint-up(md) {
+      width: 580px;
+      height: 200px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 746px;
+      height: 250px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 816px;
+    }
+    @include media-breakpoint-up(xxl) {
+      width: 996px;
+    }
+}
+.feeDetails>li{
+  @include media-breakpoint-down(md){
+    margin-bottom: 4px;
+  }
+}
+
+.feeBorder{
+    border-left: 2px solid #BADAF3;
+    @include media-breakpoint-down(md) {
+        border: 0;
+      }
+}
+
+.feeIncluded, .cancelPolicy{
+@include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
+.cancelText{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  @include media-breakpoint-down(sm) {
+    display: block;
+    padding-left: 20px
+  }
+}

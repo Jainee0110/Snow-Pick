@@ -1,151 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
-    <title>購物車-行程確認</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-<!--progress-->
-<section class="container">
-  <div class="px-lg-11 px-6 py-lg-8 py-3 mb-lg-11 mb-6 progress-mt">
-<div class="position-relative mx-7 mb-6">
 
-  <div class="progress mb-lg-6 mb-4" role="progressbar" aria-label="Example 2px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar" style="width: 0%"></div>
-  </div> 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+  <title>購物車-行程確認</title>
+</head>
 
-  <div class="progress-milestone translate-middle progress-milestone-hover" style="left: 0%;"></div>
-  <div class="progress-milestone translate-middle bg-info-300" style="left: 33%;"></div>
-  <div class="progress-milestone translate-middle bg-info-300" style="left: 66%;"></div>
-  <div class="progress-milestone translate-middle bg-info-300" style="left: 100%;"></div>
-
-  
-</div>
-<ul class="list-unstyled d-flex justify-content-between text-info-100 fs-10 fs-md-6">
-<li>行程確認</li>
-<li>資料填寫</li>
-<li>裝備租借</li>
-<li>訂單確認</li>
-</ul>
-</div>
-</section>
-
-<!--訂購人資料-->
-<section class="container mb-8">
-  <div class="row justify-content-center">
-    <div class="col-lg-11">
-      <div class="card rounded-0">
-        <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6">
-          訂購人資料
+<body>
+  <%- include('./layout/header'); -%>
+    <!--progress-->
+    <section class="container py-10">
+      <div class="px-lg-11 px-6  py-lg-8 py-3 mb-lg-11 progress-mt">
+        <div class="position-relative mx-7 mb-6">
+          <div class="progress mb-lg-6 mb-4" role="progressbar" aria-label="Example 2px high" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 0%"></div>
+          </div>
+          <div class="progress-milestone translate-middle progress-milestone-hover" style="left: 0%;"></div>
+          <div class="progress-milestone translate-middle bg-info-300" style="left: 33%;"></div>
+          <div class="progress-milestone translate-middle bg-info-300" style="left: 66%;"></div>
+          <div class="progress-milestone translate-middle bg-info-300" style="left: 100%;"></div>
         </div>
-        <div class="card-body">
-          <div class="row gy-6">
-            <div class="col-md-6 col-auto mb-3 fs-lg-6">
-              <label for="exampleFormControlInput1" class="form-label text-info-100">電子信箱</label>
-              <input type="email" class="form-control-plaintext text-info-200 form-pd" id="exampleFormControlInput1" placeholder="snowpick@gmail.com">
-            </div>
-            <div class="col-md-6 col-auto mb-3 fs-lg-6">
-              <label for="exampleFormControlInput1" class="form-label text-info-100">訂購人</label>
-              <input type="text" class="form-control-plaintext text-info-200 form-pd" id="exampleFormControlInput1" placeholder="王怡蓁">
-            </div>
-            <div class="col-md-6 col-auto mb-3 fs-lg-6">
-              <label for="exampleFormControlInput1" class="form-label text-info-100">行動電話</label>
-              <input type="tel" class="form-control-plaintext text-info-200 form-pd" id="exampleFormControlInput1" placeholder="09XXXXXXXX">
-            </div>
-           
-
-        </div>
+        <ul class="list-unstyled d-flex justify-content-between text-info-100 fs-10 fs-sm-8 fs-lg-6">
+          <li class="ls-1">行程確認</li>
+          <li class="ls-1">資料填寫</li>
+          <li class="ls-1">裝備租借</li>
+          <li class="ls-1">訂單確認</li>
+        </ul>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-11">
-      <div class="card rounded-0">
-        <div class="card-header bg-primary-100 text-white rounded-0">
-          <p class="fs-lg-9 fs-10">2024/12/16(一)</p>
-          <p class="fs-lg-6">苗場滑雪三日行-單板初級</p>
+    <!--行程確認-->
+    <form class="schedule-needs-validation pb-15" action="cart-personal-information.html"
+      onsubmit="return validate_form()" novalidate>
+      <section class="container mb-8">
+        <div class="row justify-content-center">
+          <div class="col-lg-11">
+            <div class="card rounded-0">
+              <div class="card-header bg-primary-100 text-white rounded-0 fs-6 fs-lg-5 py-3 ls-1">
+                訂購人資料
+              </div>
+              <div class="card-body p-lg-7">
+                <div class="row gy-6">
+                  <div class="col-md-6 mb-md-3 fs-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label text-info-100">訂購人</label>
+                    <input type="text" value="王怡蓁" class="form-control text-info-200 form-pd"
+                      id="exampleFormControlInput1" required>
+                    <div class="invalid-feedback">
+                      請輸入訂購人姓名
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-md-3 fs-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label text-info-100">電子信箱</label>
+                    <input type="email" value="yichen@gmail.com" class="form-control text-info-200 form-pd"
+                      id="exampleFormControlInput1" required>
+                    <div class="invalid-feedback">
+                      請輸入電子郵件
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-md-3 fs-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label text-info-100">行動電話</label>
+                    <input type="tel" class="form-control text-info-200 form-pd" id="exampleFormControlInput1" required>
+                    <div class="invalid-feedback">
+                      請輸入行動電話號碼
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-11">
+            <div class="card rounded-0">
+              <div class="card-header bg-primary-100 text-white rounded-0 py-3">
+                <p class="fs-lg-8 fs-9 pb-1 fw-bold ls-1">2024/12/23(一)</p>
+                <p class="fs-lg-5 fs-6 ls-1">苗場滑雪三日行-單板初級</p>
+              </div>
+              <div class="card-body p-lg-7">
+                <table class="table table-borderless fs-lg-6 mb-0">
+                  <thead class="mb-6">
+                    <tr class="mb-6">
+                      <th class="text-info-100 d-none d-lg-block" scope="col">請選擇行程報名人數</th>
+                      <th class="text-info-100 d-none d-sm-block d-lg-none" scope="col">報名人數</th>
+                      <th class="text-info-100 d-sm-none num-visable" scope="col">報名</th>
+                      <th class="text-info-100 text-center" scope="col"><span class="d-none d-sm-inline-block">&emsp;&emsp;&emsp;</span>單價</th>
+                      <th class="text-info-100 text-center" scope="col">人數</th>
+                      <th class="text-info-100 text-end" scope="col">小計</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="align-bottom">
+                      <th class="text-info-100" scope="row py-sm-4">成人</th>
+                      <td class="text-info-100 text-center align-bottom py-sm-4">NT$28,800</td>
+                      <td class="text-center py-sm-4">
+                        <div class="people-num d-none d-sm-block">
+                          <button class="value-control fw-4 border-0" onclick="numberInput.stepDown()"
+                            title="Decrease value" aria-label="Decrease value">–</button>
+                          <input class="value-input" type="number" placeholder="2" name="numberInput" id="numberInput"
+                            min="0" max="10">
+                          <button class="value-control border-0 fw-4" onclick="numberInput.stepUp()"
+                            title="Increase value" aria-label="Increase value">+</button>
+                        </div>
+                        <div class="d-sm-none">
+                          <label for="quantity"></label>
+                          <input type="number" id="quantity" name="quantity" min="0" max="10" placeholder="2"
+                            class="text-center text-info-200 fs-lg-6 ">
+                        </div>
+                      </td>
+                      <td class="text-info-100 text-end py-sm-4">NT$57,600</td>
+                    </tr>
+                    <tr>
+                      <th class="text-info-100 align-bottom py-sm-4" scope="row">小孩</th>
+                      <td class="text-info-100 text-center py-sm-4 align-bottom">NT$28,800</td>
+                      <td class="py-sm-4">
+                        <div class="text-center d-none d-sm-block">
+                          <button class="value-control fw-4 border-0" onclick="quantityInput.stepDown()"
+                            title="Decrease value" aria-label="Decrease value">–</button>
+                          <input class="value-input" type="number" placeholder="1" name="quantityInput"
+                            id="quantityInput" min="0" max="10">
+                          <button class="value-control border-0 fw-4" onclick="quantityInput.stepUp()"
+                            title="Increase value" aria-label="Increase value">+</button>
+                        </div>
+                        <div class="d-sm-none text-center">
+                          <label for="quantity-child"></label>
+                          <input type="number" id="quantity-child" name="quantity" min="0" max="10" placeholder="1"
+                            class="text-center text-info-200 fs-lg-6 ">
+                        </div>
+                      </td>
+                      <td class="text-info-100 text-end py-sm-4 align-bottom">NT$28,800</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-footer text-end fs-lg-6 text-info-100 py-3">
+                共計 <span class="fw-bold text-info-100 fs-5 fs-lg-3 pe-2 pe-lg-4 ps-6">NT$86,400</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-        
-          <table class="table table-borderless fs-lg-6">
-            <thead class="mb-6">
-              <tr class="mb-6">
-                <th class="text-info-100 d-none d-lg-block" scope="col">請選擇行程報名人數</th>
-                <th class="text-info-100 d-lg-none" scope="col">報名人數</th>
-                <th class="text-info-100" scope="col">單價</th>
-                <th class="text-info-100" scope="col">數量</th>
-                <th class="text-info-100" scope="col">小計</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="align-bottom">
-                <th class="text-info-100" scope="row ">成人</th>
-                <td class="text-info-100">NT$28,800</td>
-                <td>
-                  <form>
-                    <label for="quantity"></label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="2" class="rounded-0 text-info-200 fs-lg-6 ">
-                  </form>
-              </td>
-                <td class="text-info-100">NT$57,600</td>
-              </tr>
-              <tr>
-                <th class="text-info-100 align-bottom" scope="row">小孩</th>
-                <td class="text-info-100">NT$28,800</td>
-                <td>
-                  <form>
-                    <label for="quantity2"></label>
-                    <input type="number" id="quantity2" name="quantity2" min="1" max="10" placeholder="1" class="rounded-0 text-info-200 fs-lg-6 ">
-                  </form>
-              </td>
-                <td class="text-info-100">NT$28,800</td>
-              </tr>
-              </tbody>           
-          </table>
-      
-
+      </section>
+      <!--注意事項-->
+      <section class="my-lg-11 my-6">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-11">
+              <div class="alert bg-primary-400 p-0 p-lg-6 p-4" role="alert">
+                <h1 class="alert-heading fs-lg-5 fs-6 fw-bold text-info-100 mb-5">注意事項</h1>
+                <ol class="text-info-200 mb-0 fs-lg-6 fs-8 ls-1 ms-2">
+                  <li>小孩報名需就讀國小一年級以上(含)始能參加。</li>
+                  <li>請再次確認報名人數後再點擊下一步。</li>
+                </ol>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card-footer text-end text-info-100 fw-bold fs-lg-6">
-          共計 NT$86,400元
-          
+      </section>
+      <!--下一頁按鈕-->
+      <section class="container">
+        <div class="text-center my-lg-19 my-6">
+          <button class="link-light fs-8 fs-lg-6 ls-1 btn btn-page btn-primary-100 link-light fw-bold"
+            type="submit">下一步</button>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <!--注意事項-->
-<section class="my-lg-11 my-6">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-11">
-        <div class="alert bg-primary-400 p-0 p-lg-6 p-4" role="alert">
-          <h1 class="alert-heading fs-lg-5 fs-6 fw-bold text-info-100 mb-6">注意事項</h1>
-          <ol class="text-info-200 mb-0 fs-lg-6 fs-8 ls-1">
-            <li>小孩報名需就讀國小一年級以上(含)始能參加。</li>
-            <li>請再次確認報名人數後再點擊下一步。</li>
-          </ol>  
-           </div>
-      </div>
-    </div>
-  
-  </div>
-</section>
-<!--下一頁按鈕-->
-<section class="container">
-  <div class="text-center my-lg-19 my-6 fs-md-8 fs-10">
-    <a href="cart-personal-information.html" class="btn btn-page btn-primary-100 link-light fw-bold">下一步</a>
-  </div>
-</section>
+      </section>
+    </form>
 
-<%- include('./layout/footer'); -%>
+    <%- include('./layout/footer'); -%>
 
-<script type="module" src="../main.js"></script>
+      <script type="module" src="../main.js"></script>
+      <script>
+        (function () {
+          'use strict'
+          const forms = document.querySelectorAll('.schedule-needs-validation')
+          Array.from(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+      </script>
 </body>
+
 </html>

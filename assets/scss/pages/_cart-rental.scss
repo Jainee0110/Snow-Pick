@@ -24,7 +24,7 @@
         
         &-hover{    
             box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
-            animation: fade 1s linear 2s infinite; 
+            animation: fade 3s linear 2s infinite; 
         }
         @keyframes fade {
             from {
@@ -100,9 +100,9 @@ table{
     background-color: $primary-400;
 }
 
-.table > :not(caption) > * > * {
-    padding: 12px 0;
-}
+// .table> :not(caption) > * > * {
+//     padding: 17px 0;
+// }
 
 .btn-page{
     padding: 16px 50px;
@@ -114,4 +114,10 @@ table{
 .link-info-100:hover{
     background-color: $primary-400;
     border: 0px;
+}
+.rental_all{
+    width: 38px;
+    @media (min-width:992px) {
+        width: 75px
+    }
 }
