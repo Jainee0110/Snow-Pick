@@ -51,3 +51,15 @@
 .form-pd{
     padding: 7px 12px;
 }
+
+.btn-page{
+    padding: 16px 50px;
+    max-width:200px;    
+    @media (min-width:992px) {
+        padding: 16px 70px; 
+    }
+}
+.link-info-100:hover{
+    background-color: $primary-400;
+    border: 0px;
+}

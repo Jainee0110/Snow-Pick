@@ -123,7 +123,7 @@
       <div class="card-header bg-primary-200 text-info-100 rounded-0 fs-lg-6 text-center py-5">加購品項</div>
       <div class="card-body p-0">
         <div class="table-responsive">
-        <table class="table table-striped table-hover table-borderless text-center mb-6">
+        <table class="table table-striped table-hover table-borderless text-center mb-6 text-nowrap">
           <caption class="text-end text-info-100 fw-normal mt-6 pe-4">
             <span class="fs-lg-6 me-6">共計</span>
             <span class="fs-lg-2 fs-5 fw-bold">NT$ 5,850</span>
@@ -206,7 +206,7 @@
 <section class="container">
 <div class="row justify-content-center g-5">
   <div class="col-lg-6">
-    <div class="card rounded-0">
+    <div class="card rounded-0 h-100">
       <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
         付款方式
       </div>
@@ -219,42 +219,107 @@
     </div>
   </div>
   <div class="col-lg-5">
-    <div class="card rounded-0">
+    <div class="card rounded-0 h-100">
     <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
       發票資訊
     </div>
     <div class="card-body">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <ul class="nav nav-pills mb-3 gap-4" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pills-home-tab" data-bs-target="#pills-home" data-bs-toggle="pill"  role="tab" aria-controls="pills-home" aria-selected="true">
+            <label class="form-check-label" for="pills-home-tab">
+             電子發票
+            </label>
+          </div>
         </li>
+        
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"  role="tab" aria-controls="pills-profile" aria-selected="false">
+            <label class="form-check-label" for="pills-profile-tab">
+              手機條碼載具
+            </label>
+          </div>          
         </li>
+       
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"  role="tab" aria-controls="pills-contact" aria-selected="false">
+            <label class="form-check-label" for="pills-contact-tab">
+              三聯式紙本發票
+            </label>
+          </div>               
         </li>
       </ul>
+      
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="mb-4">
+            <label for="winReciptFormControlInput" class="form-label">中獎發票寄送地址</label>
+            <input type="email" class="form-control form-control-sm" id="winReciptFormControlInput" placeholder="請輸入中獎發票寄送地址">
+          </div>
+          <div class="form-check d-flex justify-content-end">
+            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckSameAddress">
+            <label class="form-check-label" for="flexCheckSameAddress">
+              同訂購人聯絡地址
+            </label>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="mb-4"> 
+            <label for="reciptCodeFormControlInput" class="form-label">手機條碼載具</label>
+            <input type="email" class="form-control" id="reciptCodeFormControlInput" placeholder="請輸入手機條碼載具">
+          </div>
+          <div>
+            <label for="reciptCodeFormControlInput2" class="form-label">再次輸入</label>
+            <input type="email" class="form-control" id="reciptCodeFormControlInput2" placeholder="請再次輸入手機條碼載具">
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="row gy-5">
+              <div class="col-md-6">
+                <label for="reciptCodeFormControlInput" class="form-label">公司抬頭</label>
+                <input type="email" class="form-control" id="reciptCodeFormControlInput" placeholder="請輸入公司抬頭">
+              </div>
+              <div class="col-md-6">
+                <label for="reciptCodeFormControlInput" class="form-label">統一編號</label>
+                <input type="email" class="form-control" id="reciptCodeFormControlInput" placeholder="請輸入統一編號">
+              </div>
+              <div class="col">
+                <label for="reciptCodeFormControlInput" class="form-label">發票寄送地址</label>
+                <input type="email" class="form-control" id="reciptCodeFormControlInput" placeholder="請輸入發票寄送地址">
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-  <div class="col-lg-11">
-    <div class="card rounded-0">
-    <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
-      訂單備註
-    </div>
-    <div class="card-body">
-      <textarea class="form-control" id="FormControlTextarea1" rows="3" placeholder="如有任何特殊指示或需求，請在此註明。"></textarea>
-    </div>
-  </div>
-</div>
+            <div class="col-lg-11">
+              <div class="card rounded-0 mb-6">
+              <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
+                訂單備註
+              </div>
+              <div class="card-body">
+                <textarea class="form-control" id="FormControlTextarea1" rows="3" placeholder="如有任何特殊指示或需求，請在此註明。"></textarea>
+              </div>
+            </div>
+          </div>
 </div>
 
+<div class="form-check d-flex justify-content-center">
+  <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   已閱讀並同意「訂購須知」、「合約與取消政策」及「隱私權政策」
+  </label>
+</div>
+<div class="d-flex justify-content-center gap-6 my-lg-19 my-6">
+  <a href="cart-rental.html" class="btn btn-page border-info-300 fw-bold link-info-100">上一步</a>
+  <a href="#"  class="btn btn-page btn-primary-100 link-light fw-bold text-nowrap">前往結帳</a>
+</div> 
 
 </section>
 
