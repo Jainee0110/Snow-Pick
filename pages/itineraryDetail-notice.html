@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+    <!-- <link rel="stylesheet" href="..\assets\scss\layout\cssReset.css" /> -->
+    <!-- <link rel="stylesheet" href="../assets/scss/pages/equipmentStyle.css" /> -->
+    <title>注意事項 | 苗場滑雪三日行</title>
+</head>
+<body>
+<!-- 匯入 -->
+<header class="header-itinerary header-itinerary-bg mb-6 mb-lg-19">
+  <%- include('./layout/header-itinerary'); -%>
+    <div class="container py-6 pb-lg-11 flex-fill d-flex flex-column justify-content-between align-items-start">
+      <ul class="list-unstyled d-flex ls-1 mb-11 fs-9 fs-lg-8">
+        <li><a href="index.html" class="link-light">首頁</a><i class="bi bi-chevron-right text-light mx-2"></i></li>
+        <li><a href="itinerary-overview.html" class="link-light">日本</a><i class="bi bi-chevron-right text-light mx-2"></i></li>
+        <li><a href="##" class="link-light">苗場滑雪三日行｜單板初級</a></li>
+      </ul>
+      <span class="badge bg-danger lh-base mb-2 fs-9 fs-lg-8">已額滿</span>
+      <h2 class="text-light fs-6 fs-lg-3 ls-1">苗場滑雪三日行｜單板初級</h2>
+    </div>
+</header>
+<section class="mb-6 mb-lg-11">
+  <div class="container">
+    <div class="row align-items-lg-start g-4 g-lg-6">
+      <div class="col-lg-9">
+        <div class="d-flex flex-column p-3 p-lg-6 bg-primary-400">
+          <span class="fs-6 fs-lg-5 fw-semibold text-info-100 mb-4">出發日期：2024 / 12 / 16</span>
+          <p class="fs-8 fs-lg-6 ls-lg-1">
+            苗場滑雪場是日本知名的滑雪勝地，以其廣闊的雪道和迷人景色著稱。三日行程包含入住豪華王子大飯店，並由專業教練根據每位學員的程度提供量身指導。這趟旅程將幫助您建立單板滑雪的基本技能，讓您自信地在滑雪場上享受各種滑雪興趣，並感受苗場的美麗雪景。
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="d-flex flex-column p-4 py-lg-10 px-lg-6">
+          <span class="mb-6 fs-5 fw-bold text-info-100 d-flex align-items-lg-center" style="font-family: roboto;">
+            <span class="me-3">NT$</span><span class="fs-lg-3">28,000</span>
+          </span>
+          <!--這裡有問題，為什麼要需要另外加me-6，看起來整個元素超出container了
+           -->
+          <a href="cart-schedule.html" class="btn btn-info-200 text-light fs-lg-6 lh-sm disabled">立即預訂</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pb-lg-7">
+  <div class="container">
+    <div class="swiper itineraryDetail-swiper mb-6 mb-lg-11 ">
+      <div class="swiper-wrapper fs-8 fs-lg-6">
+        <div class="swiper-slide">
+          <a class="slide-link d-block w-100 py-4 " href="./itineraryDetail-content.html">行程內容</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-courseList.html">教學項目</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-feeDescription.html">費用說明</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="slide-link d-block w-100 py-4" href="./itineraryDetail-equipment.html">雪具裝備</a>
+        </div>
+        <div class="swiper-slide">
+          <a class="slide-link d-block w-100 py-4 active" href="./itineraryDetail-notice.html">注意事項</a>
+        </div>
+      </div>
+      <div class="itineraryDetail-swiper-next d-lg-none"><i class="bi bi-chevron-right"></i></div>
+      <div class="itineraryDetail-swiper-prev d-lg-none"><i class="bi bi-chevron-left"></i></div>
+    </div>
+  </div>
+  </section>
+<!-- 匯入結束-->
+<div class="container mb-19">
+    <div class="noteDescription p-10">
+      <div class="mb-5">
+      <p class="fs-7 fs-lg-5 noticeItem text-info-100 fw-bold pb-2"><i class="bi bi-snow2 me-3"></i>訂單成立</i></p>
+      <ol class="noticeDescriptionOL ps-lg-15">
+        <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100" style="text-indent: -1.3em; text-align: justify;">&nbsp;成功預訂後請加入雪域狂歡官方，我們將於此通知您當天上課的時間及集合地點等相關資訊。如有任何疑問，歡迎洽詢官方。</li>
+      </ol>
+      </div>
+      
+      <div class="mb-5">
+       <p class="fs-7 fs-lg-5 noticeItem text-info-100 fw-bold pb-2"><i class="bi bi-snow2 me-3"></i>滑雪教學</p>
+       <ol class="noticeDescriptionOL ps-12 ps-lg-15">
+         <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100" style="text-indent: -1.3em; text-align: justify;">&nbsp;為確保良好的教學品質，教學人數比平均 1:4至6人。</li>
+         <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100 my-1" style="text-indent: -1.3em; text-align: justify;">&nbsp;參加滑雪團體教學活動者需為國小一年級以上 (國小一至三年級者需有家長陪同)。</li>
+         <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100" style="text-indent: -1.3em; text-align: justify;">&nbsp;團體教學中可能會安排分時教學，請遵循教練指導，避免擅自脫離隊伍。</li>
+         <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100 my-1" style="text-indent: -1.3em; text-align: justify;">&nbsp;請遵守滑雪場的安全規則，佩戴必要的安全裝備，如滑雪頭盔和護具。</li>
+         <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100" style="text-indent: -1.3em; text-align: justify;">&nbsp;孕婦及患有重大心血管疾病或其他重大傷殘疾病者,不建議參加滑雪課程。</li>
+       </ol>
+      </div>
+
+       <div class="mb-5">
+         <p class="fs-7 fs-lg-5 noticeItem text-info-100 fw-bold pb-2"><i class="bi bi-snow2 me-3"></i>滑雪器材</p>
+         <ol class="noticeDescriptionOL ps-12 ps-lg-15">
+           <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100" style="text-indent: -1.3em; text-align: justify;">&nbsp;為確保您能夠順利使用我們提供的雪板及雪靴，請務必在下單時詳填下列資
+            訊，以避免因器材不合而影響您的滑雪體驗：
+            <ul class="my-3 list-unstyled">
+              <li class="fs-8 fs-lg-6 text-info-100 noticeDescriptionDetail mb-1" style="text-indent: -0.5em;"><i class="bi bi-dot"></i>身高：影響跨距和雪板長度的選擇。</li>
+              <li class="fs-8 fs-lg-6 text-info-100 noticeDescriptionDetail mb-1" style="text-indent: -0.5em;"><i class="bi bi-dot"></i>體重：影響雪板長度,較重的體重需要較長的雪板來提供足夠的浮力支撐。</li>
+              <li class="fs-8 fs-lg-6 text-info-100 noticeDescriptionDetail mb-1" style="text-indent: -0.5em;"><i class="bi bi-dot"></i>腳掌長度：影響雪靴的尺寸，以0.5公分為最小單位實際丈量腳長。雪靴需非常合腳，尺寸會比平常穿的鞋子小。</li>
+            </ul>
+          </li>
+           <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100" style="text-indent: -1.3em; text-align: justify;">&nbsp;請愛惜滑雪器材,若有損壞或遺失,需照價賠償。</li>
+         </ol>
+        </div>
+
+        <div class="mb-5">
+          <p class="fs-7 fs-lg-5 noticeItem text-info-100 fw-bold pb-2"><i class="bi bi-snow2 me-3"></i>其他注意事項</p>
+          <ol class="noticeDescriptionOL ps-12 ps-lg-15">
+            <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100" style="text-indent: -1.3em; text-align: justify;">&nbsp;單人報名，若未備註加價單人房，則將與同性團員湊房，可能因生活習慣不同而造成不便，如需現場調整房間，將產生額外費用。</li>
+            <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100 my-1" style="text-indent: -1.3em; text-align: justify;">&nbsp;若有特殊需求，請於報名時註明於備註欄中，以利後續處理。</li>
+            <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100" style="text-indent: -1.3em; text-align: justify;">&nbsp;遇特殊狀況及其他不可抗力之因素，雪域歡保留變更或調整行程之權利。</li>
+          </ol>
+         </div> 
+
+         <div class="mb-5">
+          <p class="fs-7 fs-lg-5 noticeItem text-info-100 fw-bold pb-2"><i class="bi bi-snow2 me-3"></i>體能訓練</p>
+          <ol class="noticeDescriptionOL ps-12 ps-lg-15">
+            <li class="noticeDescription fs-8 fs-lg-6 px-1 text-info-100" style="text-indent: -1.3em; text-align: justify;">&nbsp;為防止運動傷害，建議於出發前一個月開始進行體能訓練，如：游泳、慢跑和自行車等低強度長時間的有氧運動，藉此增強肌耐力。</li>
+          </ol>
+         </div> 
+</div>
+</div>
+<button class="back-to-top hidden back-to-top btn btn-primary-100 rounded-circle"><i class="bi bi-chevron-up text-white fs-6"></i></button>
+<div>
+    <%- include('./layout/footer'); -%>
+</div>
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".itineraryDetail-swiper", {
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".itineraryDetail-swiper-next",
+          prevEl: ".itineraryDetail-swiper-prev",
+        },
+      });
+    </script>
+</body>
+</html>

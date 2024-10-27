@@ -1,62 +1,119 @@
-.progress-mt{
-    margin-top: 24px;
-    @media (min-width:768px) {
-        margin-top: 90px;
-    } 
+.progress-mt {
+  margin-top: 24px;
+  @media (min-width: 768px) {
+    margin-top: 90px;
+  }
 }
-.progress{
-    height: 2px;
-    background-color: $info-300;
-    @media (min-width:768px) {
-        height: 4px;
-        
+.progress {
+  height: 2px;
+  background-color: $info-300;
+  @media (min-width: 768px) {
+    height: 4px;
+  }
+  .progress-bar {
+    background-color: $primary-100;
+  }
+  &-milestone {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: $primary-100;
+    top: 0;
+    &-hover {
+      box-shadow: 0 0 0 4px $primary-200, 0 0 0 8px #ebf7ff;
     }
-    .progress-bar{
-        background-color: $primary-100;
-    }
-    &-milestone{
-position:absolute;
-width: 12px;
-height: 12px;
-border-radius: 50px;
-background-color:$primary-100;
-top: 0; 
-&-hover{    
-    box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
-}
-@media (min-width:768px) {
-    width: 24px;
-    height: 24px;  
-    &-hover{    
-        box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF;
-        animation: fade 1s linear 2s infinite;  
-    }
-    @keyframes fade {
+    @media (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+      &-hover {
+        box-shadow: 0 0 0 8px $primary-200, 0 0 0 15px #ebf7ff;
+        animation: fade 1s linear 2s infinite;
+      }
+      @keyframes fade {
         from {
-            opacity: 0;
+          opacity: 0;
         }
         to {
-            opacity: 1;
+          opacity: 1;
         }
+      }
     }
-}      
-    }
+  }
 }
 .form-control-plaintext {
-    background-color: $info-300;
+  background-color: $info-300;
 }
-.form-pd{
-    padding: 7px 12px;
+.form-pd {
+  padding: 7px 12px;
 }
 input[type="number"] {
-    border: 1px solid $info-200;   
-    padding-left:4px;     
+  border: 1px solid $info-200;
+  padding-left: 4px;
 }
 
-.btn-page{
+.btn-page {
+  padding: 13px 40px;
+  @include media-breakpoint-up(sm) {
     padding: 16px 50px;
-    max-width:200px;    
-    @media (min-width:768px) {
-        padding: 16px 70px; 
-    }
+  }
+}
+
+.value-control {
+  width: var(--control-size);
+  height: var(--control-size);
+  margin: 0 4px;
+  background: transparent;
+  font-weight: bolder;
+  color: #3b3b3b;
+  cursor: pointer;
+  font-size: var(--font-size);
+}
+
+.value-control:hover {
+  background: #eee;
+}
+
+.value-control:active {
+  background: #ddd;
+}
+
+.value-control:focus,
+.value-input:focus {
+  outline: 2px solid #3e67fd;
+  outline-offset: 1px;
+}
+
+.value-input {
+  margin: 0;
+  height: var(--control-size);
+  width: 35px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 2px 8px;
+  text-align: center;
+  font-size: var(--font-size);
+  @include media-breakpoint-up(sm) {
+    width: 80px;
+  }
+}
+
+.value-input:hover {
+  border-color: #777;
+}
+
+.value-input::-webkit-outer-spin-button,
+.value-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.value-input {
+  -moz-appearance: textfield;
+}
+.num-visable {
+  visibility: hidden;
+  @include media-breakpoint-up(sm) {
+    visibility: visible;
+  }
 }

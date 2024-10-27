@@ -49,3 +49,9 @@
   background-position: right bottom;
   background-repeat: no-repeat;
 }
+.text-modify{
+  margin-left: 24px;
+  @include media-breakpoint-up(lg) {
+    margin-left: 28px
+  }
+}

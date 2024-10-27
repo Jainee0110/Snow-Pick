@@ -57,7 +57,13 @@
         &.red {
             color: red;
         }
-    }  
+    } 
+    &-banner{
+        height: 100dvh;
+        @include media-breakpoint-up(md){ 
+            height: auto;
+        }
+    } 
 }
 .overview-key-word{
     margin-top: 30px;
