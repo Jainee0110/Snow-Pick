@@ -121,3 +121,9 @@ table{
         width: 75px
     }
 }
+.rental-items{
+    width: 44px;
+    @media (min-width:992px) {
+        width: 88px
+    }
+}
