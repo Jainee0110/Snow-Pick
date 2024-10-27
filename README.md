@@ -19,7 +19,6 @@
 - **瀏覽**不同**滑雪行程的詳細介紹**，包括行程安排、價格、住宿條件。
 - 將滑雪行程**加入購物車**，並依照需求**租用**滑雪裝備。
 - 進入**結帳流程**確認訂單，勾選接受服務條款和隱私政策，點擊“提交訂單”完成支付。
-<br>
 
 ### 使用技術
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
@@ -33,7 +32,6 @@
 - 使用 Boostrap5 & SCSS建構響應式。
 - 使用 Javascript 呈現動畫效果及表單驗證。
 - 使用 Git 進行團隊開發協作。
-<br>
 
 ### 使用套件
 - Swiper 輪播功能
