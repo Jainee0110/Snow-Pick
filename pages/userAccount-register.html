@@ -110,9 +110,9 @@
               <div class="row gy-4 mb-8 mb-lg-10">
                 <div class="col-sm-6 px-md-4 px-lg-6">
                   <label class="form-label text-info-100">單板等級</label>
-                  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="snowboard-skiSkillLV"
+                  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="snowboard-skiSkillLV" id="snowboard-skiSkillLV"
                     required>
-                    <option selected>請選擇您的單板等級</option>
+                    <option value="0" selected>請選擇您的單板等級</option>
                     <option value="1">level 1</option>
                     <option value="2">level 2</option>
                     <option value="3">level 3</option>
@@ -123,9 +123,9 @@
                 </div>
                 <div class="col-sm-6 px-md-4 px-lg-6">
                   <label class="form-label text-info-100">雙板等級</label>
-                  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="skis-skiSkillLV"
+                  <select class="form-select border-info-200 rounded-0 text-info-200" aria-label="skis-skiSkillLV" id="skis-skiSkillLV"
                     required>
-                    <option selected>請選擇您的雙板等級</option>
+                    <option value="0" selected>請選擇您的雙板等級</option>
                     <option value="1">level 1</option>
                     <option value="2">level 2</option>
                     <option value="3">level 3</option>
@@ -190,7 +190,7 @@
                   </tbody>
                 </table>
               </div>
-              <a href="./userAccount-registerComplete.html" class="register-completeBTN btn btn-primary-100 text-light ms-auto rounded-2 ls-1 fs-lg-6">註冊</a>
+              <a href="./userAccount-registerComplete.html" class="register-completeBTN btn btn-primary-100 text-light ms-auto rounded-2 ls-1 fs-lg-6" id="register-completeBTN">註冊</a>
             </div>
           </form>
         </div>
@@ -242,6 +242,14 @@
             else {
               alert("請同意雪域會員約定事項和隱私權保護政策以進行下一步驟")
             }
+          }
+        });
+        document.getElementById('register-completeBTN').addEventListener('click', function (event) {
+          const snowboardSkiSkillLV = document.getElementById("snowboard-skiSkillLV").value.trim();
+          const skisSkiSkillLV = document.getElementById("skis-skiSkillLV").value.trim();
+          if(skisSkiSkillLV === "0" || snowboardSkiSkillLV === "0"){
+            alert("請選擇單板及雙板的滑雪等級")
+            event.preventDefault();
           }
         });
       </script>
