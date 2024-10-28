@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/Snow-Pick/assets/snowboarding-icon-d8a6949f.png" type="snowpick-icon" />
+    <title>購物車-訂單確認</title>
+    <script type="module" crossorigin src="/Snow-Pick/assets/main-88c7e7ff.js"></script>
+    <link rel="stylesheet" href="/Snow-Pick/assets/main-113620bc.css">
+  </head>
+  <body>
+    <div class="border-bottom border-info-300">
+  <nav class="content-nav navbar py-0 navbar-expand-lg" style="z-index: 100;">
+    <div class="container header-dropdown position-relative">
+      <a class="navbar-brand py-3 d-none d-lg-block" href="index.html"><img src="/Snow-Pick/assets/logo_snow pick_blue-1215a7d7.png" alt="logo"></a>
+      <a class="navbar-brand py-0 d-lg-none" href="index.html"><img src="data:image/png;base64,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" alt="logo"></a>
+      <button class="navbar-toggler collapsed navbar-btn border-0 px-1 px-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-4 align-middle ms-auto text-info-100"></i>
+        <i class="bi bi-x-lg align-middle ms-auto close fs-5 text-info-100"></i>
+      </button>
+      <div class="collapse header-dropdown-menu navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-lg-auto content-navbar border border-info-300">
+          <li class="nav-item"><a class="border-top border-bottom border-info-300 nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 px-8 py-lg-4" href="itinerary-overview.html">滑雪行程</a></li>
+          <li class="nav-item"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 px-8 py-lg-4 mx-lg-4" href="#">雪場介紹</a></li>
+          <li class="nav-item"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-lg-6 py-lg-4 d-none d-lg-block" href="#">註冊 / 登入</a></li>
+          <li class="nav-item login"><a class="nav-link fs-9 text-info-100 fs-lg-6 ls-1 px-8 px-lg-6 py-lg-4 d-lg-none" href="#">會員登入</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div><!--progress-->
+<section class="container py-10">
+  <div class="px-lg-11 px-6 py-lg-8 py-3 mb-lg-11 progress-mt">
+<div class="position-relative mx-7 mb-6">
+
+  <div class="progress mb-lg-6 mb-4" role="progressbar" aria-label="Example 2px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 100%"></div>
+  </div> 
+
+  <div class="progress-milestone translate-middle" style="left: 0%;"></div>
+  <div class="progress-milestone translate-middle" style="left: 33%;"></div>
+  <div class="progress-milestone translate-middle" style="left: 66%;"></div>
+  <div class="progress-milestone translate-middle progress-milestone-hover" style="left: 100%;"></div>
+
+  
+</div>
+<ul class="list-unstyled d-flex justify-content-between text-info-100 fs-10  fs-sm-8 fs-lg-6">
+<li class="ls-1">行程確認</li>
+<li class="ls-1">資料填寫</li>
+<li class="ls-1">裝備租借</li>
+<li class="ls-1">訂單確認</li>
+</ul>
+</div>
+</section>
+
+<!--訂購人資料-->
+<section class="container mb-8">
+  <div class="row justify-content-center">
+    <div class="col-lg-11">
+      <div class="card rounded-0">
+        <div class="card-header bg-primary-100 text-white rounded-0 fs-6 fs-lg-5 py-3 ls-1">
+          訂購人資料
+        </div>
+        <div class="card-body p-lg-7">
+          <div class="row gy-6">
+            <div class="col-md-6 mb-md-3 fs-lg-6">
+              <label for="confirmation01" class="form-label text-info-100 fs-lg-7">訂購人</label>
+              <input type="text" value="王怡蓁" class="form-control text-info-200 form-pd fs-lg-7"
+                id="confirmation01" disabled>
+            </div>
+            <div class="col-md-6 mb-md-3 fs-lg-6">
+              <label for="confirmation02" class="form-label text-info-100 fs-lg-7">電子信箱</label>
+              <input type="email" value="yichen@gmail.com" class="form-control text-info-200 form-pd fs-lg-7"
+                id="confirmation02" disabled>
+            </div>
+            <div class="col-md-6 mb-md-3 fs-lg-6">
+              <label for="confirmation03" class="form-label text-info-100 fs-lg-7">行動電話</label>
+              <input type="tel" class="form-control text-info-200 form-pd fs-lg-7" value="+886 919999999" id="confirmation03" disabled>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- <section class="container mb-8">
+  <div class="row justify-content-center">
+    <div class="col-lg-11">
+      <div class="card rounded-0">
+        <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
+          訂購人資料
+        </div>
+        <div class="card-body">
+          <div class="row gy-6">
+            <div class="col-md-6 col-auto mb-3 fs-lg-6">
+              <label for="FormControlInput1" class="form-label text-info-100">電子信箱</label>
+              <input type="email" class="form-control-plaintext text-info-200 form-pd" id="FormControlInput1" placeholder="snowpick@gmail.com">
+            </div>
+            <div class="col-md-6 col-auto mb-3 fs-lg-6">
+              <label for="FormControlInput1" class="form-label text-info-100">訂購人</label>
+              <input type="text" class="form-control-plaintext text-info-200 form-pd" id="FormControlInput1" placeholder="王怡蓁">
+            </div>
+            <div class="col-md-6 col-auto mb-3 fs-lg-6">
+              <label for="FormControlInput1" class="form-label text-info-100">行動電話</label>
+              <input type="tel" class="form-control-plaintext text-info-200 form-pd" id="FormControlInput1" placeholder="09XXXXXXXX">
+            </div>
+           
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!--訂單總覽-->
+<section class="container mb-8">
+  <div class="row justify-content-center">
+    <div class="col-lg-11">
+<div class="card rounded-0">
+  <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
+    訂單總覽
+  </div>
+  <div class="card-body">
+    <div class="card rounded-0 mb-6">
+      <div class="card-header bg-primary-200 text-info-100 rounded-0 text-center">
+        <p class="fs-lg-9 fs-10">2024/12/16(一)</p>
+        <p class="fs-lg-6">苗場滑雪三日行-單板初級</p>
+      </div>
+      <div class="card-body">      
+        <table class="table table-striped table-borderless fs-lg-6">
+          <thead class="mb-6">
+            <tr class="mb-6">
+              <th class="text-info-100 w-50" scope="col"></th>
+              <th class="text-info-100 w-25" scope="col">單價</th>
+              <th class="text-info-100 w-25" scope="col">數量</th>
+              <th class="text-info-100 w-25" scope="col">小計</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-bottom">
+              <th class="text-info-100" scope="row ">成人</th>
+              <td class="text-info-100">NT$28,800</td>
+              <td class="text-info-100 ps-3">
+                <p>2</p>
+            </td>
+              <td class="text-info-100">NT$57,600</td>
+            </tr>
+            <tr>
+              <th class="text-info-100 align-bottom" scope="row">小孩</th>
+              <td class="text-info-100">NT$28,800</td>
+              <td class="text-info-100 ps-3">
+                 <p>2</p>
+              </td>
+              <td class="text-info-100">NT$28,800</td>
+            </tr>
+            </tbody>           
+        </table>
+    
+
+      </div>
+      <div class="card-footer text-end text-info-100 fs-lg-6">
+       
+        <span class="fs-lg-6 me-6">共計</span>
+            <span class="fs-lg-2 fs-5 fw-bold">NT$ 86,400</span>
+      </div>
+    
+    </div>
+   
+  
+    <!-- <div class="card rounded-0">
+      <div class="card-header bg-primary-200 text-info-100 rounded-0 fs-lg-6 text-center py-5">加購品項</div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+        <table class="table table-striped table-hover table-borderless text-center mb-6 text-nowrap">
+          <caption class="text-end text-info-100 fw-normal mt-6 pe-4">
+            <span class="fs-lg-6 me-6">共計</span>
+            <span class="fs-lg-2 fs-5 fw-bold">NT$ 5,850</span>
+          </caption>
+          <thead class="fs-lg-6" style="border-bottom: 1px solid #A3A3A3;">
+            <tr>
+              <th scope="col">租賃項目</th>
+              <th scope="col">天數</th>
+              <th scope="col">成人費用</th>
+              <th scope="col">數量</th>
+              <th scope="col">小孩費用</th>
+              <th scope="col">數量</th>
+              <th scope="col">小計</th>
+            </tr>
+          </thead>
+          <tbody class="fs-lg-6">
+            <tr class="table-borderless-lg">
+              <th scope="row">雪褲</th>
+              <td>3</td>
+              <td>NT$ 450/日</td>
+              <td>1</td>
+              <td>NT$ 300/日</td>
+              <td>1</td>
+              <td>NT$ 2,250</td>
+            </tr>
+            <tr>
+              <th scope="row">雪衣</th>
+              <td>3</td>
+              <td>NT$ 450/日</td>
+              <td>1</td>
+              <td>NT$ 300/日</td>
+              <td>1</td>
+              <td>NT$ 2,250</td>
+            </tr>
+            <tr>
+              <th scope="row">滑雪手套</th>
+              <td>3</td>
+              <td>NT$ 150/日</td>
+              <td>1</td>
+              <td>NT$ 100/日</td>
+              <td>1</td>
+              <td>NT$ 750</td>
+            </tr>
+            <tr>
+              <th scope="row">護膝</th>
+              <td>3</td>
+              <td>NT$ 250/日</td>
+              <td>0</td>
+              <td>NT$ 100/日</td>
+              <td>1</td>
+              <td>NT$ 750</td>
+            </tr>
+            <tr>
+              <th scope="row">防摔褲</th>
+              <td>3</td>
+              <td>NT$ 210/日</td>
+              <td>0</td>
+              <td>NT$ 100/日</td>
+              <td>1</td>
+              <td>NT$ 300</td>
+            </tr>          
+          </tbody>
+        </table>
+      </div>
+      
+     
+      </div>
+    </div>  -->
+    <section class="container ">
+      <hr class="my-0">
+      <h3 class="fs-lg-5 fs-6 mt-lg-11 my-6 text-info-100">滑雪裝備租賃購物車</h3>
+
+      <table class="-table table text-center d-lg-table d-none mb-6 confirm-table">
+        <caption class="text-end text-info-100 fw-normal mt-6"><span class="fs-lg-6 me-6">共計</span>
+          <span class="fs-5 fs-lg-3 fw-bold pe-xxl-17 pe-xl-13 pe-lg-9">NT$ 5,850</span>
+        </caption>
+        <thead class="table-light confirm-tableHead fs-6 border-primary-200">
+          <tr>
+            <th scope="col" class="py-3">租賃項目</th>
+            <th scope="col" class="py-3">天數</th>
+            <th scope="col" class="py-3">成人費用</th>
+            <th scope="col" class="py-3">數量</th>
+            <th scope="col" class="py-3">小孩費用</th>
+            <th scope="col" class="py-3">數量</th>
+            <th scope="col" class="py-3">小計</th>
+          </tr>
+        </thead>
+        <tbody class="fs-6">
+          <tr>
+            <th scope="row" class="py-4">雪褲</th>
+            <td class="py-4">3</td>
+            <td class="py-4">NT$ 450/日</td>
+            <td class="py-4">1</td>
+            <td class="py-4">NT$ 300/日</td>
+            <td class="py-4">1</td>
+            <td class="py-4">NT$ 2,250</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-4">雪衣</th>
+            <td class="py-4">3</td>
+            <td class="py-4">NT$ 450/日</td>
+            <td class="py-4">1</td>
+            <td class="py-4">NT$ 300/日</td>
+            <td class="py-4">1</td>
+            <td class="py-4">NT$ 2,250</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-4">滑雪手套</th>
+            <td class="py-4">3</td>
+            <td class="py-4">NT$ 150/日</td>
+            <td class="py-4">1</td>
+            <td class="py-4">NT$ 100/日</td>
+            <td class="py-4">1</td>
+            <td class="py-4">NT$&ensp; 750</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-4">護膝</th>
+            <td class="py-4">3</td>
+            <td class="py-4">NT$ 250/日</td>
+            <td class="py-4">0</td>
+            <td class="py-4">NT$ 100/日</td>
+            <td class="py-4">1</td>
+            <td class="py-4">NT$&ensp; 750</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-4">防摔褲</th>
+            <td class="py-4">3</td>
+            <td class="py-4">NT$ 210/日</td>
+            <td class="py-4">0</td>
+            <td class="py-4">NT$ 100/日</td>
+            <td class="py-4">1</td>
+            <td class="py-4">NT$&ensp; 300</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped table-hover table-borderless text-center d-lg-none d-table mb-6"
+        style="width: inherit">
+        <caption class="text-end text-info-100 mt-6"><span class="fs-10 me-3">共計</span>
+          <span class="fs-5 fw-bold pe-md-19 pe-sm-12 pe-5">NT$ 5,850</span>
+        </caption>
+        <thead class="table-light confirm-tableHead  border-primary-200 text-white border-0 fs-8">
+          <tr>
+            <th scope="col">租賃項目</th>
+            <th scope="col">天數</th>
+            <th scope="col">數量</th>
+            <th scope="col">小計</th>
+          </tr>
+        </thead>
+        <tbody class="fs-8">
+          <tr>
+            <th scope="row" class="py-3">成人雪褲</th>
+            <td class="py-3">3</td>
+            <td class="py-3">1</td>
+            <td class="py-3">NT$ 1,350</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-3">成人雪衣</th>
+            <td class="py-3">3</td>
+            <td class="py-3">1</td>
+            <td class="py-3">NT$ 1,350</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-3">成人手套</th>
+            <td class="py-3">3</td>
+            <td class="py-3">1</td>
+            <td class="py-3">NT$&ensp; 450</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-3">兒童雪褲</th>
+            <td class="py-3">3</td>
+            <td class="py-3">1</td>
+            <td class="py-3">NT$&ensp;  900</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-3">兒童雪衣</th>
+            <td class="py-3">3</td>
+            <td class="py-3">1</td>
+            <td class="py-3">NT$&ensp;  900</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-3">兒童手套</th>
+            <td class="py-3">3</td>
+            <td class="py-3">1</td>
+            <td class="py-3">NT$&ensp;  300</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-3">兒童護膝</th>
+            <td class="py-3">3</td>
+            <td class="py-3">1</td>
+            <td class="py-3">NT$&ensp;  300</td>
+          </tr>
+          <tr>
+            <th scope="row" class="py-3">兒童防摔褲</th>
+            <td class="py-3">3</td>
+            <td class="py-3">1</td>
+            <td class="py-3">NT$&ensp;  300</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+  </div>
+
+</div>
+ 
+    </div>
+  </div>
+</section>
+
+<!--訂單備註、付款方式、發票資訊-->
+<section class="container">
+<div class="row justify-content-center g-5">
+  <div class="col-lg-6">
+    <div class="card rounded-0 h-100">
+      <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
+        付款方式
+      </div>
+      <div class="card-body">
+        <select class="form-select border-info-200 rounded-0 text-info-200 fs-lg-6 form-pd" aria-label="Default select example">
+          <option selected>信用卡(支援VISA、MASTER、JCB、UnionPay)</option>
+          <option value="1">銀行轉帳</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <div class="card rounded-0 h-100">
+    <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
+      發票資訊
+    </div>
+    <div class="card-body">
+      <ul class="nav nav-pills mb-3 gap-4" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pills-home-tab" data-bs-target="#pills-home" data-bs-toggle="pill"  role="tab" aria-controls="pills-home" aria-selected="true">
+            <label class="form-check-label" for="pills-home-tab">
+             電子發票
+            </label>
+          </div>
+        </li>
+        
+        <li class="nav-item" role="presentation">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"  role="tab" aria-controls="pills-profile" aria-selected="false">
+            <label class="form-check-label" for="pills-profile-tab">
+              手機條碼載具
+            </label>
+          </div>          
+        </li>
+       
+        <li class="nav-item" role="presentation">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"  role="tab" aria-controls="pills-contact" aria-selected="false">
+            <label class="form-check-label" for="pills-contact-tab">
+              三聯式紙本發票
+            </label>
+          </div>               
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="mb-4">
+            <label for="winReciptFormControlInput" class="form-label">中獎發票寄送地址</label>
+            <input type="email" class="form-control border-info-200 rounded-0 text-info-200 fs-lg-6 form-pd" id="winReciptFormControlInput" placeholder="請輸入中獎發票寄送地址">
+          </div>
+          <div class="form-check d-flex justify-content-end">
+            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckSameAddress">
+            <label class="form-check-label" for="flexCheckSameAddress">
+              同訂購人聯絡地址
+            </label>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="mb-4"> 
+            <label for="reciptCodeFormControlInput" class="form-label">手機條碼載具</label>
+            <input type="email" class="form-control border-info-200 rounded-0 text-info-200 fs-lg-6 form-pd" id="reciptCodeFormControlInput" placeholder="請輸入手機條碼載具">
+          </div>
+          <div>
+            <label for="reciptCodeFormControlInput2" class="form-label">再次輸入</label>
+            <input type="email" class="form-control border-info-200 rounded-0 text-info-200 fs-lg-6 form-pd" id="reciptCodeFormControlInput2" placeholder="請再次輸入手機條碼載具">
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="row gy-5">
+              <div class="col-md-6">
+                <label for="reciptCodeFormControlInput" class="form-label">公司抬頭</label>
+                <input type="email" class="form-control border-info-200 rounded-0 text-info-200 fs-lg-6 form-pd" id="reciptCodeFormControlInput" placeholder="請輸入公司抬頭">
+              </div>
+              <div class="col-md-6">
+                <label for="reciptCodeFormControlInput" class="form-label">統一編號</label>
+                <input type="email" class="form-control border-info-200 rounded-0 text-info-200 fs-lg-6 form-pd" id="reciptCodeFormControlInput" placeholder="請輸入統一編號">
+              </div>
+              <div class="col">
+                <label for="reciptCodeFormControlInput" class="form-label">發票寄送地址</label>
+                <input type="email" class="form-control border-info-200 rounded-0 text-info-200 fs-lg-6 form-pd" id="reciptCodeFormControlInput" placeholder="請輸入發票寄送地址">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="col-lg-11">
+              <div class="card rounded-0 mb-6">
+              <div class="card-header bg-primary-100 text-white rounded-0 fs-lg-6 fw-bold">
+                訂單備註
+              </div>
+              <div class="card-body">
+                <textarea class="form-control border-info-200 rounded-0 text-info-200 fs-lg-6" id="FormControlTextarea1" rows="3" placeholder="如有任何特殊指示或需求，請在此註明。"></textarea>
+              </div>
+            </div>
+          </div>
+</div>
+
+<div class="form-check d-flex justify-content-center">
+  <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   已閱讀並同意「訂購須知」、「合約與取消政策」及「隱私權政策」
+  </label>
+</div>
+<div class="d-flex justify-content-center gap-6 my-lg-19 my-6 fs-md-8 fs-10">
+  <a href="cart-rental.html" class="btn btn-page border-info-300 fw-bold link-info-100">上一步</a>
+  <a href="#"  class="btn btn-page btn-primary-100 link-light fw-bold text-nowrap">前往結帳</a>
+</div> 
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="py-8 py-md-12 bg-primary-400">
+    <div class="container">
+        <div class="d-flex border-bottom border-info-300 pb-4 pb-md-8 mb-4 mb-md-8 flex-column flex-lg-row">
+            <a href="../pages/index.html"><img src="/Snow-Pick/assets/logo_snow pick_footer-77a82d20.png" alt="icon" class="me-lg-12 me-xl-19 mb-4 mb-lg-0" style="width: 236px;"></a>
+            <div class="me-auto mb-4 mb-lg-0 contact">
+                <p class="source-sans-pro ls-1 fs-md-6 ">聯絡地址 : 新北市中山區天龍路999號5樓</p>  
+                <p class="source-sans-pro ls-1 fs-md-6 ">聯絡電話 : <a href="tel:0299999999" class="text-info-200">(02) 9999-9999</a></p>
+                <p class="source-sans-pro ls-1 fs-md-6 ">客服信箱 : <a href="mailto:snowpick@gmail.com" class="text-info-200">snowpick@gmail.com</a></p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKCSURBVHgBvVfbddpAEF0tgm86sFJB5AqIO7D/AZkKQiowVBBTAeH17aQC4w5IBagD41+evldnxRGyVtIiwT1HSGhn587Ozs6MLJETw+GwXqlU7vHYkFK6h8PBwXNdDa8sy/JxX+z3+7fdbve30+ms8ui1sgRA7FSr1Z8gfIwQZiu2rD+bzaYPQ/xUOaEn5oqfoKgrCgDzn5vN5i/tuEgm56pflZsLg9sDb9wleUMmkLtlkhPURZ2z2cxNNUCt/OVccq4Uc1c6I3C9kONkTvTPdDpdGpLPIf9PRb0fHaAnbdt+wuN93Ehsx214SuxwYDwe/zYhx3Hre57X042DYDEajT5wZE/eq+2gYUFgSmWtYxLtWeRZgBHdcCsCA5RFeSf7RchDYHuCBds87yrJ5AJcOteNURdujlAJC3nkBrp14h7ke7ZKr7nBoNOQM+heRSRbppATQWrHgmRDGGC73SYeM5APhUGqVmhIWOmazKjVakvNkJEeAoHvyjIz3hlwJKwwdVuZqFuTySQ1Upi5UM2+iTOA5PaetUCpy91FoZJblndXUnUypQOnwskh5kuk1f/iAoDeH1kyWPzCxs8cz16aYLSE6lqseJlFfvkuso18kyylaXHAYwp3LsMLTcVNklxUhpeIleEkkFuyLoNkJK4MNq3kDqohXPEsrgx2zLwHBqh9HYjrYRDG0rFdQZHpsdaLC4McrVbr2PwcDeB+ICjuLmkEdZMj+u6kYaNbIPBwCSMU+UP8GH/5LmAzWbYnwpVTd3xMJk2gle12mwWoL4pjAPJbXQKTaTMRLD0EJw0xyhMqsQ04lwGX9qVsZylTlj8i1XbZw63X6w+N6ALEdLHR5/knz6hy1MM3xKQAAAAASUVORK5CYII=" alt="fb"></a>
+                <a href="#" class="mx-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM0SURBVHgBtVfZddpQEH2S5X+lA7mC4AoiVwAN2IYKnA4IFSRUAAYKIBVYriCkApQO+GfLvZwZZ/KsjcVzjs7b586u9wJXQKPRqBVFURvdVhAELc7t9/vEHUE4l6NZ4Ry/n9vtdt7r9fJ3+zzgBMAjdFP3AQShxuv1emAFCSz49fX1S5mm1CQMw5VrQLvdLgZYXCJEDiHuVIigCJxg2DhEN9tsNgtsbgTsE/jGsChd2AXPtgplhYg4AfC+Ac/hr7sifx1LInjGj0peXV29ADwhlrj6LhC/L/UQNL65BDiJwQzQVANQhPillgDWpxATHT3AILkgOBWjxt+pIMYpeUP7Z90D7G6EDW2dgF+ejwCgFgk+tu/ihJrL2oEQwBxnaOdon2Q6jewmMnI1oNCGh1PnpepsNlsg+ocPDw9jjml2CNEXn6+wdphnUIOHCvU5wMGlBuD9/X1QAV6Zpko2wsXnGgNvFppOp3vdGzWpcEXgkqqZ9FkxE+kf9uKMZtLY5ydnY7RxZCUvE8CrETn29mDqzO6ZTCZdNGpyFeK2qIawoBEc3Th0NUTGfo2AqzJ/H33PNe6RvQmAvtbxrxUAGj2Z4aAqTblG67wxD8Mv7hwBJNX0b5hrhFcRrUMfyzAVHqcJIHVc6bdrSBqcQok7VQDk7Ek/IY9OtwAo1w60qvWn2WsttzhZAPM3I8Ws566GbNa4ghJ9lABCr9pBbo9YlMo2cg2R39cxBBm6GqoVAHHww+Y2C4wUHR889QtWk6yJjLSFwUITsqzaywTaEf4hvMSof1N8LK3K61CwykCNi1ahKcGl0coCY6ucYdKRLzbzjW9UwF7954KqokGGMOkNAFjpiiI7wzcA+G0VuMVgwYrEjInMtdy/qC8k8etYL5xSK/KmF1db3ID9hzHACteRxU6dAEpeijYmmP1RY4XnQ2gwN+uPVWl2LpE3wLs65kUlhCZ0QSZzsfzHE3dh0kuNjvUCfEhDWKHn3dmXSLOxXFLPepigaQG4Tc011ZkpwBwcBLESqhAVPHmVqhWm6prnp2nR4/Qbuo/uY4hPvV7h49QXhA8WeTPEcoFMXEOyD1mmOb7Xsuf5X6GvTdRxC3izAAAAAElFTkSuQmCC" alt="ig"></a>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALzSURBVHgBvVe9kiFRFD5oEoIlIVE1RSJiA5HIBCSCnRcQeIKdN5jZN5h5AoFINlMlIlgRiaqlBCTsVJFI2IDET9n73XHV7avbaJqvqsvVfft83zn3nHP7OkhBsVhMu93uH2z4sN1u78gGOByONvtpr1arX4VC4UP3TCL+5nK5ntjkR7oimP2XnZB/ewEgZ17/Zh5/pxsAEWEi7iHCiRvw/FbkALiYw09cDPP+TtO0v1YMeL1e8vl85PF4+DWfz2m5XNJsNrNihtbr9b0GJUzR0YlsDoVCIYpEIhQMBjmpESBiMpnQeDymwWBAX4E5/uAolUp/2Ng0/LFYjOLxuCmpGRCVbrd7VAjLhQ8IMHQfYU6lUtzjS4CINBoNWiwWhs+dZuSZTOZicgA2YAs2TxaAF5BkdgG2YNNoGQ8EYL3tJJdFIJ+OCkCYIOBagAA1Cpr8B6WmolwuUzabJb/fz//3+32e2RDabDZ5aPGsVqvtIydnfi6X278L8nA4rHuuEyAmymAtk9e3AMbyVa/XOYlqJ5lM8rGafCqHbgms1rqYj0jIQEdE6RmVH5qaDI0uAIyl02kefnRTsQTwUiScSqhCJ2A6nfJ2q6LVanFvYViNEu4hHzBHAF4Ph0M+DgQCuvloTKYC8JJYOwG5KuCh2IhAHI1G+X2R3cJbed3VCBwVgKQajUY8U40EqJATSo6c/L7qoJoTB40IoZSz3i6AuNPpHNx3Gk1EUtkpAqVcrVYNNyTDvQBlBBFmO5hd5KYChAi8KLL5HIC0Uqkc/VIy/R6QgaxOJBJ8azXbVlV89R0gcFIjghEYA5D5KENkulHPAJDI2DNOgYbPIisHEIQTF8pVjYhowRY+TtvaZrN5dzqdP+kMCHIkGkrsVK8FcD7QGPkbG1sWAHIQ93o9fmFsFTgh8ZMRS8SXc0RciNd8Pv/Iy5AdEJ7ZT5tuh/aO87MP4IyGUwpU0fXxCi7d4VTG7qj2zIYJOnJgsYJdpb2z4RsLe11+9h9bGHQ/CTmhiwAAAABJRU5ErkJggg==" alt="lind"></a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between flex-column flex-lg-row">
+            <p class="mb-2 mb-lg-0">本網站僅供個人作品使用，不提供商業用途</p>
+            <p>Copyright © 2024 oscar.</p>
+        </div>
+        
+    </div>
+</div>
+    
+  </body>
+</html>
