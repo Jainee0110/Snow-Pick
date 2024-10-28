@@ -1,47 +1,47 @@
-.progress-mt{
-    margin-top: 24px;
-    @media (min-width:992px) {
-        margin-top: 90px;
-    } 
-}
-.progress{
-    height: 2px;
-    background-color: $info-300;
-    @media (min-width:992px) {
-        height: 4px;
+// .progress-mt{
+//     margin-top: 24px;
+//     @media (min-width:576px) {
+//         margin-top: 90px;
+//     } 
+// }
+// .progress{
+//     height: 2px;
+//     background-color: $info-300;
+//     @media (min-width:576px) {
+//         height: 4px;
         
-    }
-    .progress-bar{
-        background-color: $primary-100;
-    }
-    &-milestone{
-position:absolute;
-width: 12px;
-height: 12px;
-border-radius: 50px;
-background-color:$primary-100;
-top: 0; 
-&-hover{    
-    box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
-}
-@media (min-width:992px) {
-    width: 24px;
-    height: 24px;  
-    &-hover{    
-        box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF; 
-        animation: fade 2s linear 2s infinite; 
-    }
-    @keyframes fade {
-        from {
-            opacity: 0.4;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-}      
-    }
-}
+//     }
+//     .progress-bar{
+//         background-color: $primary-100;
+//     }
+//     &-milestone{
+// position:absolute;
+// width: 12px;
+// height: 12px;
+// border-radius: 50px;
+// background-color:$primary-100;
+// top: 0; 
+// &-hover{    
+//     box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
+// }
+// @media (min-width:576px) {
+//     width: 24px;
+//     height: 24px;  
+//     &-hover{    
+//         box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF; 
+//         animation: fade 1s linear 2s infinite; 
+//     }
+//     @keyframes fade {
+//         from {
+//             opacity: 0;
+//         }
+//         to {
+//             opacity: 1;
+//         }
+//     }
+// }      
+//     }
+// }
 .traveler-label{
     border-radius: 0%;
     background-color: $primary-100;
@@ -59,6 +59,18 @@ top: 0;
 .form-check-input{
     border-color: $info-200;
 }
+// .btn-page{
+//     padding-top: 16px;
+//     padding-bottom: 16px;
+//     // max-width:200px;    
+// //     @media (min-width:992px) {
+// //         // padding: 16px 70px; 
+// //     }
+// }
+// .link-info-100:hover{
+//     background-color: $primary-400;
+//     border: 0px;
+// }
 .link-info-100:hover{
     background-color: $primary-400;
     border: 0px;
@@ -69,4 +81,10 @@ top: 0;
 }
 .ski-modal{
     --bs-modal-width: 700px;
+}
+.confirm-info{
+    width: 300px;
+        @media (min-width:992px) {
+            width: 327px;
+    }
 }

@@ -1,50 +1,48 @@
-.progress-mt{
-    margin-top: 24px;
-    @media (min-width:768px) {
-        margin-top: 90px;
-    } 
-}
-.progress{
-    height: 2px;
-    background-color: $info-300;
-    @media (min-width:768px) {
-        height: 4px;
+// .progress-mt{
+//     margin-top: 24px;
+//     @media (min-width:576px) {
+//         margin-top: 90px;
+//     } 
+// }
+// .progress{
+//     height: 2px;
+//     background-color: $info-300;
+//     @media (min-width:576px) {
+//         height: 4px;
         
-    }
-    .progress-bar{
-        background-color: $primary-100;
-    }
-    &-milestone{
-position:absolute;
-width: 12px;
-height: 12px;
-border-radius: 50px;
-background-color:$primary-100;
-top: 0; 
-&-hover{    
-    box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
-}
-@media (min-width:768px) {
-    width: 24px;
-    height: 24px;  
-    &-hover{    
-        box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF;
-        animation: fade 1s linear 2s infinite;  
-    }
-     @keyframes fade {
-         from {
-             opacity: 0;
-         }
-         to {
-             opacity: 1;
-         }
-     }
-}      
-    }
-}
- .form-control-plaintext {
-     background-color: $info-300;
-}
+// }
+//     .progress-bar{
+//         background-color: $primary-100;
+//     }
+//     &-milestone{
+// position:absolute;
+// width: 12px;
+// height: 12px;
+// border-radius: 50px;
+// background-color:$primary-100;
+// top: 0; 
+// &-hover{    
+//     box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
+// }
+// @media (min-width:768px) {
+//     width: 24px;
+//     height: 24px;  
+//     &-hover{    
+//         box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF;
+//         animation: fade 1s linear 2s infinite;  
+//     }
+//      @keyframes fade {
+//          from {
+//              opacity: 0;
+//          }
+//          to {
+//              opacity: 1;
+//          }
+//      }
+// }      
+//     }
+// }
+
 .form-pd{
     padding: 7px 12px;
 }
@@ -111,6 +109,7 @@ input[type="number"] {
   
   .value-input {
     -moz-appearance: textfield;
+    appearance: none;
   }
   .num-visable{
         visibility: hidden;

@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <form  class="needs-validation rental-needs-validation" action="" onsubmit="return validate_form()" novalidate >>
+    <form  class="needs-validation rental-needs-validation" action="cart-order-confirmation.html" onsubmit="return validate_form()" novalidate >>
       <!--旅客資料1-->
       <section class="container mb-lg-11 mb-6">
         <hr class="my-0">
@@ -61,27 +61,27 @@
 
         <div class="row">
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
-              <label for="travelerdataInput1" class="form-label text-info-100">身高<span class="text-danger"
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">身高<span class="text-danger"
                   style="margin-left: 2px;">*</span></label>
-              <input type="text" class="form-control text-info-200 form-pd" id="travelerdataInput1
+              <input type="text" class="form-control text-info-200 form-pd fs-lg-7" id="travelerdataInput1
           " placeholder="請輸入您的身高(cm)" value="156" required>
             <div class="invalid-feedback">
               請輸入欄位
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
-              <label for="travelerdataInput1" class="form-label text-info-100">體重<span class="text-danger"
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">體重<span class="text-danger"
                   style="margin-left: 2px;">*</span></label>
-              <input type="text" class="form-control text-info-200 form-pd" id="travelerdataInput1
+              <input type="text" class="form-control text-info-200 form-pd fs-lg-7" id="travelerdataInput1
           " placeholder="請輸入您的體重(kg)" value="47" required>
             <div class="invalid-feedback">
               請輸入欄位
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
-              <label for="travelerdataInput1" class="form-label text-info-100">腳掌長度<span class="text-danger"
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">腳掌長度<span class="text-danger"
                   style="margin-left: 2px;">*</span></label>
-              <select class="form-select text-info-200 form-pd" aria-label="Default select example" required>
+              <select class="form-select text-info-200 form-pd fs-lg-7" aria-label="Default select example" required>
                 <option value>請選擇您的腳掌長度(cm)</option>
                 <option value="1">22.5</option>
                 <option value="2">23</option>
@@ -103,8 +103,8 @@
           </div>
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
             <div>
-              <label for="travelerdataInput1" class="form-label text-info-100">租借天數</label>
-              <select class="form-select text-info-200 form-pd" aria-label="Default select example" disabled>
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">租借天數</label>
+              <select class="form-select text-info-200 form-pd fs-lg-7" aria-label="Default select example" disabled>
                 <option value="1">1天</option>
                 <option value="2">2天</option>
                 <option selected value="3">3天</option>
@@ -120,13 +120,13 @@
 
         <div>
           <div class="form-check d-flex">
-            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault" data-bs-toggle="collapse"
+            <input class="form-check-input me-2 fs-lg-7" type="checkbox" value="" id="flexCheckDefault" data-bs-toggle="collapse"
               data-bs-target="#collapseSnowEquipment" aria-expanded="true" aria-controls="collapseExample" checked>
-            <label class="form-check-label me-6 text-info-100" for="flexCheckDefault">
+            <label class="form-check-label me-6 text-info-100 fs-lg-7" for="flexCheckDefault">
               租借雪具裝備
             </label>
             <div class="collapse show" id="collapseSnowEquipment">
-              <div class="card border-0"><span class="text-danger "><span class="text-danger"
+              <div class="card border-0 fs-lg-7"><span class="text-danger "><span class="text-danger"
                     style="margin-left: 2px;">*</span>請勾選欲租借的裝備</span></div>
             </div>
 
@@ -134,72 +134,57 @@
           <div class="collapse show mb-lg-11 mb-6" id="collapseSnowEquipment">
             <div class="card card-body border-0 text-info-100">
               <div class="row">
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent" type="checkbox" value="" id="flexCheckSnowCoat" checked>
-                    <picture class="mx-lg-4 mx-2" class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/snow%20coat_M.png">
-                      <img src="../assets/img/snow%20coat_s.png" alt="snow coat_s">
-                    </picture>
+                    <input class="form-check-input customerRent fs-lg-7" type="checkbox" value="" id="flexCheckSnowCoat" checked>
+                    <img src="../assets/img/rental_coat.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
 
-                    <label class="form-check-label" for="flexCheckSnowCoat">
+                    <label class="form-check-label fs-lg-7" for="flexCheckSnowCoat">
                       雪衣
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent" type="checkbox" value="" id="flexCheckSnowPants" checked>
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/snow%20pants_M.png">
-                      <img src="../assets/img/snow pants_s.png" alt="snow pants_s">
-                    </picture>
-                    <label class="form-check-label" for="flexCheckSnowPants">
+                    <input class="form-check-input customerRent fs-lg-7" type="checkbox" value="" id="flexCheckSnowPants" checked>
+                    <img src="../assets/img/snow pants_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckSnowPants">
                       雪褲
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent" type="checkbox" value="" id="flexCheckGloves" checked>
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/inside-gloves_M.png">
-                      <img src="../assets/img/inside-gloves_s.png" alt="inside-gloves_s">
-                    </picture>
-                    <label class="form-check-label" for="flexCheckGloves">
+                    <input class="form-check-input customerRent fs-lg-7" type="checkbox" value="" id="flexCheckGloves" checked>
+                    <img src="../assets/img/gloves_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckGloves">
                       滑雪手套
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent" type="checkbox" value="" id="flexCheckKneePads">
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/knee%20pads_M.png">
-                      <img src="../assets/img/knee pads_s.png" alt="knee pads_s">
-                    </picture>
-                    <label class="form-check-label" for="flexCheckKneePads">
+                    <input class="form-check-input customerRent fs-lg-7" type="checkbox" value="" id="flexCheckKneePads">
+                    <img src="../assets/img/knee pads_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckKneePads">
                       護膝
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent" type="checkbox" value="" id="flexCheckImpactShorts">
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/impact%20shorts_M.png">
-                      <img src="../assets/img/impact shorts_s.png" alt="impact shorts_s">
-                    </picture>
-                    <label class="form-check-label" for="flexCheckImpactShorts">
+                    <input class="form-check-input customerRent fs-lg-7" type="checkbox" value="" id="flexCheckImpactShorts">
+                    <img src="../assets/img/impact shorts_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckImpactShorts">
                       防摔褲
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="selectAll">
+                    <input class="form-check-input me-2 fs-lg-7" type="checkbox" value="" id="selectAll">
                       <img src="../assets/img/rental_all.png" alt="rentalAll" class="ms-lg-4 ms-1 me-lg-5 rental_all" style="margin-right: 10px;">
-                    <label class="form-check-label" for="selectAll">
+                    <label class="form-check-label fs-lg-7" for="selectAll">
                       全選
                     </label>
                   </div>
@@ -223,27 +208,27 @@
 
         <section class="row">
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
-              <label for="travelerdataInput1" class="form-label text-info-100">身高<span class="text-danger"
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">身高<span class="text-danger"
                   style="margin-left: 2px;">*</span></label>
-              <input type="text" class="form-control text-info-200 form-pd" id="travelerdataInput1
+              <input type="text" class="form-control text-info-200 form-pd fs-lg-7" id="travelerdataInput1
           " placeholder="請輸入您的身高(cm)" required>
             <div class="invalid-feedback">
               請輸入欄位
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
-              <label for="travelerdataInput1" class="form-label text-info-100">體重<span class="text-danger"
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">體重<span class="text-danger"
                   style="margin-left: 2px;">*</span></label>
-              <input type="text" class="form-control text-info-200 form-pd" id="travelerdataInput1
+              <input type="text" class="form-control text-info-200 form-pd fs-lg-7" id="travelerdataInput1
           " placeholder="請輸入您的體重(kg)" required>
             <div class="invalid-feedback">
               請輸入欄位
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
-              <label for="travelerdataInput1" class="form-label text-info-100">腳掌長度<span class="text-danger"
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">腳掌長度<span class="text-danger"
                   style="margin-left: 2px;">*</span></label>
-              <select class="form-select text-info-200 form-pd" aria-label="Default select example" required>
+              <select class="form-select text-info-200 form-pd fs-lg-7" aria-label="Default select example" required>
                 <option value>請選擇您的腳掌長度(cm)</option>
                 <option value="1">22.5</option>
                 <option value="2">23</option>
@@ -265,8 +250,8 @@
           </div>
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
             <div>
-              <label for="travelerdataInput1" class="form-label text-info-100">租借天數</label>
-              <select class="form-select text-info-200 form-pd" aria-label="Default select example" disabled>
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">租借天數</label>
+              <select class="form-select text-info-200 form-pd fs-lg-7" aria-label="Default select example" disabled>
                 <option value="1">1天</option>
                 <option value="2">2天</option>
                 <option selected value="3">3天</option>
@@ -282,85 +267,69 @@
 
         <div>
           <div class="form-check d-flex">
-            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault2" data-bs-toggle="collapse"
+            <input class="form-check-input me-2 fs-lg-7" type="checkbox" value="" id="flexCheckDefault2" data-bs-toggle="collapse"
               data-bs-target="#collapseSnowEquipment-2" aria-expanded="false" aria-controls="collapseExample">
-            <label class="form-check-label me-6 text-info-100" for="flexCheckDefault2">
+            <label class="form-check-label me-6 text-info-100 fs-lg-7" for="flexCheckDefault2">
               租借雪具裝備
             </label>
             <div class="collapse" id="collapseSnowEquipment-2">
-              <div class="card border-0"><span class="text-danger fs-lg-6"><span class="text-danger"
+              <div class="card border-0 fs-lg-7"><span class="text-danger fs-lg-6"><span class="text-danger"
                     style="margin-left: 2px;">*</span>請勾選欲租借的裝備</span></div>
             </div>
           </div>
           <div class="collapse mb-lg-11 mb-6" id="collapseSnowEquipment-2">
             <div class="card card-body border-0 text-info-100">
               <div class="row">
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent02" type="checkbox" value="" id="flexCheckSnowCoat2">
-                    <picture class="mx-lg-4 mx-2" class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/snow%20coat_M.png">
-                      <img src="../assets/img/snow%20coat_s.png" alt="snow coat_s">
-                    </picture>
-
-                    <label class="form-check-label fs-lg-6" for="flexCheckSnowCoat2">
+                    <input class="form-check-input customerRent02 fs-lg-7" type="checkbox" value="" id="flexCheckSnowCoat2">
+                    <img src="../assets/img/rental_coat.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckSnowCoat2">
                       雪衣
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent02" type="checkbox" value="" id="flexCheckSnowPants2">
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/snow%20pants_M.png">
-                      <img src="../assets/img/snow pants_s.png" alt="snow pants_s">
-                    </picture>
-                    <label class="form-check-label fs-lg-6" for="flexCheckSnowPants2">
+                    <input class="form-check-input customerRent02 fs-lg-7" type="checkbox" value="" id="flexCheckSnowPants2">
+                    <img src="../assets/img/snow pants_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckSnowPants2">
                       雪褲
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent02" type="checkbox" value="" id="flexCheckGloves2">
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/inside-gloves_M.png">
-                      <img src="../assets/img/inside-gloves_s.png" alt="inside-gloves_s">
-                    </picture>
-                    <label class="form-check-label fs-lg-6 fs-lg-6" for="flexCheckGloves2">
+                    <input class="form-check-input customerRent02 fs-lg-7" type="checkbox" value="" id="flexCheckGloves2">
+                    <img src="../assets/img/gloves_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-6 fs-lg-7" for="flexCheckGloves2">
                       滑雪手套
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent02" type="checkbox" value="" id="flexCheckKneePads2">
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/knee%20pads_M.png">
-                      <img src="../assets/img/knee pads_s.png" alt="knee pads_s">
-                    </picture>
-                    <label class="form-check-label fs-lg-6" for="flexCheckKneePads2">
+                    <input class="form-check-input customerRent02 fs-lg-7" type="checkbox" value="" id="flexCheckKneePads2">
+                    <img src="../assets/img/knee pads_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckKneePads2">
                       護膝
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent02" type="checkbox" value="" id="flexCheckImpactShorts2">
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/impact%20shorts_M.png">
-                      <img src="../assets/img/impact shorts_s.png" alt="impact shorts_s">
-                    </picture>
-                    <label class="form-check-label fs-lg-6" for="flexCheckImpactShorts2">
+                    <input class="form-check-input customerRent02 fs-lg-7" type="checkbox" value="" id="flexCheckImpactShorts2">
+                    <img src="../assets/img/impact shorts_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckImpactShorts2">
                       防摔褲
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
-                  <div class="form-check form-check-equipment mt-6">
+                <div class="col-sm-4 col-6">
+                  <div class="form-check form-check-equipment mt-6 fs-lg-7">
                     <input class="form-check-input me-2" type="checkbox" value="" id="selectAll2">
                       <img src="../assets/img/rental_all.png" alt="rentalAll" class="ms-lg-4 ms-1 me-lg-5 rental_all" style="margin-right: 10px;">
-                    <label class="form-check-label fs-lg-6" for="selectAll2">
+                    <label class="form-check-label fs-lg-7" for="selectAll2">
                       全選
                     </label>
                   </div>
@@ -386,27 +355,27 @@
 
         <div class="row">
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
-              <label for="travelerdataInput1" class="form-label text-info-100">身高<span class="text-danger"
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">身高<span class="text-danger"
                   style="margin-left: 2px;">*</span></label>
-              <input type="text" class="form-control text-info-200 form-pd" id="travelerdataInput1
+              <input type="text" class="form-control text-info-200 form-pd fs-lg-7" id="travelerdataInput1
           " placeholder="請輸入您的身高(cm)" value="125" required>
             <div class="invalid-feedback">
               請輸入欄位
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
-              <label for="travelerdataInput1" class="form-label text-info-100">體重<span class="text-danger"
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">體重<span class="text-danger"
                   style="margin-left: 2px;">*</span></label>
-              <input type="text" class="form-control text-info-200 form-pd" id="travelerdataInput1
+              <input type="text" class="form-control text-info-200 form-pd fs-lg-7" id="travelerdataInput1
           " placeholder="請輸入您的體重(kg)" value="30" required>
             <div class="invalid-feedback">
               請輸入欄位
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
-              <label for="travelerdataInput1" class="form-label text-info-100">腳掌長度<span class="text-danger"
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">腳掌長度<span class="text-danger"
                   style="margin-left: 2px;">*</span></label>
-              <select class="form-select text-info-200 form-pd" aria-label="Default select example" required>
+              <select class="form-select text-info-200 form-pd fs-lg-7" aria-label="Default select example" required>
                 <option value>請選擇您的腳掌長度(cm)</option>
                 <option selected value="1">22.5</option>
                 <option value="2">23</option>
@@ -428,8 +397,8 @@
           </div>
           <div class="col-xl-3 col-sm-6 mb-lg-6 mb-5">
             <div>
-              <label for="travelerdataInput1" class="form-label text-info-100">租借天數</label>
-              <select class="form-select text-info-200 form-pd" aria-label="Default select example" disabled>
+              <label for="travelerdataInput1" class="form-label text-info-100 fs-lg-7">租借天數</label>
+              <select class="form-select text-info-200 form-pd fs-lg-7" aria-label="Default select example" disabled>
                 <option value="1">1天</option>
                 <option value="2">2天</option>
                 <option selected value="3">3天</option>
@@ -445,89 +414,73 @@
 
         <div>
           <div class="form-check d-flex">
-            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault3" data-bs-toggle="collapse"
+            <input class="form-check-input me-2 fs-lg-7" type="checkbox" value="" id="flexCheckDefault3" data-bs-toggle="collapse"
               data-bs-target="#collapseSnowEquipment-3" aria-expanded="true" aria-controls="collapseExample" checked>
-            <label class="form-check-label me-6 text-info-100" for="flexCheckDefault3">
+            <label class="form-check-label me-6 text-info-100 fs-lg-7" for="flexCheckDefault3">
               租借雪具裝備
             </label>
             <div class="collapse show" id="collapseSnowEquipment-3">
-              <div class="card border-0"><span class="text-danger"><span class="text-danger"
+              <div class="card border-0 fs-lg-7"><span class="text-danger"><span class="text-danger"
                     style="margin-left: 2px;">*</span>請勾選欲租借的裝備</span></div>
             </div>
           </div>
           <div class="collapse show mb-lg-11 mb-6" id="collapseSnowEquipment-3">
             <div class="card card-body border-0 text-info-100 text-info-100">
               <div class="row">
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent03" type="checkbox" value="" id="flexCheckSnowCoat3"
+                    <input class="form-check-input customerRent03 fs-lg-7" type="checkbox" value="" id="flexCheckSnowCoat3"
                       checked>
-                    <picture class="mx-lg-4 mx-2" class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/snow%20coat_M.png">
-                      <img src="../assets/img/snow%20coat_s.png" alt="snow coat_s">
-                    </picture>
-
-                    <label class="form-check-label fs-lg-6" for="flexCheckSnowCoat3">
+                    <img src="../assets/img/rental_coat.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckSnowCoat3">
                       雪衣
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent03" type="checkbox" value="" id="flexCheckSnowPants3"
+                    <input class="form-check-input customerRent03 fs-lg-7" type="checkbox" value="" id="flexCheckSnowPants3"
                       checked>
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/snow%20pants_M.png">
-                      <img src="../assets/img/snow pants_s.png" alt="snow pants_s">
-                    </picture>
-                    <label class="form-check-label fs-lg-6" for="flexCheckSnowPants3">
+                    <img src="../assets/img/snow pants_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckSnowPants3">
                       雪褲
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent03" type="checkbox" value="" id="flexCheckGloves3" checked>
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/inside-gloves_M.png">
-                      <img src="../assets/img/inside-gloves_s.png" alt="inside-gloves_s">
-                    </picture>
-                    <label class="form-check-label fs-lg-6 fs-lg-6" for="flexCheckGloves3">
+                    <input class="form-check-input customerRent03 fs-lg-7" type="checkbox" value="" id="flexCheckGloves3" checked>
+                    <img src="../assets/img/gloves_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckGloves3">
                       滑雪手套
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent03" type="checkbox" value="" id="flexCheckKneePads3"
+                    <input class="form-check-input customerRent03 fs-lg-7" type="checkbox" value="" id="flexCheckKneePads3"
                       checked>
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/knee%20pads_M.png">
-                      <img src="../assets/img/knee pads_s.png" alt="knee pads_s">
-                    </picture>
-                    <label class="form-check-label fs-lg-6" for="flexCheckKneePads3">
+                      <img src="../assets/img/knee pads_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckKneePads3">
                       護膝
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input customerRent03" type="checkbox" value="" id="flexCheckImpactShorts3"
+                    <input class="form-check-input customerRent03 fs-lg-7" type="checkbox" value="" id="flexCheckImpactShorts3"
                       checked>
-                    <picture class="mx-lg-4 mx-2">
-                      <source media="(min-width: 992px)" srcset="../assets/img/impact%20shorts_M.png">
-                      <img src="../assets/img/impact shorts_s.png" alt="impact shorts_s">
-                    </picture>
-                    <label class="form-check-label fs-lg-6" for="flexCheckImpactShorts3">
+                    <img src="../assets/img/impact shorts_M.png" alt="snow coat" class="rental-items mx-lg-4 mx-2">
+                    <label class="form-check-label fs-lg-7" for="flexCheckImpactShorts3">
                       防摔褲
                     </label>
                   </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-sm-4 col-6">
                   <div class="form-check form-check-equipment mt-6">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="selectAll3" checked>
+                    <input class="form-check-input me-2 fs-lg-7" type="checkbox" value="" id="selectAll3" checked>
                       <img src="../assets/img/rental_all.png" alt="rentalAll" class="ms-lg-4 ms-1 me-lg-5 rental_all" style="margin-right: 10px;">
-                    <label class="form-check-label fs-lg-6" for="selectAll3">
+                    <label class="form-check-label fs-lg-7" for="selectAll3">
                       全選
                     </label>
                   </div>
@@ -678,6 +631,7 @@
           <button class="fs-8 fs-lg-6 ls-1 btn btn-page btn-primary-100 link-light fw-bold" type="submit">下一步</button>
         </div>
       </section>
+      <button class="back-to-top hidden back-to-top btn btn-primary-100 rounded-circle"><i class="bi bi-chevron-up text-white fs-6"></i></button>
     </form>
 
 
