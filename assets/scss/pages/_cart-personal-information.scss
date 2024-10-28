@@ -70,3 +70,9 @@ top: 0;
 .ski-modal{
     --bs-modal-width: 700px;
 }
+.confirm-info{
+    width: 300px;
+        @media (min-width:992px) {
+            width: 327px;
+    }
+}
