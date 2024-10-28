@@ -1,6 +1,6 @@
 .progress-mt{
     margin-top: 24px;
-    @media (min-width:768px) {
+    @media (min-width:992px) {
         margin-top: 90px;
     } 
 }
@@ -8,6 +8,9 @@
     height: 2px;
     background-color: $info-300;    
     @media (min-width:768px) {
+        height: 3px;
+    }
+    @media (min-width:992px) {
         height: 4px;
     }
     .progress-bar{
