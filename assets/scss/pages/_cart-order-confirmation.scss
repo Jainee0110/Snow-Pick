@@ -64,8 +64,6 @@
 //     border: 0px;
 // }
 
-.confirm-tableHead{
-    --bs-table-bg: $primary-300;
-    background-color: $primary-300;
-    color:  #4D4D4D;
+.confirm-table-hover > tbody > tr:hover > * {
+    --bs-table-bg-state:rgb(250, 250, 250);
 }
