@@ -85,10 +85,10 @@
               </caption>
               <thead class="fs-lg-7 border-info-300">
                 <tr>
-                  <th scope="col" class="py-3 fw-bold">類型</th>
-                  <th scope="col" class="py-3 fw-bold">單價</th>
-                  <th scope="col" class="py-3 fw-bold">數量</th>
-                  <th scope="col" class="py-3 fw-bold">小計</th>
+                  <th scope="col" class="py-3 fw-bold ls-1">類型</th>
+                  <th scope="col" class="py-3 fw-bold ls-1">單價</th>
+                  <th scope="col" class="py-3 fw-bold ls-1">數量</th>
+                  <th scope="col" class="py-3 fw-bold ls-1">小計</th>
                 </tr>
               </thead>
               <tbody class="fs-lg-7">
@@ -105,12 +105,12 @@
                   <td class="py-3">NT$ 28,800</td>
                 </tr>
                 <tr>
-                  <th class="text-dark text-start px-4 py-2 fw-bold bg-info-300 fs-lg-7">雪具租賃品項</th>
+                  <th class="text-dark text-start px-4 py-2 fw-bold bg-info-300 fs-lg-7 ls-1">雪具租賃品項</th>
                   <td class="py-3 bg-info-300"></td>
                   <td class="py-3 bg-info-300"></td>
                   <td class="py-3 bg-info-300"></td>
                 </tr>
-                <tr class=" bg-light">
+                <tr>
                   <th class="py-3 px-4 fw-bold">成人 Adult</th>
                   <td class="py-3"></td>
                   <td class="py-3"></td>
@@ -202,12 +202,12 @@
                   <td class="py-2">NT$ 28,800</td>
                 </tr>
                 <tr>
-                  <th class="text-dark text-start px-4 py-2 fw-bold bg-info-300 fs-lg-7">雪具租賃</th>
+                  <th class="text-dark text-start px-4 py-2 fw-bold bg-info-300 fs-lg-7 ls-1">雪具租賃</th>
                   <td class="py-2 bg-info-300"></td>
                   <td class="py-2 bg-info-300"></td>
                 </tr>
                 <tr class=" bg-light">
-                  <th class="py-2 px-4 fw-bold">成人</th>
+                  <th class="py-2 px-4 fw-bold ls-1">成人</th>
                   <td class="py-2"></td>
                   <td class="py-2"></td>
                 </tr>
@@ -227,7 +227,7 @@
                   <td class="py-2">NT$&ensp; &ensp;&ensp;450</td>
                 </tr>
                 <tr>
-                  <th class="py-2 px-4 fw-bold">兒童</th>
+                  <th class="py-2 px-4 fw-bold ls-1">兒童</th>
                   <td class="py-2"></td>
                   <td class="py-2"></td>
                 </tr>
@@ -412,6 +412,7 @@
 </section>
 
 <!--訂單備註、付款方式、發票資訊-->
+<form  class="needs-validation confirmation-needs-validation"  onsubmit="return validate_form()" novalidate>
 <section class="container">
 <div class="row  justify-content-center">
   <div class="col-lg-5 mb-6 mb-lg-0">
@@ -444,7 +445,7 @@
             
             <li class="nav-item" role="presentation">
               <div class="form-check">
-                <input class="form-check-input fs-lg-7" type="radio" name="flexRadioDefault" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"  role="tab" aria-controls="pills-profile" aria-selected="false" checked>
+                <input class="form-check-input fs-lg-7 active" type="radio" name="flexRadioDefault" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"  role="tab" aria-controls="pills-profile" aria-selected="true" checked>
                 <label class="form-check-label fs-lg-7 text-info-100" for="pills-profile-tab">
                   手機條碼載具
                 </label>
@@ -455,7 +456,7 @@
               <div class="form-check">
                 <input class="form-check-input fs-lg-7" type="radio" name="flexRadioDefault" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"  role="tab" aria-controls="pills-contact" aria-selected="false">
                 <label class="form-check-label fs-lg-7 text-info-100" for="pills-contact-tab">
-                  三聯式紙本發票
+                  三聯式發票
                 </label>
               </div>               
             </li>
@@ -475,7 +476,7 @@
               </div>
 
             </div>
-            <div class="tab-pane fade pt-6 pb-1" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="tab-pane  pt-6 pb-1 active show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="mb-4"> 
                 <label for="reciptCodeFormControlInput" class="form-label text-info-100  fs-lg-7">手機條碼載具</label>
                 <input type="email" class="form-control text-info-200 fs-lg-7 form-pd" id="reciptCodeFormControlInput" placeholder="請輸入手機條碼載具">
@@ -513,8 +514,8 @@
         </div>
       <div class="card-body p-6">
         <select class="form-select text-info-200 fs-lg-6 form-pd" aria-label="Default select example">
-          <option selected>信用卡 - 支援VISA、MasterCard、JCB</option>
-          <option value="1">銀行轉帳</option>
+          <option value="orderPayment-paymentInstructions.html" >信用卡 - 支援VISA、MasterCard、JCB</option>
+          <option value="orderPayment-paymentComplete.html">銀行轉帳</option>
         </select>
       </div>
     </div>
@@ -524,36 +525,51 @@
 </div>
 
 
-<div class="py-lg-19 py-6 mb-15 d-flex flex-column align-items-center">
+<div class="pt-13 pb-lg-19 py-6 mb-15 d-flex flex-column align-items-center">
   <div class="form-check mb-13">
     <input class="form-check-input fs-lg-7"  type="checkbox" value="agree" id="agree" required>
-    <label class="form-check-label text-info-100  fs-lg-7" for="agree">
+    <label class="form-check-label text-info-100  fs-lg-7 d-none d-md-block" for="agree">
+      已閱讀並同意「訂購須知」、「合約與取消政策」及「隱私權政策」 <span class="text-danger" style="margin-left: 2px;">*</span>
+    </label>
+    <label class="form-check-label text-info-100 d-md-none text-center" for="agree" style="max-width: 350px;">
       已閱讀並同意「訂購須知」、「合約與取消政策」及「隱私權政策」 <span class="text-danger" style="margin-left: 2px;">*</span>
     </label>
   </div>
+</form>
 <div class="d-flex justify-content-center gap-6">
   <a href="cart-rental.html" class="s-8 fs-lg-6 ls-1 btn btn-page border-info-300 fw-bold link-info-100">上一步</a>
-  <button class="fs-8 fs-lg-6 ls-1 btn btn-page btn-primary-100 link-light fw-bold text-nowrap" type="submit">送出訂單</button>
+  <button class="fs-8 fs-lg-6 ls-1 btn btn-page btn-primary-100 link-light fw-bold text-nowrap" type="submit" onclick="window.location=document.querySelector('select').value;">送出訂單</button>
 </div> 
 
 </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.confirmation-needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+
+    </script>
   </body>
 </html>
