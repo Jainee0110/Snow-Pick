@@ -1,3 +1,6 @@
 .orderPayment-page{
-  min-height: calc(100vh - 390px);
+  min-height: calc(100vh - 56px);
+  @include media-breakpoint-up(lg) {
+    min-height: calc(100vh - 109px);
+  }
 }
