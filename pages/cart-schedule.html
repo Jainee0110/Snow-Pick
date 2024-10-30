@@ -46,24 +46,24 @@
               <div class="card-body p-lg-7">
                 <div class="row gy-6">
                   <div class="col-md-6 mb-md-3 fs-lg-6">
-                    <label for="exampleFormControlInput1" class="form-label text-info-100">訂購人</label>
-                    <input type="text" value="王怡蓁" class="form-control text-info-200 form-pd"
+                    <label for="exampleFormControlInput1" class="form-label text-info-100 fs-lg-7">訂購人</label>
+                    <input type="text" value="王怡蓁" class="form-control text-info-200 form-pd fs-lg-7"
                       id="exampleFormControlInput1" required>
                     <div class="invalid-feedback">
                       請輸入訂購人姓名
                     </div>
                   </div>
                   <div class="col-md-6 mb-md-3 fs-lg-6">
-                    <label for="exampleFormControlInput1" class="form-label text-info-100">電子信箱</label>
-                    <input type="email" value="yichen@gmail.com" class="form-control text-info-200 form-pd"
+                    <label for="exampleFormControlInput1" class="form-label text-info-100 fs-lg-7">電子信箱</label>
+                    <input type="email" value="yichen@gmail.com" class="form-control text-info-200 form-pd fs-lg-7"
                       id="exampleFormControlInput1" required>
                     <div class="invalid-feedback">
                       請輸入電子郵件
                     </div>
                   </div>
                   <div class="col-md-6 mb-md-3 fs-lg-6">
-                    <label for="exampleFormControlInput1" class="form-label text-info-100">行動電話</label>
-                    <input type="tel" class="form-control text-info-200 form-pd" id="exampleFormControlInput1" required>
+                    <label for="exampleFormControlInput1" class="form-label text-info-100 fs-lg-7">行動電話</label>
+                    <input type="tel" value="+886 919999999" class="form-control text-info-200 form-pd fs-lg-7" id="exampleFormControlInput1" required>
                     <div class="invalid-feedback">
                       請輸入行動電話號碼
                     </div>
@@ -82,21 +82,22 @@
                 <p class="fs-lg-5 fs-6 ls-1">苗場滑雪三日行-單板初級</p>
               </div>
               <div class="card-body p-lg-7">
-                <table class="table table-borderless fs-lg-6">
+                <table class="table table-borderless fs-lg-6 mb-0">
                   <thead class="mb-6">
                     <tr class="mb-6">
-                      <th class="text-info-100 d-none d-lg-block" scope="col">請選擇行程報名人數</th>
-                      <th class="text-info-100 d-lg-none num-visable" scope="col">報名人數</th>
-                      <th class="text-info-100 text-center" scope="col">&emsp;&emsp;&emsp;單價</th>
-                      <th class="text-info-100 text-center" scope="col">人數</th>
-                      <th class="text-info-100 text-end" scope="col">小計</th>
+                      <th class="text-info-100 d-none d-lg-block fs-lg-7" scope="col">請選擇行程報名人數</th>
+                      <th class="text-info-100 d-none d-sm-block d-lg-none fs-lg-7" scope="col">報名人數</th>
+                      <th class="text-info-100 d-sm-none num-visable fs-lg-7" scope="col">報名</th>
+                      <th class="text-info-100 text-center fs-lg-7" scope="col"><span class="d-none d-sm-inline-block">&emsp;&emsp;&emsp;</span>單價</th>
+                      <th class="text-info-100 text-center fs-lg-7" scope="col">人數</th>
+                      <th class="text-info-100 text-end fs-lg-7" scope="col">小計</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="align-bottom">
-                      <th class="text-info-100" scope="row ">成人</th>
-                      <td class="text-info-100 text-center">NT$28,800</td>
-                      <td class="text-center">
+                      <th class="text-info-100 fs-lg-7" scope="row py-sm-4">成人</th>
+                      <td class="text-info-100 text-center align-bottom py-sm-4 fs-lg-7">NT$28,800</td>
+                      <td class="text-center py-sm-4">
                         <div class="people-num d-none d-sm-block">
                           <button class="value-control fw-4 border-0" onclick="numberInput.stepDown()"
                             title="Decrease value" aria-label="Decrease value">–</button>
@@ -111,12 +112,12 @@
                             class="text-center text-info-200 fs-lg-6 ">
                         </div>
                       </td>
-                      <td class="text-info-100 text-end">NT$57,600</td>
+                      <td class="text-info-100 text-end py-sm-4 fs-lg-7">NT$57,600</td>
                     </tr>
                     <tr>
-                      <th class="text-info-100 align-bottom" scope="row">小孩</th>
-                      <td class="text-info-100 text-center">NT$28,800</td>
-                      <td>
+                      <th class="text-info-100 align-bottom py-sm-4 fs-lg-7" scope="row">小孩</th>
+                      <td class="text-info-100 text-center py-sm-4 align-bottom fs-lg-7">NT$28,800</td>
+                      <td class="py-sm-4">
                         <div class="text-center d-none d-sm-block">
                           <button class="value-control fw-4 border-0" onclick="quantityInput.stepDown()"
                             title="Decrease value" aria-label="Decrease value">–</button>
@@ -131,13 +132,13 @@
                             class="text-center text-info-200 fs-lg-6 ">
                         </div>
                       </td>
-                      <td class="text-info-100 text-end">NT$28,800</td>
+                      <td class="text-info-100 text-end py-sm-4 align-bottom fs-lg-7">NT$28,800</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div class="card-footer text-end fw-bold fs-lg-7 text-info-100">
-                共計 &emsp;<span class="text-danger fs-6 fs-lg-5">NT$86,400元</span>
+              <div class="card-footer text-end fs-10 fs-lg-8 text-info-100 py-3">
+                共計 <span class="fw-bold text-info-100 fs-7 fs-lg-5 pe-2 pe-lg-4 ps-6">NT$86,400</span>
               </div>
             </div>
           </div>
@@ -166,6 +167,7 @@
             type="submit">下一步</button>
         </div>
       </section>
+      <button class="back-to-top hidden back-to-top btn btn-primary-100 rounded-circle"><i class="bi bi-chevron-up text-white fs-6"></i></button>
     </form>
 
     <%- include('./layout/footer'); -%>
