@@ -1,9 +1,9 @@
 .userAccount-page {
-  min-height: calc(100vh - 56px);
+  min-height: calc(100dvh - 56px);
   padding-top: 60px;
   padding-bottom: 60px;
   @include media-breakpoint-up(lg) {
-    min-height: calc(100vh - 109px);
+    min-height: calc(100dvh - 109px);
     padding-top: 100px;
     padding-bottom: 100px;
   }
