@@ -1,19 +1,53 @@
-.userAccount-page{
-  min-height: calc(100vh - 383px);
-}
-.login-box{
-  position: relative;
-  .login-box-header{
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.userAccount-page {
+  min-height: calc(100dvh - 56px);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include media-breakpoint-up(lg) {
+    min-height: calc(100dvh - 109px);
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
-.login-account{
+.login-box {
   position: relative;
-  &::before{
+  width: 100%;
+  max-width: 400px;
+  padding-top: 76px;
+  padding-bottom: 44px;
+  border: 5px dotted $primary-200;
+
+  @include media-breakpoint-up(md) {
+    width: 100%;
+    max-width: 540px;
+    padding-top: 100px;
+    padding-bottom: 64px;
+  }
+
+  .login-box-header {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .login-box-loginBtn {
+    .bi-box-arrow-in-right {
+      display: none;
+    }
+
+    &:hover {
+      .bi-box-arrow-in-right {
+        display: inline;
+      }
+    }
+  }
+}
+
+.login-account {
+  position: relative;
+
+  &::before {
     position: absolute;
     content: "";
     background-image: url(../img/icon-accountLoggin/person-circle.svg);
@@ -22,18 +56,21 @@
     display: block;
     width: 24px;
     height: 24px;
-    transform: translate(50%,-7px);
+    transform: translate(50%, -7px);
     bottom: 0%;
     left: 0%;
   }
-  input[type="text"]{
+
+  input[type="text"] {
     padding-left: 44px;
     color: $info-100;
   }
 }
-.login-passwd{
+
+.login-passwd {
   position: relative;
-  &::before{
+
+  &::before {
     position: absolute;
     content: "";
     background-image: url(../img/icon-accountLoggin/key-fill.svg);
@@ -42,26 +79,28 @@
     display: block;
     width: 24px;
     height: 24px;
-    transform: translate(50%,-7px);
+    transform: translate(50%, -7px);
     bottom: 0%;
     left: 0%;
   }
-  input[type="password"]{
+
+  input[type="password"] {
     padding-left: 44px;
     color: $info-100;
   }
 }
 
-.account-function-link{
+.account-function-link {
   a:hover {
     text-decoration: underline;
   }
 }
 
-.login-otherAccount{
-  a{
+.login-otherAccount {
+  a {
     color: $info-200;
-    &:hover{
+
+    &:hover {
       color: $primary-200;
     }
   }
