@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" href="/Snow-Pick/assets/snowboarding-icon-d8a6949f.png" type="snowpick-icon" />
   <title>雪域狂歡</title>
-  <script type="module" crossorigin src="/Snow-Pick/assets/main-f5ecdd9c.js"></script>
-  <link rel="stylesheet" href="/Snow-Pick/assets/main-35a570b9.css">
+  <script type="module" crossorigin src="/Snow-Pick/assets/main-6e57cb6a.js"></script>
+  <link rel="stylesheet" href="/Snow-Pick/assets/main-3028f3ad.css">
 </head>
 
 <body>
@@ -32,16 +32,122 @@
       </div>
     </div>
   </nav>
-</div>    <section class="orderPayment-page py-11 py-lg-16">
+</div>    <section class="orderPayment-page d-flex align-items-center  align-items-md-start  py-13 py-lg-19" >
       <div class="container d-flex flex-column align-items-center">
         <h2 class="w-100 p-6 fs-6 fs-lg-4 bg-primary-400 text-center text-info-100 border border-bottom-0">雪域狂歡線上付款說明</h2>
         <div class="w-100 py-12 px-6 mb-8 mb-lg-12 fs-8 fs-lg-6 text-info-100 border">
-          <p>王○蓁您好：<br>
+          <p class="ls-1" style="line-height: 1.7;">王○蓁您好：<br>
             您訂購的苗場滑雪三日行-單板初級，本次應繳金額為<span class="text-danger fw-bold">NT$92,250元整</span>，將透過安全加
             密線上付款系統進行扣款。</p>
           <p>如使用信用卡交易，基於個資保護，您的信用卡資訊並不會保存於本站會員資料庫中。</p>
         </div>
-        <a href="##" class="btn btn-primary-100 text-light py-3 py-lg-4 fs-8 fs-lg-6 lh-sm rounded-3">信用卡一次付清</a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary-100 text-light py-3 py-lg-4 px-lg-9 px-7 fs-8 fs-lg-6 lh-sm rounded-3 ls-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          信用卡一次付清
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title text-info-100 fw-normal fs-5 ls-1" id="staticBackdropLabel">應付金額<sapn class="fw-bold"> &ensp;NT$92,250</sapn></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <form role="form" class="payment-needs-validation" action="orderPayment-paymentComplete.html"
+              onsubmit="return validate_form()" novalidate>
+                <div class="modal-body pt-0">
+                  <div class="row">
+                    <div class="col-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div>
+                                    <span class="d-inline-block badge py-3 px-4 text-dark my-3 me-4" style="background-color: rgba(255, 193, 7, 0.2); box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;">信用卡一次付清</span>
+                                    <img class="img-responsive" alt="mastercard" src="/Snow-Pick/assets/master-aa289626.png" style="width: 45px;">
+                                    <img class="img-responsive me-1" alt="visa" src="data:image/png;base64,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" style="width: 55px;">
+                                    <img class="img-responsive" alt="jcb" src="data:application/octet-stream;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIACsAOAMBEQACEQEDEQH/xAAZAAEAAwEBAAAAAAAAAAAAAAAGAAUHBAP/xAA4EAABAwMCBAMEBgsAAAAAAAABAgMEAAURBiEHEhNRFDFBImFxsTRzgZHC0iQmMjZiZHJ0g6HR/8QAGgEAAgMBAQAAAAAAAAAAAAAABQYAAwQCAf/EAC8RAAEDAgQDCAAHAAAAAAAAAAEAAgMEEQUSITFBYbEGEyIyUXGR8BQkgaHB0fH/2gAMAwEAAhEDEQA/ANE1/rVnSUZhKGPEzpOek0VYSAMZUo9txt6/fWinpzMeSrlkyC6Bs8WdQLO8S2D/ABOfnoi3D4jxP39EMfiEjeAS9vXpi6LavdyYbXKeeUyywxlKVqBPqScDAyTQysjbBIWtRbDg6raCdEUPFa/FRKYltCc7AtuEj7eesXeFNEGDU7x4if2/pK9Na6dlacuN3vTbKBFcCEojJI5yQMDcnfJrprzY3QrHKWHDSC0ki19f8Cpk8Srs+6S1Dgttk7JUlaiPt5hn7qokqHN2SmMSlcdALJXo/UMy9vSES246Q2gKHSSR5n3k15TVD5XEO4LfTTulJzLOuOf7y2/+y/GqmCg8p917U7IXbokmTkxo7zwT59Nsqx8cUTDmt3KDPY52wSi/NuJ0TYGShYc8XJT08HmzkbY70CxM3m05dEz4ALR6/dVSps126fObVcAjH7RiuY+VDLFOlNPCDYvHyEhtsd9egLiy2w6p0XJvKEoJUPZ7V0Nil3tkM4Zl10/lcMOBNTjmhyR8WVf8rLK0+iQY43jcH4Wg8M/pUz6tPzNeUHnci9DuUR45n9ZreP5L8aqZ6DyH3V9SrvgX9FvH9bXyVXGIbtVdDs5NdNobLE17ppW43cJYQrAyMuHIB9M4FZajcew6LRT+UjmeqxuRrXUkiWuSq6SGVFRIZbPKhH8PLj09+9YC43TvTYfS5cpYCtH4VXCTdYl0mzVhyQ7JTzrCQM4QkeQ+Fdx7lDMdgZA+OOMWAB6le+kpgXepLatTm5EoXyxFMqTykKG+T28tu9eMPi8yUqd95SO8zcrLssSXRqu8KejeHK0IUEZByPLm274zVEN/xD7i2yshv3z7iyLcVtRotd5iQZVlttyjLjdX9KbJWhXMR7KvQbdqN0kWZpIcQVZM/KNRdH4XEV+DBVEsVmt9tSo5KmwVb9/TJ+Oa2CiD3XkcShz60sFmNAXe1qq6af0nZ5kNbbi5EqT10vp5g57QOTuDnc+vrQ/ETlmsOXRGMGibPF4/uqrX9YwZclUqRpK0rkrPMpxRJ5j3IxvQ0uHomymoZMuVszgFeWLVkqFp663puJFDrs9tHRQkpbSOmBsM+4V602uUJ7Tfkmxhuthx31JXPbNZ+GkKkRLFa2HlgguNoIUc+e9UumyG4ASZHW2dmawApZom5SLtd58uWU9RTSAAkYCQCdhXFJI6SVznegW+lkdI9znITxujSHtTQFMx3nEiEAShsqA9tXamOhIDTc8VZUAkaIbb7XcX3UtMwJS1qOAlLKs/KiIkY0XJQh8UjjYBM9b2WTaNJaehPIKn0uPLdCBzcpVg427eVL9dKJZC5uyacFjMLcrt0NaiSnFBDcV9SjsEpaUSf9VhTlTyMAuSPlOJGn51q4cLTLYWmRJnId6OMqQnlIGR32zXeUhuqUe1dUyqNotQ3T3R6FFkZA8O9n6s1klBSVGxw4LVOH1plQmX5cttTXWCUtoWMKwPUj0qyjhc27ncUco4nNBc7il9bltUqKKVFFKiilRRSoopUUX/2Q==" style="width: 35px;">
+                                </div>
+                            </div>
+                            <div class="panel-body mt-5">
+                                    <div class="row g-4">
+                                        <div class="col-12">
+                                          <h3 class="text-primary fs-7 ls-1">※ 信用卡交易資訊 Credit card information</h3>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="text-info-100 mb-1 ls-1 fw-medium">信用卡卡號<span class="text-danger" style="margin-left: 2px;">*</span></label>
+                                                <div class="input-group">
+                                                    <input type="tel" class="form-control bg-light rounded-1" style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;" required value="1234">
+                                                    <span class="input-group-text bg-white border-0">–</span>
+                                                    <input type="tel" class="form-control bg-light rounded-1" style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;" required value="0000">
+                                                    <span class="input-group-text bg-white border-0 fw-bold">–</span>
+                                                    <input type="tel" class="form-control bg-light rounded-1" style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;" required value="6666">
+                                                    <span class="input-group-text bg-white border-0 fw-bold">–</span>
+                                                    <input type="tel" class="form-control bg-light rounded-1" style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;" required value="4321">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="text-info-100 mb-2 fw-medium ls-1">卡片有效期限<span class="text-danger" style="margin-left: 2px;">*</span></label>
+                                                <div class="input-group">
+                                                  <input type="tel" class="form-control bg-light rounded-1" placeholder="MM"  style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;" required>
+                                                  <span class="input-group-text bg-white border-0 fw-bold"></span>
+                                                  <input type="tel" class="form-control bg-light rounded-1" placeholder="YY"  style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;" required>
+                                                </div>    
+                                              </div>
+                                        </div>
+                                        <div class="col-12 row mt-4">
+                                            <div class="form-group col-5">
+                                                <label class="text-info-100 mb-2 fw-medium ls-1">信用卡安全碼<span class="text-danger" style="margin-left: 2px;">*</span></label>
+                                                <div class="input-group">
+                                                  <input type="tel" class="form-control bg-light rounded-1" style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;" value="555"  required>
+                                                  <img src="/Snow-Pick/assets/ccv-e6e69ed6.png" alt="ccv" style="width:70px;" class="input-group-text bg-white border-0">
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col-12">
+                                          <h3 class="text-primary fs-7 pt-4 ls-1" \>※ 持卡人資料 Cardholder Information</h3>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="form-group">
+                                                <label class="text-info-100 mb-2 fw-medium ls-1">持卡人姓名<span class="text-danger" style="margin-left: 2px;">*</span></label>
+                                                <input type="text" class="form-control bg-light rounded-1"  style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;" required value="王怡蓁">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                          <div class="form-group">
+                                              <label class="text-info-100 mb-2 fw-medium ls-1">手機號碼<span class="text-danger" style="margin-left: 2px;">*</span></label>
+                                              <input type="tel" class="form-control bg-light rounded-1"  style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;" required value="0919999999">
+                                          </div>
+                                        </div>
+                                        <!-- <div class="col-12">
+                                          <div class="form-group">
+                                              <label class="text-info-100 mb-2 fw-medium ls-1">電子郵件</label>
+                                              <input type="email" class="form-control bg-light rounded-1"  style="box-shadow: rgba(0,0,0,0.4) 1px 1px 2px 0px inset;">
+                                          </div>
+                                        </div> -->
+                                        <div class="col-12">
+                                          <div class="form-check pt-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                            <label class="form-check-label text-danger" for="flexCheckDefault">
+                                              請再次確認您的「應付金額」及「付款資訊」，提醒您：我們不會主動與您聯繫要求執行ATM轉帳或提供個人資料。
+                                            </label>
+                                          </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer border-0">
+                  <button class="btn btn-warning btn-lg btn-block px-6 mb-3 me-3" type="submit">確認付款</button>
+                </div>
+            </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <div class="py-8 py-md-12 bg-primary-400">
@@ -68,6 +174,22 @@
 </div>
       
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        (function () {
+          'use strict'
+          const forms = document.querySelectorAll('.payment-needs-validation')
+          Array.from(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+      </script>
       <script>AOS.init();</script>
 </body>
 
