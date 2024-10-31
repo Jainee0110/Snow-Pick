@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" href="/Snow-Pick/assets/snowboarding-icon-d8a6949f.png" type="snowpick-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="icon" href="/Snow-Pick/assets/snowboarding-icon-d8a6949f.png" type="snowpick-icon" />
-  <title>忘記密碼-雪域狂歡</title>
+  <title>會員註冊-雪域狂歡</title>
   <script type="module" crossorigin src="/Snow-Pick/assets/main-f57cdc33.js"></script>
   <link rel="stylesheet" href="/Snow-Pick/assets/main-4c964526.css">
 </head>
@@ -36,21 +36,16 @@
       </div>
     </div>
   </nav>
-</div>    <section class="userAccount-page py-13 py-lg-19 d-flex flex-column align-items-center justify-content-sm-start justify-content-center">
+</div>    <section class="userAccount-page py-13 py-lg-19 d-flex flex-column align-items-center  justify-content-sm-start justify-content-center">
       <div class="container d-flex flex-column align-items-center">
-        <div class="col-12 col-sm-10 col-lg-6 p-11 bg-primary-400 shadow rounded-5 border">
-          <h2 class="text-info-100 mb-4 mb-lg-6 fs-6 fs-lg-4 ">忘記密碼</h2>
-          <form action="get">
-            <div class="mb-4 mb-lg-6">
-              <label for="forgetPasswd-emailVerify" class="form-label  fs-lg-7">請輸入你的電子郵件信箱</label>
-              <input type="email" class="form-control text-info-100 fs-lg-7" id="forgetPasswd-emailVerify" aria-describedby="emailHelp">
-              <span class="text-danger mt-2 d-none" id="forgetPasswd-emailVerify-errorMsg">帳號不存在或輸入錯誤，<a href="mailto:snowpick@gamil.com" class="link-primary text-decoration-underline">需要協助?</a></span>
-            </div>
-            <div class="d-flex justify-content-end align-items-center gap-4">
-              <a href="./userAccount-login.html" class="forgetPasswd-cancelBtn rounded-2 py-2 px-4">取消</a>
-              <a href="./userAccount-forgetPasswd-verifyInfo.html" id="forgetPasswd-submitBtn" class="btn btn-primary-100 py-2 px-4 rounded-2 text-light">送出</a>
-            </div>
-          </form>
+        <div
+          class="col-12 col-sm-10 col-lg-6 d-flex flex-column gap-3 gap-lg-4 align-items-center p-11 bg-primary-400 shadow rounded-5 border">
+          <p class="fs-7 fs-lg-5 text-info-100 fw-semibold text-center">已完成會員註冊<br>
+            開始自訂專屬滑雪體驗</p>
+          <i class="bi bi-check-circle-fill fs-1 text-success animate__animated animate__flipInY"></i>
+          <a href="##" class="btn btn-sm btn-primary-100 text-light fs-9 fs-lg-8 py-2 px-4 py-lg-3 px-lg-5"><i
+              class="bi bi-box-arrow-in-right me-2"></i>進入會員中心</a>
+          <a href="./index.html" class="text-primary-100 text-decoration-underline fs-9 fs-lg-8">返回首頁</a>
         </div>
       </div>
     </section>
@@ -79,24 +74,6 @@
       
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>AOS.init();</script>
-      <script>
-        document.getElementById('forgetPasswd-submitBtn').addEventListener('click', function(event) {
-            const input = document.getElementById('forgetPasswd-emailVerify');
-            const inputType = input.getAttribute('type');
-            const inputValue = input.value.trim();
-            const errorMsg = document.getElementById('forgetPasswd-emailVerify-errorMsg');
-            if (inputValue === '') {
-                input.classList.add('is-invalid');
-                errorMsg.classList.remove('d-none');
-                errorMsg.classList.add('d-block');
-                event.preventDefault();
-            } else {
-                input.classList.remove('is-invalid');
-                rrorMsg.classList.remove('d-block');
-                errorMsg.classList.add('d-none');
-            }
-        });
-      </script>
 </body>
 
 </html>
