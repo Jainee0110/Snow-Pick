@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neucha&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <title>苗場滑雪場介紹</title>
+</head>
+<body>
+<!-- 匯入 -->
+    <header class="mb-6 mb-lg-19" style="background-image: url(../assets/img/naeba-skiresort-banner.jpg); background-size: cover; background-position: bottom;">
+    <%- include('./layout/header-itinerary'); -%>
+        <div class="container py-6 py-lg-19 text-end">
+        <h2 class="text-light fs-6 fs-lg-2 mb-2 fw-bolder" style="font-family:'Neucha'; letter-spacing: 5px; font-style: italic; ">Naeba Ski Resort</h2>
+        <h1 class="text-light fs-6 fs-lg-3 ls-1">苗場滑雪場</h1>
+        </div>
+    </header>
+    <div class="container my-15">
+        <div class="row align-items-center g-6">
+            <div class="col-12 col-md-7 col-lg-6 p-xxl-10 p-xl-5">
+                <h3 class="text-center mb-4 fs-lg-4 text-info-100">苗場滑雪場</h3>
+                <p class="fs-lg-6 text-info-100" style="text-align: justify;">苗場滑雪場位於日本新潟縣，擁有各種坡度和地形的雪道，適合各級別的滑雪者。初學者可以於平緩的滑雪道體驗滑雪樂趣；而滑雪高手則能挑戰刺激的陡坡，享受高難度滑行的快感。到了夜晚，滑雪道的將進行點燈，雪地上的燈光營造出迷人的氛圍，讓夜間滑雪變得格外浪漫和精彩。
+                    苗場滑雪場的另一大特色是全長5.5公里的「龍纜車」，是日本最長的滑雪纜車，連接著鄰近的神樂滑雪場，讓滑雪愛好者可以輕鬆穿越兩大滑雪區，體驗不同的雪道和景觀。在纜車上，可以一覽連綿的雪景，感受被銀白世界包圍的壯麗之美。</p>
+            </div>
+            <div class="col-12 col-md-5 col-lg-6">
+                <img src="https://www.princehotels.com/en/ski/naeba/img/mountain_map.jpg" alt="naeba-skiresort" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
