@@ -432,7 +432,7 @@
 </section>
 
 <!--訂單備註、付款方式、發票資訊-->
-<form  class="needs-validation confirmation-needs-validation"  onsubmit="return validate_form()" novalidate>
+<form >
 <section class="container">
 <div class="row  justify-content-center">
   <div class="col-lg-5 mb-6 mb-lg-0">
@@ -499,11 +499,11 @@
             <div class="tab-pane  pt-6 pb-1 active show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="mb-4"> 
                 <label for="reciptCodeFormControlInput" class="form-label text-info-100  fs-lg-7">手機條碼載具</label>
-                <input type="email" class="form-control text-info-200 fs-lg-7 form-pd" id="reciptCodeFormControlInput" placeholder="請輸入手機條碼載具">
+                <input type="email" class="form-control text-info-200 fs-lg-7 form-pd" id="reciptCodeFormControlInput" placeholder="請輸入手機條碼載具" value="/B2GJBL6">
               </div>
               <div>
                 <label for="reciptCodeFormControlInput2" class="form-label text-info-100 fs-lg-7">再次輸入</label>
-                <input type="email" class="form-control text-info-200 fs-lg-7 form-pd" id="reciptCodeFormControlInput2" placeholder="請再次輸入手機條碼載具">
+                <input type="email" class="form-control text-info-200 fs-lg-7 form-pd" id="reciptCodeFormControlInput2" placeholder="請再次輸入手機條碼載具" value="/B2GJBL6">
               </div>
 
             </div>
@@ -547,7 +547,7 @@
 
 <div class="pt-13 pb-lg-19 py-6 mb-15 d-flex flex-column align-items-center">
   <div class="form-check mb-13">
-    <input class="form-check-input fs-lg-7"  type="checkbox" value="agree" id="agree" required>
+    <input class="form-check-input fs-lg-7"  type="checkbox" value="agree" id="agree" required checked>
     <label class="form-check-label text-info-100  fs-lg-7 d-none d-md-block" for="agree">
       已閱讀並同意「訂購須知」、「合約與取消政策」及「隱私權政策」 <span class="text-danger" style="margin-left: 2px;">*</span>
     </label>
@@ -589,7 +589,7 @@
     </div>
 </div>
     
-    <script>
+    <!-- <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function () {
         'use strict'
@@ -611,6 +611,6 @@
           })
       })()
 
-    </script>
+    </script> -->
   </body>
 </html>
