@@ -1,0 +1,56 @@
+.mountain-top{
+    top: 50px;
+    left: 170px;
+    @include media-breakpoint-up(xl) {
+        left: 185px;
+    }
+}
+.mountain-foot{
+    top: 163px;
+    left: 210px;
+    @include media-breakpoint-up(xl) {
+        left: 230px;
+    }
+}
+.skiresort-circle{
+    width: 150px;
+    @media (min-width: 400px) {
+        width: 180px;
+    }
+    @media (min-width: 450px) {
+        width: 200px;
+    }
+    @media (min-width: 500px) {
+        width: 220px;
+    }
+    @media (min-width: 550px) {
+        width: 270px;
+    }
+    @include media-breakpoint-up(sm) {
+        width: 250px;
+    }
+    @include media-breakpoint-up(md) {
+    width: 350px;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 400px;
+    }
+    @include media-breakpoint-up(xl) {
+        width: 450px;
+    }
+}
+.start-10{
+    left: 10%;
+}
+.end-10{
+    right: 10%;
+}
+.end-3{
+    right: 3%;
+}
+.kid-facility{
+    right: 0;
+    @include media-breakpoint-up(lg) {
+        right: 6%;
+    }
+}
