@@ -36,6 +36,9 @@
         width: 400px;
     }
     @include media-breakpoint-up(xl) {
+        width: 430px;
+    }
+    @include media-breakpoint-up(xxl) {
         width: 450px;
     }
 }
