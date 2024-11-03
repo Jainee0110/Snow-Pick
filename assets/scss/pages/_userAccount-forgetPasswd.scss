@@ -1,0 +1,9 @@
+.forgetPasswd-cancelBtn {
+  border: 1px solid $primary-100;
+  color: $primary-100;
+  &:hover,:focus,:active {
+    transition: 0.1s;
+    background-color: $primary-100;
+    color: $white;
+  }
+}

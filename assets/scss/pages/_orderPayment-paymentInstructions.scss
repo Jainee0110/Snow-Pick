@@ -1,0 +1,26 @@
+.orderPayment-page{
+  // min-height: calc(100vh - 383px);
+  height: calc(100dvh - 54px);
+  @include media-breakpoint-up(lg){
+    height: calc(100dvh - 108px);; 
+  }
+}
+.payment-show{
+  display: none;
+  @media (min-width: 420px) {
+    display: inline-block;
+   }
+}
+.ccv-img{
+  width: 45px;
+  padding-right: 0;
+  padding-left: 8px;
+  @media (min-width: 450px) {
+    width: 70px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+.btn-close-white{
+  --bs-btn-close-color: #ffffff;
+}

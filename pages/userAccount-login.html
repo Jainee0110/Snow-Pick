@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+  <title>登入-雪域狂歡</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="userAccount-page d-flex flex-column align-items-center justify-content-center">
+      <div class="container d-flex flex-column align-items-center mt-7">
+        <div class="login-box d-flex flex-column px-11 px-lg-16 rounded-5">
+          <div class="login-box-header text-center bg-white" style="font-family: 'Permanent Marker';">
+            <h2 class="text-primary-200 text-nowrap">SNOW PICK</h2>
+            <span class="fw-semibold ls-1 fs-6 text-nowrap">Skiing closer than ever.</span>
+          </div>
+          <form class="text-info-100 mb-6 mb-lg-11">
+            <div class="login-account mb-5">
+              <label for="login-account" class="form-label fs-lg-6">帳號</label>
+              <input type="text" class="form-control" id="login-account" aria-describedby="login-account">
+            </div>
+            <div class="mb-4 login-passwd">
+              <label for="login-passwd" class="form-label fs-lg-6">密碼</label>
+              <input type="password" class="form-control" id="login-passwd">
+            </div>
+            <span class="d-none mb-4 text-danger" id="login-errorMsg">帳號或密碼錯誤，請重新輸入</span>
+            <div class="d-flex mb-6 form-check justify-content-between fs-9 fs-lg-8">
+              <div>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">記住我</label>
+              </div>
+              <div class="account-function-link">
+                <a href="./userAccount-register.html" class="text-info-100 me-4">註冊</a>
+                <a href="./userAccount-forgetPasswd.html" class="text-info-100">忘記密碼</a>
+              </div>
+            </div>
+            <button type="submit"
+              class="login-box-loginBtn btn btn-primary-100 w-100 text-light fs-8 fs-lg-7 lh-sm fw-normal rounded-3" id="login-BTN">會員登入<i
+                class="bi bi-box-arrow-in-right"></i></button>
+          </form>
+          <div class="d-flex align-items-center mb-6 ">
+            <hr class="w-50"><span class="text-nowrap">使用其他方法登入</span>
+            <hr class="w-50">
+          </div>
+          <div class="login-otherAccount d-flex gap-4 gap-lg-6 fs-3 fs-lg-2 mx-auto">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-google"></i></a>
+            <a href="#"><i class="bi bi-apple"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init();</script>
+      <script>
+        document.getElementById('login-BTN').addEventListener('click', function (event) {
+          const loginAccount = document.getElementById("login-account").value.trim();
+          const loginPasswd = document.getElementById("login-passwd").value.trim();
+          const loginErrorMsg = document.getElementById('login-errorMsg');
+          if(loginAccount === "" || loginPasswd === ""){
+            loginErrorMsg.classList.remove("d-none")
+            loginErrorMsg.classList.add('d-block');
+            event.preventDefault();
+          }
+          else{
+            loginErrorMsg.classList.remove('d-block');
+            loginErrorMsg.classList.add("d-none")
+          }
+        });
+      </script>
+</body>
+
+</html>

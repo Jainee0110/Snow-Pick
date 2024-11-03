@@ -1,0 +1,57 @@
+.deco-itineraryDetail-courseList {
+  padding: 12px 36px 12px 16px;
+  display: inline-block;
+  text-wrap: nowrap;
+  background-image: url(../img/deco/deco-itineraryDetail-content-sm.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-itineraryDetail-courseListHead {
+  background: $primary-300;
+  border-bottom: 1px solid $info-300;
+  margin: -12px;
+  margin-bottom: 0px;
+  padding: 12px;
+  @include media-breakpoint-up(lg) {
+    margin: -24px;
+    margin-bottom: 0px;
+    padding: 24px;
+  }
+}
+
+/*
+.deco-itineraryDetail-courseList {
+  font-family: Roboto;
+  font-size: 40px;
+  width: 161px;
+  height: 164px;
+  padding: 16px 47px 41px 41px;
+  position: absolute;
+  top: -8px;
+  background-image: url(../img/deco/deco-itineraryDetail-content.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+*/
+
+/*.itineraryDetail-courseListHead {
+  @include media-breakpoint-up(lg) {
+    margin-left: 200px;
+  }
+}*/
+
+.deco-itineraryDetail-courseList-content {
+  background-image: url(../img/deco/deco-itineraryCourseList.png);
+  background-size: 300px 300px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.text-modify{
+  margin-left: 24px;
+  @include media-breakpoint-up(lg) {
+    margin-left: 28px
+  }
+}

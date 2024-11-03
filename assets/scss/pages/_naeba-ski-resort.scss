@@ -1,0 +1,99 @@
+.mountain-top{
+    top: 50px;
+    left: 170px;
+    @include media-breakpoint-up(xl) {
+        left: 185px;
+    }
+}
+.mountain-foot{
+    top: 163px;
+    left: 210px;
+    @include media-breakpoint-up(xl) {
+        left: 230px;
+    }
+}
+.skiresort-circle{
+    width: 150px;
+    @media (min-width: 400px) {
+        width: 180px;
+    }
+    @media (min-width: 450px) {
+        width: 200px;
+    }
+    @media (min-width: 500px) {
+        width: 220px;
+    }
+    @media (min-width: 550px) {
+        width: 270px;
+    }
+    @include media-breakpoint-up(sm) {
+        width: 250px;
+    }
+    @include media-breakpoint-up(md) {
+    width: 350px;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 400px;
+    }
+    @include media-breakpoint-up(xl) {
+        width: 430px;
+    }
+    @include media-breakpoint-up(xxl) {
+        width: 450px;
+    }
+}
+.start-10{
+    left: 10%;
+}
+.end-10{
+    right: 10%;
+}
+.end-3{
+    right: 3%;
+}
+.kid-facility{
+    right: 0;
+    @include media-breakpoint-up(lg) {
+        right: 6%;
+    }
+}
+.effect{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+@include media-breakpoint-up(lg) {
+
+.effect {
+    position: relative;
+  }
+  
+  .effect:before,
+  .effect:after {
+    content: '';
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    bottom: 15px;
+    z-index: -1;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+  }
+  .effect:before{
+    left: 10px;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg); 
+  }
+  .effect:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+}

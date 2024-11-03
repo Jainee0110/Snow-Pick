@@ -1,0 +1,75 @@
+.header-itinerary {
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  @include media-breakpoint-up(lg) {
+    min-height: 322px;
+  }
+}
+
+.header-itinerary-navbar {
+  a {
+    color: $white;
+  }
+
+  a:hover,
+  a:focus {
+    color: $info-200;
+  }
+}
+
+.header-itinerary-bg {
+  background-image: url(../img/itineraryDetails-bg-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+.header-itinerary-dropdown {
+  .bi-list {
+    display: block;
+  }
+
+  .bi-x-lg {
+    display: none;
+  }
+
+  &:has(.header-itinerary-dropdown-menu.show, .header-itinerary-dropdown-menu.collapsing) {
+    .bi-list {
+      display: none;
+    }
+
+    .bi-x-lg {
+      display: block;
+    }
+  }
+}
+
+.header-itinerary-dropdown-menu-btn {
+  &:focus {
+    box-shadow: 0 0 0 0;
+  }
+}
+
+.header-itinerary-dropdown-menu {
+  min-width: 127px;
+  right: 0px;
+  top: 56px;
+
+  li:not(:last-child) {
+    border-bottom: 1px solid $info-300;
+  }
+
+  a {
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+    color: $info-100;
+  }
+
+  a:hover,
+  a:focus {
+    color: $white;
+    background-color: $primary-100;
+  }
+}

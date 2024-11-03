@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>苗場滑雪場介紹</title>
+</head>
+<body>
+<!-- 匯入 -->
+    <header style="background-image: url(../assets/img/naeba-skiresort-banner.jpg); background-size: cover; background-position: bottom;" >
+    <%- include('./layout/header-itinerary'); -%>
+        <div class="container py-10 py-lg-19 text-end">
+            <h2 class="text-light fs-5 fs-lg-2 mb-2 fw-bolder" style="font-family:'Neucha'; letter-spacing: 5px; font-style: italic; ">Naeba Ski Resort</h2>
+            <h1 class="text-light fs-5 fs-lg-2 ls-1">苗場滑雪場</h1>
+        </div>
+    </header>
+    <div style="background-image: url(../assets/img/mountain-bg.jpg); background-size: cover; background-position: center ;" >
+        <div class="container py-lg-19 py-10">
+            <div class="row align-items-center g-6">
+                <div class="col-12 col-lg-6 p-xxl-10 p-xl-5">
+                    <h3 class="text-center mb-4 fs-5 fs-lg-3 text-info-100" data-aos="flip-up">雪場簡介</h3>
+                    <p class="fs-xxl-6 text-info-100" style="text-align: justify;">苗場滑雪場位於日本新潟縣，擁有各種坡度和地形的雪道，初學者可以於平緩的滑雪道體驗滑雪樂趣；而滑雪高手則能挑戰刺激的陡坡，享受高難度滑行的快感。到了夜晚，滑雪道的將進行點燈，雪地上的燈光營造出迷人的氛圍，讓夜間滑雪變得格外浪漫和精彩。
+                        苗場滑雪場的另一大特色是全長5.5公里的「龍纜車」，是日本最長的滑雪纜車，連接著鄰近的神樂滑雪場，讓滑雪愛好者可以輕鬆穿越兩大滑雪區，體驗不同的雪道和景觀。在纜車上，可以一覽連綿的雪景，感受被銀白世界包圍的壯麗之美。</p>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="https://www.princehotels.com/en/ski/naeba/img/mountain_map.jpg" alt="naeba-skiresort" class="img-fluid mb-2">
+                    <span>如有更新以苗場滑雪場官網為主</span>
+                </div>
+            </div>
+        </div>
+        <div class="py-md-19 py-9 container">
+            <h2 class="ls-1 text-info-100 fs-5 fs-lg-3 mb-md-11 mb-6" data-aos="fade-right">雪道概覽</h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 col-xl-7 col-12 col-md-9">
+                    <h5 class="text-center fs-7 fs-lg-6 text-info-100 mb-lg-6 mb-4">雪道比例</h5>
+                    <div class="progress fs-lg-7" style="height:  40px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">初級30%</div>
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">中級40%</div>
+                        <div class="progress-bar bg-black" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">高級30%</div>
+                    </div>
+                    <div class="progress fs-lg-7 mt-lg-10 mb-lg-15 mt-5 mb-10" style="height:  40px;">
+                        <div class="progress-bar bg-info-200" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">非壓雪20%</div>
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">壓雪 80%</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-5 col-md-6 text-center mb-2">
+                            <p class="fs-lg-7 ls-1 bg-primary-100 text-white py-lg-3 py-2 rounded-pill" data-aos="flip-down" data-aos-duration="1000">雪道數量</p>
+                            <p class="fs-lg-6 fw-bold mt-2 text-info-100">24</p>
+                        </div>
+                        <div class="col-xl-3 col-5 col-md-6 text-center mb-1">
+                            <p class="fs-lg-7 ls-1 bg-primary-100 text-white py-lg-3 py-2 rounded-pill" data-aos="flip-down" data-aos-duration="1000">最大坡度</p>
+                            <p class="fs-lg-6 fw-bold mt-2 text-info-100">34°</p>
+                        </div>
+                        <div class="col-xl-3 col-5 col-md-6 text-center">
+                            <p class="fs-lg-7 ls-1 bg-primary-100 text-white py-lg-3 py-2 rounded-pill" data-aos="flip-down" data-aos-duration="1000">最長滑行距離</p>
+                            <p class="fs-lg-6 fw-bold mt-2 text-info-100">4000m</p> 
+                        </div>
+                        <div class="col-xl-3 col-5 col-md-6 text-center">
+                            <p class="fs-lg-7 ls-1 bg-primary-100 text-white py-lg-3 py-2 rounded-pill" data-aos="flip-down" data-aos-duration="1000">纜車數量</p>
+                            <p class="fs-lg-6 fw-bold mt-2 text-info-100">12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 col-sm-9 col-12 col-md-7 position-relative">
+                    <img src="../assets/img/4908713_cold_ice_mountain_mountains_iconfinder.svg" alt="" style="height: 360px;" class="ms-xl-6">
+                    <span class="mountain-top position-absolute fw-bold text-info-100 fs-lg-7"><span class="fw-normal"><span class="d-none d-xxl-inline-block">......................</span>........................</span> 山頂 1789m</span>
+                    <span class="mountain-foot position-absolute fw-bold text-info-100 fs-lg-7"><span class="fw-normal"><span class="d-none d-xl-inline-block">.......<span class="d-none d-xxl-inline-block">............</span></span>.................</span> 山腳 900m</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-image: url(../assets/img/skiresort-bg.jpg); background-repeat: no-repeat; background-size: cover;" class="pb-md-19 pb-9 overflow-hidden">
+        <div class="container py-md-19 py-9">
+            <h2 class="ls-1 text-info-100 fs-5 fs-lg-3 mb-md-11 mb-6 position-relative text-center" data-aos="fade-right" style="text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15); color: #000080;">設備資訊</h2>
+            <div class="skiresort-facilities position-relative mx-xxl-19 my-19 py-5 px-xl-19 px-lg-10">
+                <img src="../assets/img/ski resort circle.jpg" alt="skiresort-bg" class="d-block mx-auto rounded-circle skiresort-circle">
+                <p class="animate__pulse animate__slower animate__infinite animate__animated fs-xl-3 fs-lg-4 fs-md-5 fs-sm-6 fs-9 fw-bold text-dark skiresort-facility position-absolute top-0 start-10">溫泉浴場<span class="fs-xl-1 fs-lg-2 fs-md-3 fs-sm-4 fs-5 align-middle material-symbols-outlined ms-sm-3 ms-1"> bath_outdoor </span></p>
+                <p class="fs-xl-3 fs-lg-4 fs-md-5 fs-sm-6 fs-9 fw-bold text-dark skiresort-facility position-absolute top-50 translate-middle-y">夜間滑雪<span class="fs-xl-1 fs-lg-2 fs-md-3 fs-sm-4 fs-5 align-middle material-symbols-outlined ms-sm-3 ms-1"> nights_stay </span></p>
+                <p class="animate__pulse animate__slower animate__infinite animate__animated fs-xl-3 fs-lg-4 fs-md-5 fs-sm-6 fs-9 fw-bold text-dark skiresort-facility position-absolute bottom-0 start-10">粉雪聖地<span class="fs-xl-1 fs-lg-2 fs-md-3 fs-sm-4 fs-5 align-middle material-symbols-outlined ms-sm-3 ms-1">ac_unit</span></p>
+                <p class="animate__pulse animate__slower animate__infinite animate__animated fs-xl-3 fs-lg-4 fs-md-5 fs-sm-6 fs-9 fw-bold text-dark skiresort-facility position-absolute top-0 end-3"><span class="fs-xl-1 fs-lg-2 fs-md-3 fs-sm-4 fs-5 align-middle material-symbols-outlined me-sm-3 me-1">apartment</span>Ski in & Ski out</p>
+                <p class="fs-xl-3 fs-lg-4 fs-md-5 fs-sm-6 fs-9 fw-bold text-dark skiresort-facility position-absolute top-50 kid-facility translate-middle-y"><span class="fs-xl-1 fs-lg-2 fs-md-3 fs-sm-4 fs-5 align-middle material-symbols-outlined me-sm-3 me-1"> face </span>兒童樂園</p>
+                <p class="animate__pulse animate__slower animate__infinite animate__animated fs-xl-3 fs-lg-4 fs-md-5 fs-sm-6 fs-9 fw-bold text-dark skiresort-facility position-absolute bottom-0 end-10"><span class="fs-xl-1 fs-lg-2 fs-md-3 fs-sm-4 fs-5 align-middle material-symbols-outlined me-sm-3 me-1"> snowboarding </span>雪具租借</p>
+            </div>
+        </div>
+        <div class="container py-md-19 py-9">
+            <h2 class="ls-1 text-info-100 fs-5 fs-lg-3 mb-md-11 mb-6 position-relative text-center" data-aos="fade-right" style="text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);">雪票方案</h2>
+            <div class="row g-6 align-items-stretch">
+                <div class="col-xxl-7 col-xl-8 col-md-10 d-sm-block d-none mx-auto">
+                    <div class="card">
+                        <div class="card-header py-3 fs-7 fs-lg-5 text-center text-white" style="background-color:#1b70bf ;">標準價格</div>
+                        <div class="card-body p-lg-5">
+                            <table class="table fs-8 my-auto fs-lg-6 text-info-100 text-center table-bordered">
+                                <tr>
+                                    <th scope="col">門票</th>
+                                    <th scope="col">時間</th>
+                                    <th scope="col">費用</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">五小時券</th>
+                                    <td>自購票時起算5小時</td>
+                                    <td>￥ 5,500</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">一日券</th>
+                                    <td>08：00 AM ~ 5：00 PM</td>
+                                    <td>￥ 6,800</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">下午及夜滑券</th>
+                                    <td>12：00 PM ~ 8：30 PM</td>
+                                    <td>￥ 7,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">夜滑券</th>
+                                    <td>04：00 PM ~ 8：30 PM</td>
+                                    <td>￥ 2,500</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Mt. Naeba 一日券</th>
+                                    <td>08：00 AM ~ 5：00 PM</td>
+                                    <td>￥ 8,000</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-sm-none">
+                    <div class="card">
+                        <div class="card-header py-3 fs-7 fs-lg-5 text-center text-white" style="background-color:#1b70bf ;">標準價格</div>
+                        <div class="card-body p-lg-5">
+                            <table class="table fs-8 my-auto fs-lg-6 text-info-100 text-center table-bordered">
+                                <tr>
+                                    <th scope="col">門票</th>
+                                    <th scope="col">費用</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">五小時券</th>
+                                    <td>￥ 5,500</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">一日券</th>
+                                    <td>￥ 6,800</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">下午及夜滑券</th>
+                                    <td>￥ 7,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">夜滑券</th>
+                                    <td>￥ 2,500</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Mt. Naeba 一日券</th>
+                                    <td>￥ 8,000</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-5 col-xl-4 col-md-10 mx-auto">
+                    <div class="card h-100">
+                        <div class="card-header py-3 fs-7 fs-lg-5 text-center text-white bg-primary-100">SEIBU PRINCE CLUB会員</div>
+                        <div class="card-body p-lg-5">
+                            <div class="my-auto">
+                                <table class="table fs-8 fs-lg-6 text-info-100 text-center table-bordered mb-2">
+                                    <tr>
+                                        <th scope="col">門票</th>
+                                        <th scope="col">費用</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">一日券</th>
+                                        <td>￥ 6,300</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">兩日券</th>
+                                        <td>￥ 12,600</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">三日券</th>
+                                        <td>￥ 18,900</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Mt. Naeba 一日券</th>
+                                        <td>￥ 7,000</td>
+                                    </tr>
+                                </table>
+                                <p class="text-end text-info-200 fs-9 fs-lg-8">更多雪票種類請至官網查看</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-md-19 py-9">
+            <h2 class="ls-1 text-info-100 fs-5 fs-lg-3 mb-md-11 mb-6" data-aos="flip-left"><span class="align-middle fs-5 fs-lg-3 material-symbols-outlined me-2">location_on</span>交通路線</h2>
+            <div class="row align-items-stretch g-6 justify-content-center">
+                <div class="col-11 col-md-6 col-xl-7">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.1213755457716!2d138.77706557428098!3d36.79164016818457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff4c61bf8ebffff%3A0x6afe52a8d2378486!2z6IuX5aC05ruR6Zuq5aC0!5e0!3m2!1szh-TW!2stw!4v1730565592017!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-11 col-md-6 col-xl-5"  data-aos="flip-down" data-aos-duration="1000">
+                    <div class="effect text-info-100 bg-primary-400 d-flex flex-column justify-content-center h-100 p-10">
+                        <h5 class="fs-7 fs-lg-5 mb-4"><span class="me-3 ls-1 fs-6 fs-lg-4 align-middle material-symbols-outlined">directions_railway</span>大眾運輸</h5>
+                        <ol class="fs-lg-7 mb-6 ps-lg-10">
+                            <li> 成田機場到東京站：<br>成田特快（Narita Express）- 車程約1小時</li>
+                            <li> 東京站到越後湯澤站：<br>上越新幹線（Joetsu Shinkansen）- 車程約1.5小時</li>
+                            <li> 越後湯澤站到苗場雪場：<br>接駁巴士 - 車程約30-40分鐘</li>
+                        </ol>
+                        <h5 class="fs-7 fs-lg-5 mb-4"><span class="me-3 ls-1 fs-6 fs-lg-4 align-middle material-symbols-outlined">directions_car</span>自駕</h5>
+                        <p class="fs-lg-7 ps-lg-10 ps-8" style="text-align: justify;">自成田機場出發，沿京葉道路和關越自動車道（Kan-Etsu Expressway）行駛，約需3.5到4小時。請注意，冬季駕駛時可能需要配備雪地輪胎或鏈條。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="back-to-top hidden back-to-top btn btn-primary-100 rounded-circle"><i class="bi bi-chevron-up text-white fs-6"></i></button>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/snowstorm-min.js"></script>
+    <script>
+        snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
+        snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+    </script>
+</body>
+</html>

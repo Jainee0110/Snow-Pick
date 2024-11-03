@@ -1,0 +1,132 @@
+.progress-mt{
+    margin-top: 24px;
+    @media (min-width:992px) {
+        margin-top: 90px;
+    } 
+}
+.progress{
+    height: 2px;
+    background-color: $info-300;    
+    @media (min-width:768px) {
+        height: 3px;
+    }
+    @media (min-width:992px) {
+        height: 4px;
+    }
+    .progress-bar{
+        background-color: $primary-100;
+    }
+    
+    &-milestone{
+        position:absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50px;
+        background-color:$primary-100;
+        top: 0; 
+        
+        &-hover{    
+            box-shadow:0 0 0 4px $primary-200,0 0 0 8px #EBF7FF;  
+            animation: fade 3s linear 2s infinite; 
+        }
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (min-width:768px) {
+        width: 24px;
+        height: 24px;  
+        &-hover{    
+            box-shadow:0 0 0 8px $primary-200,0 0 0 15px #EBF7FF; 
+                }
+            }      
+        }
+    
+}
+
+.traveler-label{
+    border-radius: 0%;
+    background-color: $primary-100;
+    padding: 8px 12px;
+   
+}
+.form-check-equipment{
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input{
+    border-color: $info-200;    
+}
+.form-check-input[type=checkbox]{
+    border-radius: 2px;
+}
+
+// &:checked{
+//      background-color: #ffffff;
+//     border-color: $primary-100;
+//     color: $primary-100;
+
+// }
+.form-pd{
+    padding: 7px 12px;
+}
+
+.tableHead{
+    --bs-table-bg: $primary-100;
+    background-color: $primary-100;
+    color: #ffffff;    
+}
+table{
+    --bs-table-hover-bg:$primary-400;
+    th{
+        font-weight: normal;
+        padding: 12px 12px;
+    }
+    td{
+        font-weight: normal;
+    }    
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: $primary-400;
+    --bs-table-bg-type:$primary-400;
+}
+
+
+.table-hover > tbody > tr:hover > * {
+    --bs-table-bg-state:$primary-400;
+    background-color: $primary-400;
+}
+
+// .table> :not(caption) > * > * {
+//     padding: 17px 0;
+// }
+
+.btn-page{
+    padding: 16px 50px;
+    // max-width:200px;    
+    @media (min-width:992px) {
+        padding: 16px 70px; 
+    }
+}
+.link-info-100:hover{
+    background-color: $primary-400;
+    border: 0px;
+}
+.rental_all{
+    width: 38px;
+    @media (min-width:992px) {
+        width: 75px
+    }
+}
+.rental-items{
+    width: 44px;
+    @media (min-width:992px) {
+        width: 88px
+    }
+}

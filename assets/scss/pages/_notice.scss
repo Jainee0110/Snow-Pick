@@ -1,0 +1,26 @@
+.noteDescription{
+  border: 1px solid lightgray;
+  padding: 12px;
+}
+
+.noticeDescription{
+  @include media-breakpoint-down(md) {
+    padding-left: 12px;
+    padding-right: 12px;
+  
+  }
+}
+
+.noticeDescriptionDetail{
+  padding-left: 36px;
+  padding-right: 36px;
+  @include media-breakpoint-down(md) {
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
+}
+.noticeDescriptionOL{
+  list-style-position: inside;
+}

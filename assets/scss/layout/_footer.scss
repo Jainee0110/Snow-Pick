@@ -1,0 +1,28 @@
+.social-media{
+    img{
+        width: 28px;
+        &:hover{
+            transform: scale(1.2)
+        }
+        @include media-breakpoint-up(md){
+            width: 30px;
+        }
+        @include media-breakpoint-up(xl){
+            width: 32px;
+        }
+    }
+}
+.contact{
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.footer-icon{
+    width: 190px;
+    @include media-breakpoint-up(md){
+        width: 200px;
+    }
+    @include media-breakpoint-up(xl){
+        width: 236px;
+    }
+}

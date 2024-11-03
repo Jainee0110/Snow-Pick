@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/img/snowboarding-icon.png" type="snowpick-icon" />
+  <title>忘記密碼-雪域狂歡</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="userAccount-page py-13 py-lg-19 d-flex flex-column align-items-center justify-content-sm-start justify-content-center">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="col-12 col-sm-10 col-lg-6 p-11 bg-primary-400 shadow rounded-5 border">
+          <h2 class="text-info-100 mb-4 mb-lg-6 fs-6 fs-lg-4 ">忘記密碼</h2>
+          <div class="d-flex align-items-center gap-6">
+            <i class="bi bi-exclamation-circle-fill fs-2 text-info-100"></i>
+            <p class="text-info-100 fs-8 fs-lg-6">驗證信件已經發至您的電子郵件信箱<br>
+              請盡速登入查看郵件並依照指定步驟找回您的帳號<br><br><span class="text-danger">*</span> 驗證信件在10分鐘內有效</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init();</script>
+</body>
+
+</html>
